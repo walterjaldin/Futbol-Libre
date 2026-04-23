@@ -1,26 +1,18 @@
-# Passive DNS del dominio futbollibretv.su
+# Nameservers del dominio
 
-## Resoluciones históricas
+## Servidores DNS identificados
 
-Se identificaron múltiples resoluciones DNS del dominio a lo largo del tiempo:
+A partir del análisis con DNSDumpster se identificaron los siguientes servidores DNS asociados al dominio:
 
-| Fecha | IP |
-|------|----|
-| 2026-04-15 | 185.254.197.23 |
-| 2026-04-15 | 194.42.205.18 |
-| 2026-04-14 | 138.226.244.112 |
-| 2026-04-07 | 194.42.205.19 |
-| 2026-03-20 | 128.0.104.23 |
-| 2026-03-15 | 172.64.80.1 |
-| 2026-03-10 | 104.21.37.231 |
-| 2026-03-10 | 172.67.214.174 |
+| Dominio | IP | ASN | Proveedor | País |
+|--------|----|-----|----------|------|
+| ap-dns.com | 37.187.209.163 | AS16276 | OVH | Francia |
+| bp-dns.org | 37.187.83.149 | AS16276 | OVH | Francia |
+| cp-dns.biz | 162.210.197.241 | AS30633 | Leaseweb USA | Estados Unidos |
+| dp-dns.info | 185.108.84.23 | AS60781 | Leaseweb NL | Países Bajos |
 
 ## Observaciones
 
-- El dominio presenta múltiples cambios de IP en un corto periodo de tiempo.
-- Se observa rotación de infraestructura.
-- Algunas IPs corresponden a servicios tipo CDN (Cloudflare).
-- Este comportamiento puede indicar:
-  - balanceo de carga
-  - distribución geográfica
-  - evasión de bloqueo
+- Los servidores DNS están distribuidos geográficamente.
+- Se utilizan múltiples proveedores (OVH, Leaseweb).
+- Esto sugiere una infraestructura resiliente y descentralizada.
