@@ -1,4 +1,5 @@
 # Estado del laboratorio — Checkpoint diario
+**Investigador:** Jaldin Gonzales Walter
 
 ## Última actualización: 22 de abril de 2026, cierre de jornada día 1
 
@@ -32,6 +33,7 @@
 ### Fase 1 — Terminar AVD A14 (~20 min)
 1. Abrir Burp Suite (o cargar proyecto guardado).
 2. Arrancar A14 con:
+
 cd ~/Library/Android/sdk/emulator
 ./emulator -avd A14_perfil_investigacion -writable-system
 
@@ -48,6 +50,7 @@ ls /data/local/tmp/cacerts/ | grep 7bf17d07
 
 Debe mostrar 7bf17d07.0.
 6. Aplicar bind mount:
+
 mount --bind /data/local/tmp/cacerts /apex/com.android.conscrypt/cacerts
 
 7. Salir del shell (exit).

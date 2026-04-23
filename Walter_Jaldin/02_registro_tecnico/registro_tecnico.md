@@ -1,5 +1,6 @@
 # Registro técnico del laboratorio
 **Proyecto:** Análisis de exposición del usuario en futbollibretv.su (Android)
+**Investigador:** Jaldin Gonzales Walter
 
 ---
 

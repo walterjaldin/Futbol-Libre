@@ -1,10 +1,10 @@
 # Bitácora de investigación
 **Proyecto:** Análisis de exposición del usuario al acceder al sitio futbollibretv.su desde dispositivos Android
 
-**Investigador principal:** Jaldin Gonzales Walter
+**Investigador:** Jaldin Gonzales Walter
 **Afiliación:** Universidad San Francisco Xavier de Chuquisaca (USFX)
 **Correo:** jaldinwalter6@gmail.com
-**Equipo de investigación:** Walter Jaldín, Rodrigo Álvarez, Ángel Mauricio, César Soria
+**Línea de trabajo asignada:** configuración del laboratorio Android (emuladores), ejecución de sesiones experimentales en los perfiles A14-N-R1, A14-D-R1, A11-N-R1, A11-D-R1 y A14-N-R2.
 **Fecha de inicio:** 22 de abril de 2026
 
 ---
@@ -13,7 +13,7 @@
 
 **Jornada:** Día 1 — Preparación del entorno de laboratorio
 **Hora de inicio:** [completar]
-**Hora de fin:** [completar hora al cerrar jornada]
+**Hora de fin:** [completar al cerrar jornada]
 
 ### Decisiones metodológicas confirmadas durante la jornada
 - **Alcance:** estudio exclusivo Android vía emulador.
@@ -24,15 +24,12 @@
 - **Herramientas de interceptación:** Burp Suite Community + Wireshark.
 - **Perfiles de dispositivo:** Pixel 6 para Android 14 (API 34), Pixel 5 para Android 11 (API 30).
 - **Variante de imagen del sistema:** Google APIs arm64-v8a (con acceso root habilitado), requerida para instalar certificado CA como autoridad de sistema.
-- **Distribución de sesiones entre investigadores:** cada miembro ejecuta 5 sesiones distribuidas entre perfiles, para reforzar validez inter-observador.
 
 ### Actividades ejecutadas
 
-**Estructura y repositorio**
-- Creación del repositorio colaborativo GitHub (privado): https://github.com/walterjaldin/Futbol-Libre
-- Estructura con 4 carpetas (una por investigador) creada y subida.
-- Estructura interna de `Walter_Jaldin/` con 9 subcarpetas por fase metodológica.
-- Bitácora (`01_bitacora/bitacora.md`) y registro técnico (`02_registro_tecnico/registro_tecnico.md`) inicializados.
+**Estructura y documentación**
+- Creación de la estructura de carpetas de trabajo personal.
+- Inicialización de bitácora (`01_bitacora/bitacora.md`) y registro técnico (`02_registro_tecnico/registro_tecnico.md`).
 - Plantillas `notas.md` creadas en las 5 subcarpetas de sesiones experimentales asignadas.
 - README personal creado.
 
@@ -70,7 +67,7 @@
 - **Diagnóstico:** Android 14 lee certificados CA desde `/apex/com.android.conscrypt/cacerts/` (introducido como refuerzo de seguridad), no desde `/system/etc/security/cacerts/`. Además, el hash correcto para Android 14 es `subject_hash` (7bf17d07), no `subject_hash_old` (9a5ba575).
 - **Solución aplicada:** procedimiento de bind mount para inyectar el certificado con nombre correcto en la ubicación APEX. Carpeta `/data/local/tmp/cacerts/` poblada con todos los CAs originales + nuestro certificado renombrado a `7bf17d07.0`. Contexto SELinux ajustado con chcon.
 - `mount --bind /data/local/tmp/cacerts /apex/com.android.conscrypt/cacerts` aplicado exitosamente; el certificado aparece en `/apex/` tras el bind mount.
-- **Segundo problema:** el intento de propagar el mount a todos los namespaces de procesos (`for pid in $(ls /proc)...`) causó inestabilidad en el user space del emulador. Chrome y Settings dejaron de responder tras el comando.
+- **Segundo problema:** el intento de propagar el mount a todos los namespaces de procesos causó inestabilidad en el user space del emulador. Chrome y Settings dejaron de responder tras el comando.
 - **Acción tomada:** reboot del AVD mediante cierre forzado.
 - **Segundo intento:** bind mount aplicado sin tocar todos los procesos (solo global) y complementado con `setprop ctl.restart zygote` para refrescar la UI. El restart del zygote causó que el emulador quedara congelado en el logo de Google.
 
