@@ -1,0 +1,19 @@
+# Sesión de análisis - 2026-04-22
+
+## Objetivo
+Realizar un reconocimiento inicial del dominio `futbollibretv.su` y documentar la exposición técnica del usuario.
+
+## Herramientas utilizadas
+- Ping
+- WHOIS
+- NSLOOKUP
+- CURL
+- Revisión de captura de tráfico en texto
+
+## Resultado general
+El dominio está operativo, oculta identidad de registro y utiliza HTTPS. La captura de tráfico indica que la navegación no se limita al dominio principal, sino que involucra múltiples recursos externos, algunos de ellos asociados a publicidad o servicios de terceros.
+
+## Observaciones de interés
+- `adexchangeclear.com` sugiere publicidad o tracking.
+- `cloudfront.net` indica uso de CDN.
+- `safebrowsing.googleapis.com` y `ocsp.r2m04.amazontrust.com` corresponden a validaciones de seguridad legítimas.
