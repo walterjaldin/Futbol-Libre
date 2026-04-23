@@ -7,7 +7,7 @@
 
 ## Sistema anfitrión (Host)
 
-El entorno experimental se ejecutó sobre un equipo portátil **HP Pavilion Gaming 15-dk1xxx**, configurado con un procesador **Intel Core i5-10300H @ 2.50 GHz**, **24 GB de memoria RAM** y sistema operativo de **64 bits (arquitectura x64)**.
+El entorno experimental se ejecutó sobre un equipo portátil **HP**, configurado con un procesador **Intel Core i5-10300H**, **24 GB de memoria RAM** y sistema operativo de **64 bits (arquitectura x64)**.
 
 Este equipo proporciona la capacidad de cómputo necesaria para la ejecución simultánea de la máquina virtual y las herramientas de análisis de tráfico, sin evidenciar degradación significativa en el rendimiento durante las pruebas.
 
