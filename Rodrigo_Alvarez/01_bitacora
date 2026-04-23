@@ -1,0 +1,30 @@
+# Bitácora de trabajo - Avance inicial
+
+**Fecha:** 2026-04-22  
+**Proyecto:** Análisis preliminar de exposición y riesgos de seguridad en futbollibretv.su  
+**Entorno:** Kali Linux en VMware
+
+## Actividades realizadas
+1. Se verificó la accesibilidad del dominio mediante ping.
+2. Se consultó información de registro mediante WHOIS.
+3. Se resolvió el dominio mediante nslookup.
+4. Se inspeccionaron cabeceras HTTP mediante curl -I.
+5. Se revisó un archivo de captura de tráfico de red en formato texto.
+6. Se identificaron dominios externos relacionados con publicidad, certificados y navegación segura.
+
+## Hallazgos iniciales
+- El dominio `futbollibretv.su` se encuentra activo.
+- El registro WHOIS presenta privacidad de datos.
+- Se observó resolución DNS hacia direcciones IP diferentes en distintas consultas.
+- La respuesta HTTP usa `nginx` y presenta algunas cabeceras de seguridad básicas.
+- El tráfico de red analizado muestra comunicación cifrada mediante TLS/HTTPS.
+- Se detectaron dominios externos asociados a publicidad y servicios de verificación.
+
+## Interpretación preliminar
+Los resultados iniciales sugieren una infraestructura orientada a contenido web dinámico, con probable uso de recursos externos de terceros. El cifrado TLS impide ver el contenido en texto claro, por lo que el análisis debe continuar con observación de sesiones, tráfico de navegación y carga de recursos externos.
+
+## Próximos pasos
+- Analizar el comportamiento del navegador en una sesión controlada.
+- Identificar recursos cargados por terceros.
+- Clasificar riesgos usando criterios OWASP.
+- Organizar evidencias para la sección de resultados.
