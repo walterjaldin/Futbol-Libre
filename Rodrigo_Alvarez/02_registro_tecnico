@@ -1,0 +1,84 @@
+# Registro técnico inicial
+
+## Dominio analizado
+- `futbollibretv.su`
+- Variante observada en resolución: `www.futbol.libretv.su`
+
+## Comprobación de conectividad
+### Comando
+```bash
+ping www.futbol.libretv.su
+```
+
+### Resultado
+- IP resuelta: `66.175.209.179`
+- Host accesible
+- 0% de pérdida de paquetes
+- RTT promedio aproximado: 198 ms
+
+### Interpretación
+El dominio está operativo y responde de forma estable a solicitudes ICMP.
+
+## Consulta WHOIS
+### Comando
+```bash
+whois futbollibretv.su
+```
+
+### Resultado relevante
+- Dominio: `FUTBOLLIBRETV.SU`
+- Servidores DNS: `a.p-dns.com`, `b.p-dns.org`, `c.p-dns.biz`, `d.p-dns.info`
+- Estado: `REGISTERED, DELEGATED`
+- Titular: `Private Person`
+- Correo de contacto: oculto mediante privacidad
+- Registrador: `ARDIS-SU`
+- Fecha de creación: `2022-12-26T16:43:23Z`
+- Vigencia hasta: `2026-12-26`
+
+### Interpretación
+El uso de privacidad en WHOIS y la presencia de DNS externos sugiere una estrategia de ocultamiento de identidad y administración distribuida.
+
+## Resolución DNS
+### Comando
+```bash
+nslookup futbollibretv.su
+```
+
+### Resultado
+- Servidor local consultado: `10.0.2.3`
+- IP resuelta: `185.254.197.23`
+
+### Interpretación
+La resolución DNS muestra una dirección IP distinta a la observada en ping, lo que sugiere variabilidad en la infraestructura o uso de mecanismos de entrega dinámica.
+
+## Inspección de cabeceras HTTP
+### Comando
+```bash
+curl -I https://futbollibretv.su
+```
+
+### Resultado relevante
+- `HTTP/2 200`
+- `server: nginx`
+- `content-type: text/html; charset=UTF-8`
+- `cache-control: max-age=3, must-revalidate`
+- `x-xss-protection: 1; mode=block`
+- `x-content-type-options: nosniff`
+- `x-nginx-upstream-cache-status: HIT`
+- `x-server-powered-by: Engintron`
+
+### Interpretación
+El sitio presenta cabeceras de seguridad básicas, pero no se observan controles más robustos como `Strict-Transport-Security` o una política estricta de contenido.
+
+## Observación de tráfico de red
+Se analizó un archivo de captura en texto equivalente a un dump de tráfico. El tráfico observado se compone principalmente de TLS/HTTPS, consultas DNS, tráfico OCSP, peticiones ARP e ICMPv6. La mayor parte del contenido no es visible en claro debido al cifrado.
+
+### Dominios externos identificados
+- `adexchangeclear.com`
+- `cloudfront.net`
+- `byads.co`
+- `safebrowsing.googleapis.com`
+- `ocsp.r2m04.amazontrust.com`
+
+### Interpretación
+La presencia de dominios de publicidad, CDN y verificación de certificados indica carga de recursos externos y posible exposición a seguimiento, publicidad invasiva o malvertising.
