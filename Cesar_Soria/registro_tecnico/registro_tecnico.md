@@ -60,6 +60,31 @@ Se emplearon las siguientes herramientas, seleccionadas en función de las varia
 - **Propósito:** Simulación del comportamiento de un usuario real durante la navegación  
 
 ---
+## Herramientas OSINT utilizadas
+
+Para la fase de reconocimiento pasivo se emplearon herramientas de inteligencia de fuentes abiertas (OSINT), con el fin de identificar la infraestructura y reputación del dominio sin interacción directa.
+
+Las herramientas utilizadas fueron:
+
+- VirusTotal  
+  Propósito: análisis de reputación del dominio e identificación de IPs asociadas.
+
+- Shodan  
+  Propósito: identificación de servicios expuestos, puertos abiertos y tecnologías utilizadas en la infraestructura.
+
+- DNSDumpster  
+  Propósito: obtención de registros DNS, subdominios y servidores asociados.
+
+## Justificación metodológica
+
+El uso combinado de estas herramientas permitió obtener una visión integral de la infraestructura del dominio desde diferentes perspectivas:
+
+- Reputación (VirusTotal)
+- Infraestructura y servicios (Shodan)
+- Resolución DNS y subdominios (DNSDumpster)
+
+Esto contribuye a mejorar la validez del análisis mediante la correlación de múltiples fuentes independientes.
+---
 
 ## Configuración de aislamiento
 
