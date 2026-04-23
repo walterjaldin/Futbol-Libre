@@ -113,3 +113,36 @@ El procedimiento descrito representa una técnica documentada en la comunidad de
 - **Configuración AdGuard DNS:** pendiente (próxima jornada).
 
 ---
+## Procedimiento de preparación pre-sesión (Android 14)
+
+**Contexto:** los snapshots del AVD no preservan el bind mount aplicado sobre `/apex/com.android.conscrypt/cacerts/`. Por lo tanto, cada sesión experimental que use el AVD Android 14 requiere reaplicar el bind mount antes de iniciar la captura de tráfico.
+
+**Protocolo de reaplicación (tiempo estimado: 30 segundos):**
+
+1. Cargar snapshot `baseline_con_burp` en el AVD A14.
+2. Abrir terminal y ejecutar:
+
+cd ~/Library/Android/sdk/platform-tools
+./adb root
+./adb shell
+
+3. Dentro del shell del emulador, ejecutar:
+
+mount --bind /data/local/tmp/cacerts /apex/com.android.conscrypt/cacerts
+
+4. Verificar:
+
+ls /apex/com.android.conscrypt/cacerts/ | grep 7bf17d07
+
+Debe mostrar `7bf17d07.0`.
+5. Salir del shell con `exit`.
+6. Cerrar Chrome completamente en el AVD (recientes → deslizar) y reabrirlo para asegurar que lea la nueva lista de CAs.
+7. Validar interceptación con prueba rápida a https://example.com.
+
+**Verificación de éxito:** en Burp Suite → Proxy → HTTP history deben aparecer peticiones HTTPS del AVD con contenido descifrado visible.
+
+## Verificación de interceptación HTTPS — Android 14
+
+**Fecha:** 23 de abril de 2026
+**URL de prueba:** https://example.com
+**Resultado:** ✅ Éxito. Chrome cargó la página sin advertencias de certificado. Burp capturó las peticiones HTTPS con cuerpo descifrado, incluyendo headers del User-Agent Android.

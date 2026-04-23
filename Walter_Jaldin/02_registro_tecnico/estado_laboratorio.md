@@ -18,10 +18,12 @@
 - Certificado copiado físicamente a /system/etc/security/cacerts/ del AVD A14.
 - Carpeta /data/local/tmp/cacerts/ preparada en AVD A14 con 7bf17d07.0 listo.
 
-### ⏸ En progreso — se retoma mañana
+### Completado
 - Bind mount persistente de certificado en /apex/ del AVD A14.
 - Snapshot `baseline_con_burp` en AVD A14 (no creado aún).
 - Verificación de interceptación HTTPS en A14.
+
+### ⏸ En progreso — se retoma mañana
 - Instalación de certificado en AVD A11.
 - Snapshot `baseline_con_burp` en AVD A11.
 - Configuración de AdGuard DNS.
