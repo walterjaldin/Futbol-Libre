@@ -52,7 +52,9 @@
 - **Device name en el AVD:** AVD_A14_INV
 - **Snapshots creados:**
   - `baseline_limpio` — estado inicial sin configuraciones adicionales ✅
-  - `baseline_con_burp` — pendiente de creación en próxima jornada
+  - `baseline_con_burp` — certificado PortSwigger vía bind mount + proxy 10.0.2.2:8080 ✅
+  - `baseline_con_proteccion` — adicionalmente DNS AdGuard 94.140.14.14 y 94.140.15.15 ✅
+- **Nota crítica:** los snapshots de A14 NO preservan el bind mount sobre /apex/. Cada sesión experimental requiere reaplicar el bind mount tras cargar el snapshot.
 
 ### AVD 2 — Android 11
 - **Nombre del AVD:** A11_perfil_investigacion
@@ -67,7 +69,9 @@
 - **Device name en el AVD:** AVD_A11_INV
 - **Snapshots creados:**
   - `baseline_limpio` — estado inicial sin configuraciones adicionales ✅
-  - `baseline_con_burp` — pendiente de creación en próxima jornada
+  - `baseline_con_burp` — certificado PortSwigger en /system/etc/security/cacerts/ + proxy 10.0.2.2:8080 ✅
+  - `baseline_con_proteccion` — adicionalmente DNS AdGuard 94.140.14.14 y 94.140.15.15 ✅
+- **Nota:** los snapshots de A11 SÍ preservan el certificado y configuraciones (no requiere bind mount).
 
 ## Cuentas OSINT creadas
 - **VirusTotal:** creada el 22 de abril de 2026
