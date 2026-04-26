@@ -1,0 +1,14 @@
+# Análisis preliminar
+
+## Interpretación técnica
+Los datos recopilados muestran que el dominio objetivo opera con una arquitectura web moderna basada en HTTPS y distribución de contenido externa. Aunque el tráfico está cifrado, esto no elimina el riesgo; simplemente dificulta la inspección sin técnicas adicionales.
+
+## Hallazgos relevantes
+1. El cifrado TLS protege la confidencialidad del tráfico, pero no impide la carga de recursos maliciosos o publicitarios.
+2. El uso de DNS externos y privacidad WHOIS reduce la trazabilidad del operador.
+3. La presencia de dominios de publicidad y CDN sugiere dependencia de terceros.
+4. La carga de servicios de seguridad como OCSP y Safe Browsing es consistente con navegadores modernos.
+5. La coexistencia de recursos legítimos y sospechosos exige un análisis de riesgo diferenciado.
+
+## Hipótesis preliminar
+El sitio podría exponer al usuario a publicidad invasiva, rastreo y posibles redirecciones maliciosas, aunque el tráfico principal se observe cifrado.
