@@ -1,0 +1,10 @@
+
+; <<>> DiG 9.10.6 <<>> futbollibretv.su ANY +noall +answer
+;; global options: +cmd
+futbollibretv.su.	60	IN	A	185.254.197.23
+futbollibretv.su.	60	IN	NS	b.p-dns.org.
+futbollibretv.su.	60	IN	NS	c.p-dns.biz.
+futbollibretv.su.	60	IN	NS	d.p-dns.info.
+futbollibretv.su.	60	IN	NS	a.p-dns.com.
+futbollibretv.su.	60	IN	SOA	cp.p-dns.com. joezm5a.proton.me. 2026032079 60 3600 604800 86400
+futbollibretv.su.	60	IN	TXT	"google-site-verification=rSdArONcC2FDZLl7WDw16516IV-nP_nvryYI5soxy70"

@@ -1,0 +1,7 @@
+
+; <<>> DiG 9.10.6 <<>> futbollibretv.su NS +noall +answer
+;; global options: +cmd
+futbollibretv.su.	60	IN	NS	b.p-dns.org.
+futbollibretv.su.	60	IN	NS	a.p-dns.com.
+futbollibretv.su.	60	IN	NS	d.p-dns.info.
+futbollibretv.su.	60	IN	NS	c.p-dns.biz.

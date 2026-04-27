@@ -104,3 +104,73 @@
 - Crear snapshots finales con protección.
 
 ---
+
+
+
+---
+
+## Entrada 2 — 27 de abril de 2026
+
+**Jornada:** Día 3 — Reconocimiento OSINT (sub-fases 1.1, 1.2 y 1.3)
+**Hora de inicio:** [completar]
+**Hora de fin:** [completar al cerrar jornada]
+
+### Actividades planificadas
+- Ejecutar reconocimiento pasivo del dominio futbollibretv.su.
+- Documentar hallazgos en sub-fases 1.1 (WHOIS), 1.2 (DNS) y 1.3 (certificados/host).
+- Identificar patrones de infraestructura, operador y posibles dominios relacionados.
+
+### Actividades ejecutadas
+
+**Sub-fase 1.1 — WHOIS e historial del dominio**
+- Consulta whois desde terminal y vía ViewDNS.info.
+- Identificación del registrador ARDIS-SU (ruso).
+- Confirmación de privacidad WHOIS activada (titular oculto).
+- Histórico de IPs documentado: migración desde OVH (Francia) → Cloudflare → IP directa actual.
+- Análisis del TLD .su como elección estratégica de jurisdicción permisiva.
+- Documento generado: 03_osint/01_whois.md.
+
+**Sub-fase 1.2 — Resolución DNS y registros**
+- Consultas dig para registros A, AAAA, MX, NS, TXT.
+- Análisis con DNSDumpster.
+- Hallazgo: IP actual 185.254.197.23 alojada en YURTEH-AS (Ucrania).
+- Hallazgo: certificado del servidor apunta a dominio distinto (doeemain.org).
+- Servidores NS distribuidos en 3 jurisdicciones (Francia, Países Bajos, EE.UU.) bajo proveedores OVH y LeaseWeb.
+- Sin servidores MX (sin correo).
+- Registro TXT de Google Site Verification (operador busca tráfico orgánico).
+- Documento generado: 03_osint/02_dns.md.
+
+**Sub-fase 1.3 — Certificados TLS e infraestructura**
+- Análisis profundo del host 185.254.197.23 en Censys.
+- Identificación del proveedor: Virtual Systems LLC (Kyiv, Ucrania).
+- Detección de 24 servicios expuestos en el host (cPanel, WHM, SSH, MySQL, IMAP, SMTP, webmail, Nginx).
+- Detección de servidor multi-tenant: 3 instancias WordPress, 5 de cPanel, 4 de Dovecot.
+- 0 CVEs activas en momento del escaneo.
+- HALLAZGO PRINCIPAL: identificación del dominio paralelo www.futbol-libre.su apuntando a la misma IP.
+- Verificación independiente con dig: ambos dominios resuelven a 185.254.197.23 con TTL idénticos.
+- HALLAZGO SECUNDARIO: el dominio paralelo expone correo personal de Gmail en WHOIS, mientras que el principal usa servicio de privacidad. Asimetría operativa documentada.
+- Documento generado: 03_osint/03_certificados.md.
+- Limitación documentada: crt.sh estuvo intermitentemente caído (error 502), análisis se completó priorizando Censys.
+
+### Hallazgos clave consolidados hasta ahora
+1. Dominio futbollibretv.su registrado en diciembre 2022, operador anónimo.
+2. Infraestructura distribuida diseñada para resiliencia: NS en 3 países, registrador ruso, hosting actual en Ucrania.
+3. Migración reciente de Cloudflare (2026) a hosting directo en Virtual Systems LLC.
+4. Servidor multi-tenant con 24 servicios expuestos.
+5. Existe al menos un dominio paralelo (futbol-libre.su) con misma infraestructura.
+6. Inconsistencia operativa del operador en privacidad WHOIS del dominio paralelo.
+7. Patrón consistente con sitios diseñados para evasión legal y resistencia a takedowns.
+
+### Observaciones y decisiones del día
+- **Decisión metodológica:** ante el fallo de crt.sh, se priorizó Censys como herramienta principal de análisis de certificados y host. Esta sustitución se documenta como limitación parcial pero se compensa con la riqueza de información de Censys.
+- **Línea de investigación abierta:** el dominio paralelo futbol-libre.su y el dominio del certificado TLS doeemain.org se profundizarán en la sub-fase 1.7.
+- **Nota ética:** el correo personal expuesto en el WHOIS del dominio paralelo se documenta como evidencia técnica de registros públicos, pero se anonimizará en la versión final del artículo siguiendo el principio de minimización de daños.
+
+### Pendiente para la próxima jornada
+- Sub-fase 1.4: análisis de infraestructura ampliado con Shodan.
+- Sub-fase 1.5: análisis de reputación (VirusTotal, URLhaus, Google Safe Browsing).
+- Sub-fase 1.6: historial visual del sitio en Wayback Machine.
+- Sub-fase 1.7: investigación de dominios relacionados (futbol-libre.su, doeemain.org, configma.website).
+- Reintentar crt.sh para complementar análisis de certificados.
+
+---

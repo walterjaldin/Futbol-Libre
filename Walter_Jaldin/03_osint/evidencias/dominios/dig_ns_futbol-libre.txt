@@ -1,0 +1,7 @@
+
+; <<>> DiG 9.10.6 <<>> futbol-libre.su NS +noall +answer
+;; global options: +cmd
+futbol-libre.su.	60	IN	NS	c.p-dns.biz.
+futbol-libre.su.	60	IN	NS	a.p-dns.com.
+futbol-libre.su.	60	IN	NS	d.p-dns.info.
+futbol-libre.su.	60	IN	NS	b.p-dns.org.

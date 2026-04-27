@@ -1,0 +1,4 @@
+
+; <<>> DiG 9.10.6 <<>> futbollibretv.su A +noall +answer
+;; global options: +cmd
+futbollibretv.su.	23	IN	A	185.254.197.23
