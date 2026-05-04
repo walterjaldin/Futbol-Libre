@@ -1,0 +1,39 @@
+=== Análisis VirusTotal: futbol-libre.su ===
+Fecha: Mon May  4 00:00:14 -04 2026
+
+--- Detection Stats ---
+{
+  "malicious": 2,
+  "suspicious": 1,
+  "undetected": 34,
+  "harmless": 54,
+  "timeout": 0
+}
+
+--- Categorías asignadas ---
+{}
+
+--- Reputación ---
+0
+
+--- Análisis individual por motor (solo detecciones) ---
+{
+  "alphaMountain.ai": {
+    "method": "blacklist",
+    "engine_name": "alphaMountain.ai",
+    "category": "malicious",
+    "result": "malicious"
+  },
+  "Forcepoint ThreatSeeker": {
+    "method": "blacklist",
+    "engine_name": "Forcepoint ThreatSeeker",
+    "category": "malicious",
+    "result": "malicious"
+  },
+  "Gridinsoft": {
+    "method": "blacklist",
+    "engine_name": "Gridinsoft",
+    "category": "suspicious",
+    "result": "suspicious"
+  }
+}
