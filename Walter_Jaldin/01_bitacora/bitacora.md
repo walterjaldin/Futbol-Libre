@@ -174,3 +174,70 @@
 - Reintentar crt.sh para complementar análisis de certificados.
 
 ---
+
+---
+
+## Entrada 3 — 4 de mayo de 2026
+
+**Jornada:** Día 4 — Reconocimiento OSINT (sub-fase 1.5: análisis de reputación)
+**Hora de inicio:** [completar]
+**Hora de fin:** [completar al cerrar jornada]
+
+### Actividades planificadas
+- Ejecutar análisis de reputación del dominio futbollibretv.su, dominio paralelo y la IP del servidor.
+- Realizar todas las consultas desde terminal con APIs (VirusTotal, URLhaus, AbuseIPDB).
+- Generar evidencias en formato JSON y resúmenes TXT.
+- Documentar hallazgos en sub-fase 1.5.
+
+### Actividades ejecutadas
+
+**Configuración técnica:**
+- Obtención y configuración de API keys: VirusTotal y AbuseIPDB.
+- Instalación de jq para procesamiento de JSON.
+- Creación de carpeta `03_osint/evidencias/reputacion/`.
+
+**Consultas VirusTotal API:**
+- Análisis del dominio futbollibretv.su (1/91 detecciones, motor Chong Lua Dao).
+- Análisis del dominio futbol-libre.su (3/91 detecciones, motores alphaMountain.ai, Forcepoint ThreatSeeker, Gridinsoft).
+- Análisis de la IP 185.254.197.23 (1/91 detecciones).
+- Consulta de resoluciones DNS pasivas de la IP principal.
+- Análisis de IPs alternativas (194.42.205.18 y 91.218.49.91).
+
+**Consultas URLhaus API:**
+- Búsqueda de futbollibretv.su, futbol-libre.su y la IP. Sin reportes en ninguno.
+
+**Consultas WHOIS y dig adicionales:**
+- WHOIS de pelotalibretv.su.
+- WHOIS de doeemain.org y yourewatching.org (limitados por GDPR).
+- dig de las IPs alternativas para confirmar resolución actual.
+
+### Hallazgos clave de la jornada
+
+1. **HALLAZGO MAYOR — Ecosistema de 10 dominios identificado:** mediante resoluciones DNS pasivas en VirusTotal se descubrieron 10 dominios distintos que han apuntado a la IP 185.254.197.23 en los últimos 7 meses, agrupados en familias por idioma/región (hispano, rioplatense, anglófono, matriz multi-idioma).
+
+2. **HALLAZGO MAYOR — Vinculación cruzada del operador:** el correo joezm5a@proton.me aparece en el SOA de futbollibretv.su y en el WHOIS público de pelotalibretv.su, configurando evidencia técnica directa de operador único.
+
+3. **HALLAZGO MAYOR — Infraestructura unificada en Virtual Systems LLC:** las tres IPs analizadas (185.254.197.23, 194.42.205.18, 91.218.49.91) pertenecen al mismo proveedor de hosting ucraniano, aunque distribuidas en dos ASNs distintos.
+
+4. **Asimetría de detección entre dominios hermanos:** futbol-libre.su tiene 3 veces más detecciones que futbollibretv.su, lo que sugiere efecto "luna de miel" del dominio principal.
+
+5. **Confirmado: el sitio NO distribuye malware directamente:** URLhaus sin reportes confirma que el riesgo viene por malvertising, no por payloads directos.
+
+### Decisiones metodológicas
+
+- **Aproximación 100% terminal:** se ejecutó toda la sub-fase desde línea de comandos con APIs, generando evidencias en JSON y TXT versionables en Git. Esta decisión refuerza la reproducibilidad del estudio.
+- **Documentación del operador:** se decidió incluir en evidencias técnicas los correos hallados en WHOIS (públicos por naturaleza), pero se anonimizarán en el artículo final por el principio de minimización de daños.
+
+### Limitaciones documentadas
+
+1. **AbuseIPDB no consultado:** problema con la variable de entorno de la API key. Pendiente para próxima jornada.
+2. **WHOIS limitados de los .org:** restricciones de GDPR aplicadas por Public Interest Registry impiden ver datos completos de doeemain.org y yourewatching.org.
+
+### Pendiente para la próxima jornada
+
+- Completar consulta AbuseIPDB de la IP principal.
+- Sub-fase 1.6: análisis del historial visual del sitio en Wayback Machine.
+- Sub-fase 1.7: profundización del análisis del ecosistema de dominios relacionados.
+- Reintentar crt.sh para cerrar el análisis de certificados TLS de la sub-fase 1.3.
+
+---
