@@ -338,3 +338,130 @@
 - Verificar estado de yourewatching.org y la IP iraní en días posteriores.
 
 ---
+
+---
+
+## Entrada 5 — 11 de mayo de 2026
+
+**Jornada:** Día 6 — crt.sh, aclib.js, latamvidz1.com, envivoslatam.org, mapeo OWASP
+**Hora de inicio:** [completar]
+**Hora de fin:** [completar al cerrar jornada]
+
+### Actividades planificadas
+- Sub-fase 1.3 completar: crt.sh para el ecosistema completo.
+- Cruce del GA4 ID G-L0N11PVD63 con SpyOnWeb/BuiltWith.
+- AbuseIPDB (3er intento).
+- Análisis estático de aclib.js.
+- Análisis profundo de latamvidz1.com.
+- Primer borrador de mapeo OWASP.
+
+### Actividades ejecutadas
+
+**crt.sh — sub-fase 1.3 completada**
+- crt.sh operativo (endpoint sin `&output=json` funciona, con output=json da 502).
+- Identificados 6 subdomains únicos: `*.futbollibretv.su`, `futbollibretv.su`, `www.futbollibretv.su`, `cdn.futbollibretv.su`, `cdn1.futbollibretv.su`, `cdn2.futbollibretv.su`.
+- Cronología de certificados desde 10 marzo 2026 hasta presente — 7 emisiones distintas.
+- cdn1.futbollibretv.su activo (128.0.104.23), redirige a futbol-libre.su.
+- latamvidz1.com confirmado en crt.sh: `latamvidz1.com` y `www.latamvidz1.com`.
+
+**GA4 cruce — parcialmente completado**
+- SpyOnWeb y BuiltWith API free no retornaron datos (requieren key de pago o bloquean crawlers).
+- El ID `G-L0N11PVD63` queda documentado como vector pendiente para herramientas con acceso pago.
+
+**AbuseIPDB — no completado (3er intento)**
+- API requiere key. Sin key disponible en el entorno. Se documenta como limitación recurrente.
+
+**Análisis estático aclib.js**
+- 7,995 tokens ofuscados `_0x*`.
+- 2 llamadas a `atob()` (Base64 decodificación en runtime).
+- Sin `eval()` (ofuscación sin eval).
+- Decodificación de strings Base64 internos revela técnicas: `ROTATION`, `-event`, `<!DOCTYPE `, `ACTION CALLED`, `IFRAME`, `Movement`, `?cz=`.
+- Comportamiento inferido: inyecta documentos HTML completos (popunder), crea iframes dinámicos, rota anuncios, detecta movimiento de mouse (anti-bot), trackea eventos de usuario.
+- Evidencia: `04_reconocimiento_activo/evidencias/aclib/aclib_analisis.txt`.
+
+**Análisis latamvidz1.com — hallazgos mayores**
+- El endpoint requiere header `Referer: https://futbol-libre.su/espn-1/` para responder con HTTP 200.
+- Sin Referer: HTTP 410 Gone. Con Referer correcto: HTTP 200, PHPSESSID, HTML completo del player.
+- HTML fuente del player revela arquitectura de streaming completa:
+  - Player: Clappr Player 0.8 (HTML5)
+  - P2P CDN: SwarmCloud con token `AUgDeTQSR`, trackerZone: us
+  - URL HLS real: `https://vg7ie.envivoslatam.org:443/global/espn/index.m3u8`
+  - Token de stream: `d087c65d...-f6-1778518249-1778464249` (15 horas de validez, IP-bound)
+  - Adsterra presente también en el player (doble exposición publicitaria)
+
+**HALLAZGO CRÍTICO — envivoslatam.org (nuevo dominio clave)**
+- Dominio registrado: 7 enero 2026 (Dynadot, Super Privacy Service LTD).
+- IP: 195.178.110.11 (TECHOFF SRV LIMITED, GB/Andorra) — 4º proveedor de infraestructura.
+- Puertos abiertos: 80, 443, **1935 (RTMP)** — confirma servidor de streaming real.
+- Server header: `Streamer 24.03` — software de streaming propietario/personalizado.
+- Único subdominio en reverse IP: `vg7ie.envivoslatam.org`.
+
+**IP 181.115.172.46 en el token = IP boliviana del investigador**
+- El token HLS incluye la IP del cliente que lo solicitó (la máquina del investigador en Bolivia).
+- Confirma que el mecanismo de tokenización es IP-aware: cada token se genera bound a la IP del solicitante.
+
+**Mapeo OWASP completado**
+- Documento generado: `07_owasp/owasp_mapeo.md`.
+- 4 categorías CRÍTICAS identificadas: A3 (XSS/CSP), A4 (cadena de terceros), A8 (SRI ausente), M1 (Adsterra doble exposición).
+- 3 categorías ALTAS: A5 (headers), M2 (P2P involuntario), A2 (cookie sin flags).
+
+### Hallazgos clave de la jornada
+
+1. **HALLAZGO CRÍTICO — envivoslatam.org:** el servidor HLS real del ecosistema. Registrado en enero 2026, alojado en TECHOFF SRV LIMITED (GB/Andorra), con RTMP en puerto 1935. Software: `Streamer 24.03`. Es el servidor de video más profundo de la cadena y el que nunca habría sido descubierto sin inspeccionar el código fuente del iframe.
+
+2. **HALLAZGO CRÍTICO — Arquitectura de streaming completa descubierta:**
+   - Usuario → futbol-libre.su (sitio) → latamvidz1.com (PHP proxy) → envivoslatam.org (HLS Streamer) + SwarmCloud P2P
+   - Cada capa añade un proveedor diferente: Virtual Systems → TECHOFF → SwarmCloud
+
+3. **HALLAZGO MAYOR — crt.sh:** 3 subdominios CDN propios en futbollibretv.su (`cdn`, `cdn1`, `cdn2`) y certificado wildcard `*.futbollibretv.su` — indica infraestructura mayor de la documentada.
+
+4. **HALLAZGO MAYOR — Doble exposición Adsterra:** el script de Adsterra se carga tanto en la página principal como dentro del iframe de stream. El usuario recibe dos instancias del script ofuscado en una misma visita a un canal.
+
+5. **HALLAZGO MAYOR — aclib.js deofuscado parcialmente:** la decodificación Base64 de tokens internos revela inyección de DOCTYPE completo (popunder window), manipulación de iframes y tracking de mouse. Confirma el vector de malvertising como riesgo activo.
+
+6. **SwarmCloud P2P — implicación de privacidad:** el navegador del usuario se convierte en nodo P2P que sirve fragmentos del stream a otros usuarios, consumiendo sus datos y exponiendo su IP real.
+
+### Decisiones metodológicas
+
+- **AbuseIPDB marcado como no disponible sin key:** se mantiene como limitación documentada. No bloquea el avance del estudio.
+- **GA4 cruce sin resultados:** herramientas públicas no funcionan sin API key de pago. Se recomienda intentar manualmente con SpyOnWeb.com en browser.
+- **crt.sh alternativa:** usar sin `&output=json` + parse HTML para obtener datos cuando el endpoint JSON da 502.
+
+### Evidencias generadas
+
+- `04_reconocimiento_activo/evidencias/crtsh/crtsh_futbollibretv_subdomains.txt`
+- `04_reconocimiento_activo/evidencias/crtsh/crtsh_futbollibretv_raw.html`
+- `04_reconocimiento_activo/evidencias/aclib/aclib_analisis.txt`
+- `04_reconocimiento_activo/evidencias/streams/latamvidz1_espn_stream.html`
+- `07_owasp/owasp_mapeo.md`
+
+### Arquitectura completa del ecosistema (actualizada)
+
+```
+USUARIO (Android)
+    ↓ accede a
+futbollibretv.su (Virtual Systems, 3 IPs)
+    ↓ HTTP 301
+futbol-libre.su (Virtual Systems, 185.254.197.23)
+    ├── [publicidad] acscdn.com → Adsterra popunder (aclib.js ofuscado, 166 KB)
+    ├── [assets]    cdn.futbol-libre.su → BunnyCDN Miami
+    └── [stream]    latamvidz1.com/canal.php (Virtual Systems, 128.0.104.23)
+            ├── [publicidad] acscdn.com → Adsterra SEGUNDA VEZ
+            ├── [player]    jsdelivr.net → Clappr + SwarmCloud
+            ├── [video]     vg7ie.envivoslatam.org (TECHOFF SRV, 195.178.110.11)
+            │               → HLS m3u8 con token IP-bound, 15h de validez
+            │               → Puerto 1935 RTMP abierto
+            │               → Software: Streamer 24.03
+            └── [P2P]       SwarmCloud (usuario = nodo P2P, IP expuesta, datos consumidos)
+```
+
+### Pendiente para la próxima jornada
+
+- Iniciar sesiones experimentales en los AVDs (primera sesión: A14-N-R1).
+- AbuseIPDB: intentar manualmente con key disponible, o documentar como limitación definitiva.
+- SpyOnWeb.com: intentar cruce de GA4 desde browser.
+- Investigar envivoslatam.org en profundidad (otros subdominios, software Streamer).
+- Verificar cdn.futbollibretv.su y cdn2 (sin resolución activa — dominios de reserva?).
+- Primer borrador de sección de metodología para el artículo.
+
+---

@@ -1,0 +1,36 @@
+# crt.sh - Certificate Transparency - futbollibretv.su
+# Fecha análisis: 11 mayo 2026
+
+Subdomains descubiertos:
+  *.futbollibretv.su          (wildcard cert)
+  futbollibretv.su
+  www.futbollibretv.su
+  cdn.futbollibretv.su
+  cdn1.futbollibretv.su
+  cdn2.futbollibretv.su
+
+Cronología de certificados (Let's Encrypt):
+  2026-03-10 → 2026-06-08   futbollibretv.su + www.futbollibretv.su
+  2026-03-10 → 2026-06-08   *.futbollibretv.su + futbollibretv.su  (WILDCARD)
+  2026-03-20 → 2026-06-18   futbollibretv.su
+  2026-03-26 → 2026-06-24   cdn.futbollibretv.su
+  2026-04-07 → 2026-07-06   cdn1.futbollibretv.su
+  2026-04-07 → 2026-07-06   www.futbollibretv.su
+  2026-04-13 → 2026-07-12   futbollibretv.su + www.futbollibretv.su
+  2026-04-14 → 2026-07-13   cdn2.futbollibretv.su
+  2026-04-15 → 2026-07-14   futbollibretv.su + www.futbollibretv.su (ACTUAL)
+
+Resolución DNS actual (11 mayo 2026):
+  cdn.futbollibretv.su   → Sin resolución A activa
+  cdn1.futbollibretv.su  → 128.0.104.23 (Virtual Systems LLC) → 301 a futbol-libre.su
+  cdn2.futbollibretv.su  → Sin resolución A activa
+
+Observaciones:
+  - El operador tiene 3 subdominios CDN propios (cdn/cdn1/cdn2) además del BunnyCDN externo
+  - El wildcard *.futbollibretv.su sugiere infraestructura adicional aún no descubierta
+  - cdn1 activo redirige al dominio canónico = probablemente URL de entrada alternativa
+  - La primera emisión de certificado es el 10 marzo 2026 (coherente con Wayback: 16 mar 2026)
+
+latamvidz1.com en crt.sh:
+  latamvidz1.com
+  www.latamvidz1.com
