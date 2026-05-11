@@ -1,3 +1,18 @@
+# Introducción
+
+El presente análisis tiene como objetivo examinar el comportamiento de plataformas de streaming no oficiales desde un dispositivo Android, utilizando técnicas de interceptación de tráfico HTTP/HTTPS mediante Burp Suite.
+
+Durante la investigación se identificaron mecanismos de:
+
+- Rastreo persistente (*tracking*)
+- Fingerprinting de dispositivos
+- Redirecciones publicitarias forzadas
+- Telemetría de comportamiento
+- Distribución de contenido mediante HLS
+- Integración con plataformas de apuestas y publicidad automatizada
+
+El análisis se realizó en un entorno controlado utilizando un dispositivo Android conectado a un proxy de inspección configurado sobre Burp Suite Community Edition.
+
 # Configuración de Burp Suite como Proxy para Android
 
 ## 1. Preparación del Host (PC)
@@ -1293,3 +1308,20 @@ La implementación observada permite potencialmente:
 - Monitoreo de interacción
 
 Todo ello sin mediar consentimiento informado del usuario dentro del ecosistema móvil Android.
+
+# Conclusiones
+
+El análisis realizado evidencia que múltiples plataformas de streaming no oficiales implementan mecanismos avanzados de rastreo y perfilamiento sobre dispositivos Android.
+
+La captura de tráfico reveló:
+
+- Uso extensivo de técnicas de fingerprinting
+- Exfiltración de metadatos del dispositivo
+- Integración con redes de publicidad automatizada
+- Persistencia de identificadores de sesión
+- Redirecciones hacia plataformas de apuestas
+- Uso de infraestructura CDN distribuida
+
+Asimismo, se observó la utilización de servicios de terceros para la monitorización activa del comportamiento del usuario, incluyendo herramientas de analítica avanzada y telemetría persistente.
+
+Los hallazgos demuestran que este tipo de plataformas no solo representan riesgos relacionados con contenido no autorizado, sino también amenazas significativas para la privacidad, seguridad y trazabilidad digital del usuario final.
