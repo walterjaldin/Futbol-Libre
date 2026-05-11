@@ -241,3 +241,100 @@
 - Reintentar crt.sh para cerrar el análisis de certificados TLS de la sub-fase 1.3.
 
 ---
+
+---
+
+## Entrada 4 — 10 de mayo de 2026
+
+**Jornada:** Día 5 — Reconocimiento activo HTTP + sub-fases 1.4, 1.6 y 1.7
+**Hora de inicio:** [completar]
+**Hora de fin:** [completar al cerrar jornada]
+
+### Actividades planificadas
+- Completar sub-fase 1.4 (infraestructura ampliada).
+- Ejecutar reconocimiento activo desde consola: headers HTTP, TLS, redirecciones, port scan.
+- Sub-fase 1.6: Wayback Machine.
+- Sub-fase 1.7: profundización del ecosistema de dominios relacionados.
+- Intentar completar AbuseIPDB (pendiente de jornada anterior).
+
+### Actividades ejecutadas
+
+**Reconocimiento activo — consola (curl, dig, nc, openssl)**
+
+- Consulta de headers HTTP completos con User-Agent de Android 14 (Pixel 6).
+- Análisis de cadena de redirección: futbollibretv.su → futbol-libre.su.
+- Análisis del certificado TLS con openssl.
+- Port scan básico de la IP 185.254.197.23 con netcat.
+- Descarga y análisis del código fuente HTML de index y página /espn-1/.
+- Consulta de robots.txt y sitemap.xml.
+- Análisis de headers de seguridad (9 headers evaluados).
+- Reverse IP lookup de 128.0.104.23 vía HackerTarget.
+- DNS de todo el ecosistema comparado con jornada previa.
+
+**Sub-fase 1.4 — Infraestructura**
+- Identificación del stack completo: nginx + Engintron + cPanel/WHM + Apache.
+- Verificación de 20 puertos abiertos en 185.254.197.23.
+- Identificación del CDN BunnyCDN (fltsu.b-cdn.net, Miami) para assets.
+- Documento generado: `03_osint/04_infraestructura.md`.
+
+**Sub-fase 1.6 — Historial Wayback Machine**
+- Consulta CDX API: futbollibretv.su con primeras capturas desde 16 marzo 2026.
+- futbol-libre.su sin capturas disponibles en CDX.
+- Documento generado: `03_osint/06_historial.md`.
+
+**Sub-fase 1.7 — Dominios relacionados**
+- Verificación DNS actual de los 12 dominios del ecosistema.
+- Detección de cambios: pelotalibretv.su migró de IP, doeemain.org caído (HTTP 500), yourewatching.org con IP iraní nueva.
+- Documento generado: `03_osint/07_dominios_relacionados.md`.
+
+**Reconocimiento activo — documento principal**
+- Documento generado: `04_reconocimiento_activo/reconocimiento_activo.md`.
+- Evidencias guardadas en `04_reconocimiento_activo/evidencias/`.
+
+### Hallazgos clave de la jornada
+
+1. **HALLAZGO CRÍTICO — Redirección 301:** futbollibretv.su ahora redirige permanentemente a futbol-libre.su. El dominio canónico de operación ha cambiado. El dominio de entrada (menor detección: 1/91) actúa como decoy, mientras el usuario termina en el dominio con más detecciones (3/91, bloqueado por Forcepoint).
+
+2. **HALLAZGO CRÍTICO — Adsterra / aclib.js ofuscado:** el script `acscdn.com/script/aclib.js` (166 KB) está **completamente ofuscado** con patrón `_0x...` (hex-string obfuscation). Es la red de publicidad Adsterra configurando popunders en todas las páginas del sitio. El ZoneId 10652966 identifica al publisher. La ofuscación dificulta el análisis estático del comportamiento real del script.
+
+3. **HALLAZGO CRÍTICO — latamvidz1.com:** servidor PHP de streams (`/canal.php?stream=<canal>`) en la misma IP (128.0.104.23) que futbollibretv.su. Registrado el 28 enero 2026 por SOLLUTIUM LLC (relacionado con Virtual Systems). Parte directa de la infraestructura del operador, no un tercero.
+
+4. **HALLAZGO MAYOR — 3 IPs en futbollibretv.su:** el dominio de entrada ahora resuelve a tres IPs de Virtual Systems LLC (128.0.104.23, 138.226.244.112, 185.254.197.23), aumentando la resiliencia ante bloqueos por IP.
+
+5. **HALLAZGO MAYOR — librepelota.su:** nuevo dominio descubierto vía reverse IP lookup. Registrado en ARDIS-SU, con Cloudflare NS, sin resolución A activa. Nombre combina marcas de ambos sitios — dominio en preparación para futura expansión.
+
+6. **HALLAZGO MAYOR — Google Analytics G-L0N11PVD63:** ID único de GA4 presente en todas las páginas. Puede usarse para cruzar con SpyOnWeb/BuiltWith para identificar otros sitios del operador.
+
+7. **HALLAZGO MAYOR — Ausencia de headers de seguridad:** solo 2 de 9 headers de seguridad recomendados están presentes. Sin CSP, sin HSTS, sin X-Frame-Options. Contexto ideal para que el malvertising opera sin restricciones.
+
+8. **HALLAZGO SECUNDARIO — CMS:** el sitio no usa WordPress. Es HTML estático personalizado con nginx cache + PHP solo en el servidor de streams. No hay panel de administración web-visible.
+
+9. **yourewatching.org con IP iraní (213.176.3.63):** hallazgo anómalo. La IP pertenece a la Iranian Research Organization for Science & Technology. Puede ser migración, error de configuración o uso de hosting iraní fuera de jurisdicción DMCA.
+
+10. **doeemain.org caído (HTTP 500):** la plataforma matriz está inaccesible al momento del análisis.
+
+### Decisiones metodológicas
+
+- **AbuseIPDB pendiente nuevamente:** la API key no está disponible en el entorno. Se documenta como limitación técnica recurrente. Para la próxima jornada, el investigador debe configurar la variable de entorno `ABUSEIPDB_API_KEY` antes de iniciar.
+- **Port scan limitado a nc:** no se usó nmap para no generar tráfico agresivo. El port scan con nc es suficiente para documentar servicios expuestos en puertos estándar.
+- **aclib.js no se deofuscó:** la deofuscación del script de Adsterra requiere un sandbox dinámico (browser con DevTools). Esta tarea se realizará en las sesiones experimentales con el emulador y Burp Suite.
+
+### Evidencias generadas
+
+- `04_reconocimiento_activo/evidencias/headers/headers_futbol-libre_su.txt`
+- `04_reconocimiento_activo/evidencias/headers/headers_verbose_futbol-libre.txt`
+- `04_reconocimiento_activo/evidencias/dns/dns_ecosistema_10may2026.txt`
+- `04_reconocimiento_activo/evidencias/puertos/portscan_185254197023.txt`
+- `04_reconocimiento_activo/evidencias/source_futbol-libre_index.html`
+- `04_reconocimiento_activo/evidencias/source_futbol-libre_espn1.html`
+
+### Pendiente para la próxima jornada
+
+- Configurar variable de entorno `ABUSEIPDB_API_KEY` y completar consulta.
+- Cruzar GA4 ID `G-L0N11PVD63` con SpyOnWeb/BuiltWith para identificar otros sitios del operador.
+- Reintentar crt.sh para completar análisis de certificados (sub-fase 1.3).
+- Profundizar análisis de aclib.js en sesión experimental con el emulador (deofuscación dinámica).
+- Iniciar sesiones experimentales en los AVDs (primera sesión: A14-N-R1 o A14-D-R1).
+- Verificar estado de yourewatching.org y la IP iraní en días posteriores.
+
+---
