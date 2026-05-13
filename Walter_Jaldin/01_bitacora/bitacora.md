@@ -465,3 +465,105 @@ futbol-libre.su (Virtual Systems, 185.254.197.23)
 - Primer borrador de sección de metodología para el artículo.
 
 ---
+
+## Entrada 6 — 13 de mayo de 2026
+
+**Jornada:** Día 7 — Análisis de infraestructura profunda, Shodan CVEs, WordPress y nuevos dominios  
+**Hora de inicio:** 18:00 (aprox.)  
+**Hora de fin:** 23:55
+
+### Objetivo de la jornada
+
+Profundizar en la infraestructura del ecosistema usando Shodan InternetDB para todas las IPs identificadas, analizar el sitio hermano pelotalibretv.su con foco en su pila WordPress, cruzar el ZoneId de Adsterra como evidencia de autoría común, e identificar nuevos dominios del ecosistema.
+
+### Actividades ejecutadas
+
+1. **Shodan InternetDB — análisis de 5 IPs del ecosistema:**
+   - 185.254.197.23 (futbol-libre.su): **17 CVEs detectados**. Incluye CVE-2024-6387 (regreSSHion — OpenSSH 8.7, RCE sin autenticación, CVSS 8.1) y CVE-2023-38408 (CVSS 9.8). Puertos 22, 53, 465, 2083, 3306, 9191. MySQL en 3306 expuesto.
+   - 128.0.104.23 (latamvidz1.com): 0 CVEs, MySQL 3306 expuesto. Hostname Shodan: `server.vivozly.com` — nuevo dominio del ecosistema.
+   - 138.226.244.112 (pelotalibretv.su): 0 CVEs. WordPress 6.9.4 confirmado. PTR: `dedicated.sollutium.com`.
+   - 195.178.110.11 (envivoslatam.org): 0 CVEs. Ubuntu + OpenSSH 8.9p1. Sin hostnames.
+   - 91.218.49.105 (la14hd.com): 0 CVEs. PTR: `dedicated.vsys.host` (Virtual Systems LLC).
+
+2. **PTR records — DNS inverso de todas las IPs:**
+   - 185.254.197.23 → `a1.configma.website.` — nombre de servidor del panel cPanel
+   - 128.0.104.23 → (sin PTR)
+   - 138.226.244.112 → `dedicated.sollutium.com.` — confirma proveedor SOLLUTIUM
+
+3. **pelotalibretv.su — análisis completo:**
+   - WordPress 6.9.4, tema Jannah (premium)
+   - CDN: cdn.pelotalibretv.su → BunnyCDN (pull zone: plbt)
+   - GA4: G-65329600J2 (diferente a futbol-libre.su)
+   - Adsterra ZoneId: **10652966 — IDÉNTICO a futbol-libre.su** → evidencia directa de autoría común
+   - API REST WordPress expuesta: `/wp-json/wp/v2/users` → ID 1, slug: **"futbollibre"**
+   - 3 servidores de stream: latamvidz1.com (primario), la14hd.com (backup), streamtpcloud.com (inactivo)
+
+4. **Nuevos dominios descubiertos:**
+   - `la14hd.com` (91.218.49.105, Virtual Systems LLC) — tercer servidor de streams
+   - `streamtpcloud.com` — dominio de stream sin DNS activo
+   - `server.vivozly.com` — nombre técnico del servidor de latamvidz1.com
+   - `server.envivolibre.com` — hostname Shodan de 185.254.197.23 → apunta a envivolibre.com como posible dominio adicional del ecosistema
+
+5. **Análisis de sollutium.com:**
+   - PHP/7.4.32 (EOL desde 2022), panel WHMCS, protegido por Cloudflare
+   - Confirma rol de revendedor de Virtual Systems LLC
+   - Tiene mejores headers de seguridad que los sitios del operador (Referrer-Policy, X-Frame-Options)
+
+### Hallazgos críticos de la jornada
+
+1. **CVE-2024-6387 (regreSSHion) en el servidor principal:** el servidor 185.254.197.23 que sirve futbol-libre.su a millones de usuarios tiene una vulnerabilidad crítica de RCE sin autenticación en OpenSSH 8.7. Un atacante que explote esta vulnerabilidad puede tomar control completo del servidor e inyectar código malicioso en el HTML servido a todos los usuarios.
+
+2. **ZoneId Adsterra '10652966' idéntico:** prueba técnica directa de que futbol-libre.su y pelotalibretv.su pertenecen al mismo operador. El ZoneId es el identificador único de la cuenta en la red Adsterra.
+
+3. **Slug WordPress "futbollibre":** el administrador de pelotalibretv.su usa el slug "futbollibre", que vincula directamente con la marca "futbol libre" y el dominio futbol-libre.su. La API REST de WordPress lo expone sin autenticación.
+
+4. **Ecosistema ampliado:** el ecosistema total ahora comprende al menos **16 dominios** (12 documentados en jornada anterior + la14hd.com, streamtpcloud.com, envivolibre.com, vivozly.com como nuevos candidatos).
+
+5. **MySQL en Internet:** dos IPs del ecosistema tienen MySQL/MariaDB (puerto 3306) accesible directamente desde Internet, lo cual es una mala práctica de seguridad grave que expone las bases de datos a ataques de fuerza bruta directos.
+
+### Decisiones metodológicas
+
+- **AbuseIPDB marcado definitivamente como limitación:** sin API key disponible. No afecta el avance del estudio dado el nivel de evidencia obtenido por otras vías.
+- **Shodan InternetDB como herramienta de verificación clave:** permite confirmar CVEs, puertos y hostnames sin acceso privilegiado.
+- **pelotalibretv.su = objeto de análisis secundario:** los hallazgos de este sitio refuerzan los de futbol-libre.su y amplían la caracterización del operador.
+
+### Evidencias generadas
+
+- `04_reconocimiento_activo/evidencias/shodan/shodan_analisis_13may2026.txt`
+- `03_osint/08_infraestructura_profunda.md`
+- `03_osint/09_pelotalibretv_analisis.md`
+
+### Arquitectura del ecosistema (versión definitiva Jornada 7)
+
+```
+OPERADOR (hassan.azmw@gmail.com / joezm5a@proton.me)
+│
+├── futbol-libre.su [mercado hispano general]
+│   └── CMS: HTML estático | IP: 185.254.197.23 | PTR: a1.configma.website
+│       ├── [publicidad] Adsterra ZoneId 10652966 (aclib.js)
+│       ├── [assets]     BunnyCDN (fltsu)
+│       └── [streams]    latamvidz1.com → envivoslatam.org (HLS) + SwarmCloud P2P
+│
+├── pelotalibretv.su [mercado rioplatense]
+│   └── CMS: WordPress 6.9.4 | IP: 138.226.244.112 | PTR: dedicated.sollutium.com
+│       ├── [publicidad] Adsterra ZoneId 10652966 (IDÉNTICO)
+│       ├── [assets]     BunnyCDN (plbt)
+│       └── [streams]    latamvidz1.com (primario)
+│                        la14hd.com (backup, IP 91.218.49.105)
+│                        streamtpcloud.com (backup inactivo)
+│
+└── INFRAESTRUCTURA
+    ├── Virtual Systems LLC (Kyiv, UA) — proveedor principal
+    ├── SOLLUTIUM LLC — revendedor dedicado para pelotalibretv
+    └── TECHOFF SRV LIMITED — servidor HLS (envivoslatam.org)
+```
+
+### Pendiente para la próxima jornada
+
+- SpyOnWeb.com: cruzar GA4 IDs (G-L0N11PVD63 y G-65329600J2) desde browser.
+- Verificar envivolibre.com y vivozly.com como posibles dominios de cara al usuario.
+- Iniciar sesiones experimentales en AVDs (A14-N-R1).
+- Primer borrador sección de metodología para el artículo.
+- Análisis de xmlrpc.php en pelotalibretv.su.
+
+---

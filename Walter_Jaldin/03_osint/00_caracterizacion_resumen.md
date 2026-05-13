@@ -1,6 +1,6 @@
 # OSINT — Caracterización y resumen consolidado
 
-**Última actualización:** 10 de mayo de 2026  
+**Última actualización:** 13 de mayo de 2026  
 **Investigador:** Walter Jaldín  
 **Sitio investigado:** futbollibretv.su (dominio de entrada) → futbol-libre.su (dominio canónico)
 
@@ -54,16 +54,21 @@ BunnyCDN (Miami, USA)
 
 ---
 
-## Ecosistema de 12 dominios identificados
+## Ecosistema de dominios identificados (actualizado 13 may 2026)
 
 | Dominio | Estado | Familia | IP/Hosting |
 |---|---|---|---|
 | futbollibretv.su | Activo (→ futbol-libre.su) | Hispana | Virtual Systems (3 IPs) |
-| futbol-libre.su | Activo (canónico) | Hispana | Virtual Systems |
-| pelotalibretv.su | Activo | Rioplatense | Virtual Systems |
+| futbol-libre.su | Activo (canónico) | Hispana | Virtual Systems 185.254.197.23 |
+| pelotalibretv.su | Activo (WordPress 6.9.4) | Rioplatense | SOLLUTIUM 138.226.244.112 |
 | librepelota.su | En preparación | Rioplatense | Cloudflare NS (sin A) |
-| latamvidz1.com | Activo (backend) | Infraestructura | Virtual Systems |
-| cdn.futbol-libre.su | Activo (CDN) | Infraestructura | BunnyCDN |
+| latamvidz1.com | Activo (backend PHP) | Infraestructura | Virtual Systems 128.0.104.23 |
+| la14hd.com | Activo (stream backup) | Infraestructura | Virtual Systems 91.218.49.105 |
+| streamtpcloud.com | Sin DNS activo (backup) | Infraestructura | Desconocido |
+| cdn.futbol-libre.su | Activo (CDN) | Infraestructura | BunnyCDN (fltsu) |
+| cdn.pelotalibretv.su | Activo (CDN) | Infraestructura | BunnyCDN (plbt) |
+| envivolibre.com | Hostname en 185.254.197.23 | Posible marca alterna | Virtual Systems |
+| vivozly.com | Hostname en 128.0.104.23 | Técnico/marca alterna | Virtual Systems |
 | doeemain.org | Caído (HTTP 500) | Plataforma matriz | Cloudflare |
 | es.doeemain.org | Caído (HTTP 500) | Plataforma matriz | Cloudflare |
 | pt.doeemain.org | No verificado | Plataforma matriz | Cloudflare |
@@ -81,12 +86,20 @@ BunnyCDN (Miami, USA)
 | Correo personal expuesto | hassan.azmw@gmail.com (WHOIS futbol-libre.su — descuido inicial) |
 | Registrador preferido | ARDIS-SU (todos los .su) |
 | Proveedor de hosting | Virtual Systems LLC (todos los servidores activos) |
+| Sub-proveedor | SOLLUTIUM LLC (revendedor VDS; PTR dedicated.sollutium.com en 138.226.244.112) |
+| Proveedor HLS | TECHOFF SRV LIMITED (195.178.110.11, envivoslatam.org) |
 | Patrón de privacidad | Incoherente: WHOIS privado en futbollibretv.su, expuesto en futbol-libre.su, ProtonMail en pelotalibretv.su |
-| Google Analytics | G-L0N11PVD63 (en todas las páginas de futbol-libre.su) |
+| Google Analytics futbol-libre.su | G-L0N11PVD63 |
+| Google Analytics pelotalibretv.su | G-65329600J2 |
 | Google Search Console | Verificado en ambos dominios .su principales |
-| Red de publicidad | Adsterra (popunder, ZoneId 10652966) |
-| CDN de streams | latamvidz1.com (PHP, misma IP) |
-| CDN de assets | BunnyCDN (pull zone: fltsu) |
+| Red de publicidad | Adsterra (popunder, **ZoneId 10652966 — IDÉNTICO en ambos sitios**) |
+| CDN de streams primario | latamvidz1.com (PHP, 128.0.104.23) |
+| CDN de streams backup | la14hd.com (91.218.49.105, Virtual Systems) |
+| CDN de assets futbol-libre.su | BunnyCDN (pull zone: fltsu) |
+| CDN de assets pelotalibretv.su | BunnyCDN (pull zone: plbt) |
+| Slug WordPress | "futbollibre" (admin de pelotalibretv.su, expuesto vía REST API) |
+| CMS futbol-libre.su | HTML estático (nginx) |
+| CMS pelotalibretv.su | WordPress 6.9.4 + tema Jannah |
 
 ---
 
@@ -99,19 +112,40 @@ BunnyCDN (Miami, USA)
 | Ausencia de CSP | Sin Content-Security-Policy, scripts de terceros sin restricción | ALTA |
 | Ausencia de HSTS | Sin Strict-Transport-Security, posible downgrade | MEDIA |
 | Sin X-Frame-Options | Clickjacking posible | MEDIA |
-| Tracking GA4 | Recolección de datos de visita | BAJA |
+| Tracking GA4 (doble) | Dos propiedades GA4 distintas por sitio | MEDIA |
 | Cross-linking ecosistema | Redireccionamiento entre dominios del operador | MEDIA |
+| CVE-2024-6387 en servidor principal | OpenSSH 8.7, RCE sin autenticación (regreSSHion) | **CRÍTICA** |
+| MySQL 3306 expuesto en Internet | Dos IPs con puerto 3306 abierto sin filtrado | ALTA |
+| WordPress API REST expuesta | Slug de usuario "futbollibre" visible públicamente | MEDIA |
+| SwarmCloud P2P involuntario | Usuario = nodo P2P, IP expuesta, datos consumidos | ALTA |
+
+---
+
+## Vulnerabilidades del servidor (hallazgo Jornada 7)
+
+El servidor principal 185.254.197.23 tiene **17 CVEs** según Shodan InternetDB:
+
+| CVE | CVSS | Descripción |
+|---|---|---|
+| CVE-2024-6387 | 8.1 | regreSSHion — RCE sin auth en OpenSSH 8.7 |
+| CVE-2023-38408 | 9.8 | OpenSSH ssh-agent RCE |
+| CVE-2023-48795 | 5.9 | Terrapin — protocol downgrade SSH |
+| CVE-2023-51385 | 6.5 | OpenSSH command injection ProxyCommand |
+| CVE-2025-26465 | 6.8 | OpenSSH MitM cliente |
+| CVE-2025-32728 | — | OpenSSH 2025 (detalles pendientes) |
+| +11 CVEs adicionales | — | Legado y emergentes |
 
 ---
 
 ## Líneas pendientes de investigación
 
-1. **AbuseIPDB** — consulta pendiente por problema con API key.
-2. **GA4 ID G-L0N11PVD63** — cruzar con SpyOnWeb/BuiltWith para otros sitios del operador.
-3. **crt.sh** — análisis de certificados TLS del historial (sub-fase 1.3 incompleta).
-4. **aclib.js deofuscación dinámica** — requiere browser + DevTools en sesión experimental.
-5. **yourewatching.org + IP iraní** — verificar si es temporal o indica nueva jurisdicción.
-6. **librepelota.su** — monitorear si activa resolución A.
+1. **AbuseIPDB** — definitivamente sin API key disponible. Limitación documentada.
+2. **GA4 cruce vía SpyOnWeb** — G-L0N11PVD63 y G-65329600J2. Requiere browser.
+3. **envivolibre.com y vivozly.com** — verificar si son sitios de cara al usuario.
+4. **streamtpcloud.com** — monitorear DNS para ver cuándo activa.
+5. **xmlrpc.php en pelotalibretv.su** — verificar si está habilitado (riesgo adicional WordPress).
+6. **yourewatching.org + IP iraní** — verificar si es temporal o indica nueva jurisdicción.
 7. **Sesiones experimentales** — iniciar con A14-N-R1 y A14-D-R1 en AVD.
+8. **aclib.js deofuscación dinámica** — requiere browser + DevTools en sesión experimental.
 
 ---
