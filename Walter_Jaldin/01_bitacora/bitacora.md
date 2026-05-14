@@ -742,12 +742,113 @@ Documento maestro de análisis comparativo creado en `Walter_Jaldin/06_analisis/
 
 6. **PHPSESSID insegura en todos los perfiles** donde el iframe cargó completamente — vulnerabilidad sistémica, no accidental.
 
-### Pendiente para próximas jornadas
+### Pendiente
 
-- Redacción de sección 4 (Resultados) del artículo académico
-- Redacción de sección 5 (Discusión) del artículo académico
-- SpyOnWeb GA4 cross-reference (aún pendiente)
-- Análisis xmlrpc.php en pelotalibretv.su
-- Segunda repetición A14-N-R2 (ya programada)
+- SpyOnWeb GA4 cross-reference (requiere acceso a browser)
+
+---
+
+## Entrada 11 — 14 de mayo de 2026 (continuación)
+
+**Jornada:** Día 11 — Completar trabajo pendiente: secciones del artículo, OSINT complementario, sesión R2, xmlrpc
+**Hora de inicio:** 22:00 UTC  
+**Hora de fin:** 23:59 UTC
+
+### Actividades ejecutadas
+
+#### Sesión A14-N-R2
+
+Segunda repetición del perfil Android 14 sin protección DNS. Resultado diferente al R1 — el popunder RTB resolvió a `doradobet.com` (en R1 no se activó el popunder; en R2 se activó intencionalmente).
+
+**Hallazgo clave:** Con el popunder activo y resolviendo a doradobet.com, la sesión capturó 122 dominios únicos (vs 19 en R1), revelando un ecosistema de tracking masivo introducido por el destino RTB:
+
+- **TikTok Pixel** — analytics.tiktok.com (30 requests). ByteDance recibe el perfil del visitante boliviano.
+- **Microsoft Clarity** — j.clarity.ms. Grabación de sesión con heatmaps desde el sitio de apuestas.
+- **Lotame DMP** — sync.crwdcntrl.net. El perfil se sincroniza a la plataforma de datos de audiencias global.
+- **Adform** — a2/c1.adform.net. Ad exchange europeo conectado al ecosistema RTB de doradobet.
+- **BidSwitch** — x.bidswitch.net. Intermediario RTB adicional.
+- **Nuevo subdomain TECHOFF:** `bd2ih.envivoslatam.org` — séptimo subdomain único documentado.
+
+Archivos generados: `Walter_Jaldin/05_sesiones/A14-N-R2/notas.md`, `A14-N-R2_flows.mitm` (411 flujos, 7.8 MB).
+
+#### Análisis xmlrpc.php — pelotalibretv.su
+
+Confirmado con curl: `pelotalibretv.su/xmlrpc.php` responde HTTP 200 a `system.listMethods` sin autenticación, exponiendo 80+ métodos WordPress.
+
+Vectores de ataque documentados:
+- `system.multicall` → brute force de credenciales a alta velocidad (cientos de contraseñas por request)
+- `pingback.ping` → DDoS reflection y SSRF sin autenticación requerida
+- `wp.uploadFile` → carga de webshell con credenciales válidas
+- Sin rate limiting observable (respuesta siempre HTTP 200)
+
+Archivo generado: `Walter_Jaldin/03_osint/12_xmlrpc_pelotalibretv.md`.
+
+#### OSINT complementario — Jornada 10/11
+
+Investigación y documentación de tres actores adicionales del ecosistema:
+
+1. **envivoslatam.org WHOIS:** Registrado el 7 de enero de 2026 (4 meses antes del estudio), privacidad máxima Dynadot Super Privacy, IP 195.178.110.11 (TECHOFF AS48090). Dominio de infraestructura efímera creado específicamente para la operación de streaming.
+
+2. **configma.website:** No es un sitio web público. Es el nombre técnico PTR del servidor 185.254.197.23 (`a1.configma.website`). Patrón típico de servidor cPanel con Engintron. Solo existe en DNS inverso.
+
+3. **SOLLUTIUM LLC:** Revendedor de servidores de Virtual Systems LLC. Hospeda `pelotalibretv.su` (138.226.244.112). Registrador de `latamvidz1.com`. Panel WHMCS con PHP 7.4.32 EOL (noviembre 2022). Conexión doble al ecosistema confirma que el operador es cliente SOLLUTIUM para múltiples componentes.
+
+Inventario de subdominios TECHOFF completado: **9 subdominios únicos** (iaw5b, qbk4f, bd2ih, smjt9q, wf6kt, rci1w, xky9q, chrz, dtkb).
+
+Archivo generado: `Walter_Jaldin/03_osint/13_osint_complementario_j10.md`.
+
+#### Sección 4 — Resultados (borrador)
+
+Borrador completo de la sección de resultados del artículo académico:
+- 4.1: Hallazgos OSINT (ecosistema, TECHOFF, CVE-2023-38408, xmlrpc.php)
+- 4.2: Análisis de sesiones experimentales (7 subsecciones)
+- 4.3: Efectividad de AdGuard DNS (tabla comparativa)
+- 4.4: Tabla resumen de 12 vulnerabilidades con clasificación OWASP
+
+Archivo generado: `Walter_Jaldin/08_articulo/seccion4_resultados_borrador.md`.
+
+#### Sección 5 — Discusión (borrador)
+
+Borrador completo de la sección de discusión:
+- 5.1: Modelo de riesgo en tres capas (identificación, monetización, infraestructura bulletproof)
+- 5.2: El ecosistema como infraestructura deliberadamente diseñada
+- 5.3: Ineficacia de la protección DNS como medida individual
+- 5.4: Diferencias entre versiones de Android e implicaciones para Bolivia
+- 5.5: El popunder como vector de fraude financiero (mecanismo Stripe SDK)
+- 5.6: Vulnerabilidades del servidor — implicaciones para el ecosistema
+- 5.7: Limitaciones del estudio
+- 5.8: Implicaciones para políticas públicas y recomendaciones
+
+Archivo generado: `Walter_Jaldin/08_articulo/seccion5_discusion_borrador.md`.
+
+### Estado del artículo académico al cierre de Jornada 11
+
+| Sección | Estado |
+|---|---|
+| Sección 1 — Introducción | ✅ Borrador completo |
+| Sección 2 — Marco teórico | ✅ Borrador completo |
+| Sección 3 — Metodología | ✅ Borrador completo |
+| Sección 4 — Resultados | ✅ Borrador completo |
+| Sección 5 — Discusión | ✅ Borrador completo |
+| Sección 6 — Conclusiones | ⏳ Pendiente |
+| Referencias | ⏳ Pendiente de consolidar |
+
+### Hallazgos de alto impacto — Jornada 11
+
+1. **Ecosistema RTB introduce segundo nivel de exposición.** Cuando el popunder resuelve a doradobet.com, el perfil del usuario boliviano llega simultáneamente a TikTok/ByteDance, Microsoft, Lotame, Adform, BidSwitch — actores que el operador de futbol-libre.su no controla y el usuario no conoce.
+
+2. **xmlrpc.php sin protección en pelotalibretv.su.** `system.multicall` habilita brute force de credenciales a alta velocidad. Sin rate limiting. Cualquier atacante puede comprometer el servidor WordPress y por extensión la infraestructura SOLLUTIUM.
+
+3. **SOLLUTIUM es el nodo de infraestructura central.** Hospeda pelotalibretv.su Y es el registrador de latamvidz1.com (backend de streams). Un solo proveedor (revendedor de Virtual Systems LLC) concentra dos componentes críticos del ecosistema.
+
+4. **envivoslatam.org es infraestructura efímera.** Registrado 4 meses antes del estudio, con privacidad máxima. Patrón típico de dominios creados para operaciones de streaming de corta duración.
+
+5. **Inventario TECHOFF completo: 9 subdominios.** La rotación cubre al menos 3 sesiones activas simultáneas con subdominios independientes, sugiriendo operación a escala mayor que un solo operador.
+
+### Pendiente al cierre de Jornada 11
+
+- SpyOnWeb GA4 cross-reference para G-L0N11PVD63 (requiere browser)
+- Sección 6 — Conclusiones del artículo
+- Integración y revisión final del artículo (secciones 1-5)
 
 ---

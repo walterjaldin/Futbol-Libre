@@ -3,7 +3,7 @@
 **Fecha:** 14 de mayo de 2026  
 **Investigador:** Walter Jaldín  
 **Herramienta:** mitmproxy 9.0.1 + Android Studio AVD  
-**Sesiones analizadas:** A14-N-R1, A14-D-R1, A11-N-R1, A11-D-R1
+**Sesiones analizadas:** A14-N-R1, A14-N-R2, A14-D-R1, A11-N-R1, A11-D-R1
 
 ---
 
@@ -19,14 +19,15 @@ Se ejecutaron cuatro sesiones experimentales en un diseño factorial 2×2:
 
 ## 2. Tabla maestra de sesiones
 
-| Parámetro | A14-N | A14-D | A11-N | A11-D |
-|---|---|---|---|---|
-| Android versión | 14 (API 34) | 14 (API 34) | 11 (API 30) | 11 (API 30) |
-| Chrome versión | 113.0.5672.136 | 113.0.5672.136 | 91.0.4472.114 | 91.0.4472.114 |
-| DNS protección | Ninguna | AdGuard DoT | Ninguna | AdGuard DoT |
-| Flujos capturados | 84 | 642 | 452 | 78 |
-| Dominios únicos | 19 | 32 | 26 | 19 |
-| Archivo .mitm | 2.5 MB | 14 MB | 11 MB | 1.7 MB |
+| Parámetro | A14-N-R1 | A14-N-R2 | A14-D-R1 | A11-N-R1 | A11-D-R1 |
+|---|---|---|---|---|---|
+| Android versión | 14 (API 34) | 14 (API 34) | 14 (API 34) | 11 (API 30) | 11 (API 30) |
+| Chrome versión | 113.0.5672.136 | 113.0.5672.136 | 113.0.5672.136 | 91.0.4472.114 | 91.0.4472.114 |
+| DNS protección | Ninguna | Ninguna | AdGuard DoT | Ninguna | AdGuard DoT |
+| Flujos capturados | 84 | 411 | 642 | 452 | 78 |
+| Dominios únicos | 19 | 122 | 32 | 26 | 19 |
+| Archivo .mitm | 2.5 MB | 7.8 MB | 14 MB | 11 MB | 1.7 MB |
+| Popunder destino | No activado | doradobet.com | bol.1xbet.com | bol.1xbet.com | doradobet.com |
 
 ---
 
@@ -236,12 +237,16 @@ USUARIO ANDROID (cualquier versión)
 | R5 | IP real del usuario expuesta en HLS | `&ip=181.115.172.46` en URL | A4 | A14-N, A14-D, A11-N |
 | R6 | PHPSESSID sin HttpOnly/Secure/SameSite | Set-Cookie capturado | A2 | A14-N, A14-D, A11-N |
 | R7 | Service Worker persistente | latamvidz1.com/sw.js HTTP 200 | A4 | A14-N, A14-D |
-| R8 | Rotación de subdominios TECHOFF | 6 subdominios distintos en 4 sesiones | A5 | A14-N, A14-D, A11-N |
+| R8 | Rotación de subdominios TECHOFF | 9 subdominios distintos en 5 sesiones | A5 | A14-N, A14-D, A11-N |
 | R9 | Sin SRI en ningún script externo | `integrity=` ausente en todos los JS | A8 | A14-N, A14-D, A11-N, A11-D |
 | R10 | Tracking GA4 inmediato sin consentimiento | POST a google-analytics.com | — | A14-N, A14-D, A11-N, A11-D |
 | R11 | AdGuard DNS ofrece protección nula | 0 dominios de riesgo bloqueados | — | A14-D, A11-D |
 | R12 | Yandex Metrica via popunder | mc.yandex.ru desde 1xbet | A4 | A14-D |
 | R13 | Cookie afiliado cross-session | refpa37630.com A_22811 | A4 | A14-D, A11-N, A11-D |
+| R14 | TikTok Pixel via popunder RTB | analytics.tiktok.com (30 req.) desde doradobet.com | A4 | A14-N-R2 |
+| R15 | Microsoft Clarity — grabación de sesión | j.clarity.ms desde doradobet.com | A4 | A14-N-R2 |
+| R16 | Lotame DMP — sincronización de audiencias | sync.crwdcntrl.net desde doradobet.com | A4 | A14-N-R2 |
+| R17 | Adform ad exchange europeo via popunder | a2/c1.adform.net (26 req.) | A3 | A14-N-R2 |
 
 ---
 
@@ -259,15 +264,38 @@ USUARIO ANDROID (cualquier versión)
 
 ---
 
-## 9. Subdominios TECHOFF observados — inventario
+## 9. Subdominios TECHOFF observados — inventario completo
 
 | Sesión | Redirect subdomain | Stream subdomain |
 |---|---|---|
-| A14-N | iaw5b.envivoslatam.org | qbk4f.envivoslatam.org |
-| A14-D | smjt9q.envivoslatam.org | wf6kt.envivoslatam.org |
-| A11-N | rci1w.envivoslatam.org | xky9q.envivoslatam.org |
-| Jornadas anteriores | iaw5b, chrz, dtkb | (varios) |
+| A14-N-R1 | iaw5b.envivoslatam.org | qbk4f.envivoslatam.org |
+| A14-N-R2 | bd2ih.envivoslatam.org | qbk4f.envivoslatam.org |
+| A14-D-R1 | smjt9q.envivoslatam.org | wf6kt.envivoslatam.org |
+| A11-N-R1 | rci1w.envivoslatam.org | xky9q.envivoslatam.org |
+| Shodan/OSINT | chrz.envivoslatam.org | dtkb.envivoslatam.org |
 
-Todos apuntan al mismo bloque IP TECHOFF (195.178.110.x, 93.123.109.x). La rotación de subdominios es un mecanismo de resiliencia — si un subdomain específico es bloqueado por un ISP, el sistema cambia automáticamente a otro.
+**9 subdominios únicos documentados:** iaw5b, qbk4f, bd2ih, smjt9q, wf6kt, rci1w, xky9q, chrz, dtkb.
+
+Todos apuntan al bloque IP TECHOFF (195.178.110.x, 93.123.109.x, AS48090). La rotación de subdominios es un mecanismo de resiliencia operativa — si un ISP bloquea un subdomain específico por nombre de host, el sistema asigna uno diferente en la sesión siguiente, manteniendo el acceso al mismo servidor backend.
+
+---
+
+## 10. Ecosistema publicitario expandido — hallazgo A14-N-R2
+
+La sesión R2, cuyo popunder resolvió a `doradobet.com`, reveló un segundo ecosistema de tracking completo introducido por el destino RTB:
+
+| Dominio | Empresa | Función |
+|---|---|---|
+| analytics.tiktok.com | TikTok/ByteDance | TikTok Pixel (30 req.) |
+| a2/c1.adform.net | Adform | Ad exchange europeo (26 req.) |
+| x.bidswitch.net | BidSwitch | Intermediario RTB |
+| j.clarity.ms | Microsoft | Session recording (heatmaps) |
+| sync.crwdcntrl.net | Lotame | DMP / audience sync |
+| segment.prod.bidr.io | Bidr.io | Audience bidder |
+| www.woopra.com | Woopra | Analytics avanzado |
+| mc.yandex.ru | Yandex | Metrica tracking (jurisdicción RU) |
+| refpa37630.com | 1xbet afiliados | Cookie afiliado cross-session |
+
+**Implicación:** La exposición de datos del usuario no se limita al ecosistema de futbol-libre.su. El destino del popunder RTB introduce a su vez un ecosistema completo de tracking sobre el cual ni el operador del sitio ni el usuario tienen control. En R2, el perfil del usuario boliviano fue enviado a ByteDance (TikTok), Microsoft, Yandex y múltiples DMPs europeos en una sola sesión.
 
 ---

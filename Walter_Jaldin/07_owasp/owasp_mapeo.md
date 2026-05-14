@@ -3,7 +3,7 @@
 **Fecha:** 11 de mayo de 2026  
 **Investigador:** Walter Jaldín  
 **Marco:** OWASP Top 10 Client-Side 2023 + OWASP WSTG v4.2  
-**Fuente de datos:** Reconocimiento OSINT (jornadas 1-6) + análisis estático de código
+**Fuente de datos:** Reconocimiento OSINT (jornadas 1-11) + análisis estático de código + sesiones experimentales mitmproxy
 
 ---
 
@@ -246,8 +246,37 @@ El riesgo más significativo para el usuario no está en las vulnerabilidades de
 | A6 | jQuery 1.7.1 obsoleto en /agenda/ | MEDIA | MEDIO | **MEDIO** |
 | A5 | MySQL 3306 expuesto en Internet | BAJA | ALTO | **MEDIO** |
 | A5 | cPanel/WHM accesible por IP directa | BAJA | ALTO | **MEDIO** |
+| A1/A5 | xmlrpc.php expuesto sin protección en pelotalibretv.su | ALTA | ALTO | **CRÍTICO** |
+| A7 | Sin rate limiting en xmlrpc brute force | ALTA | ALTO | **CRÍTICO** |
+| A4 | TikTok Pixel + Microsoft Clarity vía popunder RTB | ALTA | ALTO | **CRÍTICO** |
+| A4 | Lotame DMP audience sync vía popunder RTB | ALTA | MEDIO | **ALTO** |
 
 *(M = categoría específica del contexto malvertising, fuera del Top 10 estándar)*
+
+---
+
+## Hallazgos adicionales — Jornadas 10-11 (sesiones experimentales)
+
+### xmlrpc.php — pelotalibretv.su (A1 + A5 + A7)
+
+`pelotalibretv.su/xmlrpc.php` responde HTTP 200 sin autenticación a `system.listMethods`, exponiendo 80+ métodos WordPress:
+
+- **`system.multicall`** — permite probar cientos de contraseñas en un solo request HTTP, evadiendo rate limiting basado en número de peticiones. Clasificado OWASP A7 (Identification and Authentication Failures).
+- **`pingback.ping`** — DDoS reflection y SSRF sin autenticación. Clasificado OWASP A1 (Broken Access Control).
+- **`wp.uploadFile`** — con credenciales válidas permite subir webshell PHP. Compromiso total del servidor 138.226.244.112 (SOLLUTIUM/Virtual Systems LLC).
+
+**Severidad CVSS estimada:** 8.8 (Alta) — explotable remotamente sin autenticación previa para vectores DDoS/SSRF.
+
+### Ecosistema RTB expandido — A14-N-R2
+
+La sesión R2 reveló que el popunder RTB introduce un segundo ecosistema de tracking completo que el operador de futbol-libre.su no controla:
+
+- **TikTok Pixel (analytics.tiktok.com):** 30 requests. El perfil del usuario boliviano llega a ByteDance bajo jurisdicción china con leyes de acceso de datos distintas a las europeas.
+- **Microsoft Clarity (j.clarity.ms):** Grabación de sesión completa (heatmaps, replay). El sitio de apuestas graba la interacción exacta del usuario con la pantalla.
+- **Lotame DMP (crwdcntrl.net):** El perfil del usuario boliviano se sincroniza a una plataforma de audience data vendible a terceros anunciantes.
+- **Adform (a2/c1.adform.net):** Ad exchange europeo conectado — amplía el número de actores que reciben datos del usuario.
+
+**Clasificación OWASP A4** (Insecure Design): El modelo de monetización basado en RTB expone por diseño al usuario a terceros desconocidos e incontrolables.
 
 ---
 
