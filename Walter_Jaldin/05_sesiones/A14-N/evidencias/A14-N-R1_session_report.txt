@@ -1,0 +1,641 @@
+======================================================================
+REPORTE DE SESIÓN EXPERIMENTAL — ANDROID A14 SIN PROTECCIÓN (A14-N-R1)
+Fecha: 14 de mayo de 2026
+Proxy: mitmproxy 9.0.1
+Dispositivo: Android 14 (Pixel 6 emulado) — sdk_gphone64_arm64
+======================================================================
+
+[001] GET https://futbollibretv.su/
+     STATUS: 301
+     RESP LOCATION: https://futbol-libre.su/
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: text/html; charset=iso-8859-1
+
+[002] POST https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard
+     STATUS: 200
+     REQ ORIGIN: https://www.google.com
+     REQ COOKIE: AEC=AaJma5uCvs09R399z-otZ-nl-K9YUE_coomFEcsmHgFWopR02QBZ4YAEmA, __Secure-BUCKET=CNMH, NID=530=h5_7CpJyLZwqdLlXdLiHX2rmmx
+     RESP SET-COOKIE: NID=531=QD20IY0eO_Yd5ARlri3P71NIzDed9LKOGt9YHMiO9iWmv3UQtAi1DfhkOLV9Wo4eNmeowaDOrqJCNwwS_PgtMRK6TAEYJTmaxu_tfcziucu281wq
+     RESP SERVER: ESF
+     RESP CONTENT-TYPE: application/json; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: https://www.google.com
+     RESP CONTENT-SECURITY-POLICY: require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport, script-src 'report-sample' 'nonce-_
+
+[003] GET https://futbol-libre.su/
+     STATUS: 200
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: text/html; charset=UTF-8
+
+[004] GET https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.4/luxon.min.js
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: application/javascript; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[005] GET https://cdn.futbol-libre.su/js/menu.js?v=1.06
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[006] GET https://cdn.futbol-libre.su/css/style.css?v=1.49
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: text/css
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[007] GET https://code.jquery.com/jquery-3.7.1.min.js
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: application/javascript; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[008] GET https://cdn.futbol-libre.su/img/espn1.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[009] GET https://cdn.futbol-libre.su/img/dsports.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[010] GET https://cdn.futbol-libre.su/img/tyc_sports.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[011] GET https://cdn.futbol-libre.su/img/win_sports_plus.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[012] GET https://cdn.futbol-libre.su/img/fox_sports.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[013] GET https://cdn.futbol-libre.su/img/espn_premium.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[014] GET https://cdn.futbol-libre.su/img/tnt_sport.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[015] GET https://cdn.futbol-libre.su/img/tudn.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[016] GET https://futbol-libre.su/agenda/
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: text/html; charset=UTF-8
+
+[017] GET https://acscdn.com/script/aclib.js
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[018] GET https://cdn.futbol-libre.su/agenda/smallscripts.js
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[019] GET https://acscdn.com/script/suv5.js
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[020] GET https://www.googletagmanager.com/gtag/js?id=G-L0N11PVD63
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: Google Tag Manager
+     RESP CONTENT-TYPE: application/javascript; charset=UTF-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[021] GET https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SERVER: sffe
+     RESP CONTENT-TYPE: text/javascript; charset=UTF-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[022] POST https://www.google-analytics.com/g/collect?v=2&tid=G-L0N11PVD63&gtm=45je65c0v9119778136za200zd9119778136&_p=1778718200065&
+     STATUS: 204
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     RESP SERVER: Golfe2
+     RESP CONTENT-TYPE: text/plain
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: https://futbol-libre.su
+
+[023] POST https://usrpubtrk.com/ut/hb.php?cb=0.20639887686210234&v=1
+     STATUS: 204
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     POST_JSON: {"clientHints": {"chu": "%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%3D113%2C%20%22Not-A.Brand%22%3Bv%3D24", "chmob": "%3F1", "chmod": "sdk_gphone64_arm64", "chp": "Android", "chpv": "14.0.0", "chuafv": "113.0.5672.136"}, "isScrollable": 1, "totalClicks": 0, "sessionLength": 1, "ippMissc
+     RESP SERVER: cloudflare
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[024] GET https://adexchangerapid.com/script/suurl5.php?r=10652966&chu=%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: application/json; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[025] GET https://futbol-libre.su/agenda/spriteupdate8.png
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/agenda/
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: image/png
+
+[026] GET https://cdn.futbol-libre.su/favicon/android-icon-192x192.png
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ COOKIE: _ga_L0N11PVD63=GS2.1.s1778718201$o1$g0$t1778718201$j60$l0$h0, _ga=GA1.1.1764965350.1778718202
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/png
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[027] GET https://cdn.futbol-libre.su/favicon/apple-icon-180x180.png
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ COOKIE: _ga_L0N11PVD63=GS2.1.s1778718201$o1$g0$t1778718201$j60$l0$h0, _ga=GA1.1.1764965350.1778718202
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/png
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[028] GET https://cdn.futbol-libre.su/favicon/manifest.json
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: application/json
+
+[029] POST https://usrpubtrk.com/ut/hb.php?cb=0.5975148073743022&v=1
+     STATUS: 204
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     POST_JSON: {"clientHints": {"chu": "%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%3D113%2C%20%22Not-A.Brand%22%3Bv%3D24", "chmob": "%3F1", "chmod": "sdk_gphone64_arm64", "chp": "Android", "chpv": "14.0.0", "chuafv": "113.0.5672.136"}, "isScrollable": 1, "totalClicks": 0, "sessionLength": 61, "ippMiss
+     RESP SERVER: cloudflare
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[030] GET https://futbol-libre.su/espn-1/
+     STATUS: 200
+     REQ COOKIE: _ga_L0N11PVD63=GS2.1.s1778718201$o1$g0$t1778718201$j60$l0$h0, _ga=GA1.1.1764965350.1778718202
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: text/html; charset=UTF-8
+
+[031] GET https://cdn.futbol-libre.su/css/canal.css?v=1.2
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ COOKIE: _ga_L0N11PVD63=GS2.1.s1778718201$o1$g0$t1778718201$j60$l0$h0, _ga=GA1.1.1764965350.1778718202
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: text/css
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[032] GET https://cdn.futbol-libre.su/js/canal.js?v=1.3
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ COOKIE: _ga_L0N11PVD63=GS2.1.s1778718201$o1$g0$t1778718201$j60$l0$h0, _ga=GA1.1.1764965350.1778718202
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[033] GET https://cdn.futbol-libre.su/logo-futbolLibre.webp
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ COOKIE: _ga_L0N11PVD63=GS2.1.s1778718201$o1$g0$t1778718201$j60$l0$h0, _ga=GA1.1.1764965350.1778718202
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/webp
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[034] POST https://usrpubtrk.com/ut/hb.php?cb=0.895141100364371&v=1
+     STATUS: 204
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     POST_JSON: {"clientHints": {"chu": "%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%3D113%2C%20%22Not-A.Brand%22%3Bv%3D24", "chmob": "%3F1", "chmod": "sdk_gphone64_arm64", "chp": "Android", "chpv": "14.0.0", "chuafv": "113.0.5672.136"}, "isScrollable": 1, "totalClicks": 0, "sessionLength": 0, "ippMissc
+     RESP SERVER: cloudflare
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[035] GET https://adexchangerapid.com/script/suurl5.php?r=10652966&chu=%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: application/json; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[036] GET https://latamvidz1.com/canal.php?stream=espn
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     RESP SET-COOKIE: PHPSESSID=06bf2c09da1aeb0cc0d84b449a60cdb7; path=/
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: text/html; charset=UTF-8
+
+[037] GET https://acscdn.com/script/aclib.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[038] GET https://cdn.jsdelivr.net/npm/swarmcloud-hls@latest/dist/clappr-p2p-plugin.min.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     RESP CONTENT-TYPE: application/javascript; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[039] GET https://cdn.jsdelivr.net/npm/@swarmcloud/hls/p2p-engine.min.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     RESP CONTENT-TYPE: application/javascript; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[040] GET https://cdn.jsdelivr.net/npm/@clappr/player@0.8/dist/clappr.min.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     RESP CONTENT-TYPE: application/javascript; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[041] GET https://acscdn.com/script/suv5.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: text/javascript
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[042] GET https://cdn.futbol-libre.su/futbol-libre-favicon.png
+     STATUS: 200
+     REQ REFERER: https://futbol-libre.su/
+     REQ COOKIE: _ga=GA1.1.1764965350.1778718202, _ga_L0N11PVD63=GS2.1.s1778718201$o1$g1$t1778718320$j60$l0$h0
+     RESP SERVER: BunnyCDN-MI1-1356
+     RESP CONTENT-TYPE: image/png
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[043] POST https://usrpubtrk.com/ut/hb.php?cb=0.007946282503320301&v=1
+     STATUS: 204
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     POST_JSON: {"clientHints": {"chu": "%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%3D113%2C%20%22Not-A.Brand%22%3Bv%3D24", "chmob": "%3F1", "chmod": "sdk_gphone64_arm64", "chp": "Android", "chpv": "14.0.0", "chuafv": "113.0.5672.136"}, "isScrollable": 0, "totalClicks": 0, "sessionLength": 0, "ippMissc
+     RESP SERVER: cloudflare
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[044] POST https://www.google-analytics.com/g/collect?v=2&tid=G-L0N11PVD63&gtm=45je65c0v9119778136za200zd9119778136&_p=1778718320402&
+     STATUS: 204
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     RESP SERVER: Golfe2
+     RESP CONTENT-TYPE: text/plain
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: https://futbol-libre.su
+
+[045] GET https://adexchangerapid.com/script/suurl5.php?r=10652966&chu=%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: cloudflare
+     RESP CONTENT-TYPE: application/json; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[046] GET https://latamvidz1.com/sw.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/canal.php?stream=espn
+     RESP SERVER: nginx
+     RESP CONTENT-TYPE: text/javascript
+
+[047] GET https://cdn.jsdelivr.net/npm/swarmcloud-hls@latest/dist/hls-proxy.js
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     RESP CONTENT-TYPE: application/javascript; charset=utf-8
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[048] GET https://iaw5b.envivoslatam.org/hotflix/espn/index.m3u8?token=5c1c839002db66b15fb38b259441dc2b5a1eec01-0d-1778763323-1778
+     STATUS: 302
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP LOCATION: https://qbk4f.envivoslatam.org:443/espn/index.m3u8?token=5c1c839002db66b15fb38b259441dc2b5a1eec01-0d-1778763323-17787093
+     RESP SERVER: Streamer 24.03
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[049] GET https://qbk4f.envivoslatam.org/espn/index.m3u8?token=5c1c839002db66b15fb38b259441dc2b5a1eec01-0d-1778763323-1778709323&i
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: null
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[050] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[051] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[052] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[053] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/25/27-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[054] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[055] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/25/39-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[056] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[057] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[058] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[059] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/25/51-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[060] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[061] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[062] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/03-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[063] POST https://usrpubtrk.com/ut/hb.php?cb=0.40776550776731435&v=1
+     STATUS: 204
+     REQ REFERER: https://futbol-libre.su/
+     REQ ORIGIN: https://futbol-libre.su
+     POST_JSON: {"clientHints": {"chu": "%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%3D113%2C%20%22Not-A.Brand%22%3Bv%3D24", "chmob": "%3F1", "chmod": "sdk_gphone64_arm64", "chp": "Android", "chpv": "14.0.0", "chuafv": "113.0.5672.136"}, "isScrollable": 1, "totalClicks": 0, "sessionLength": 60, "ippMiss
+     RESP SERVER: cloudflare
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[064] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[065] POST https://usrpubtrk.com/ut/hb.php?cb=0.6211365402840301&v=1
+     STATUS: 204
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     POST_JSON: {"clientHints": {"chu": "%22Google%20Chrome%22%3Bv%3D113%2C%20%22Chromium%22%3Bv%3D113%2C%20%22Not-A.Brand%22%3Bv%3D24", "chmob": "%3F1", "chmod": "sdk_gphone64_arm64", "chp": "Android", "chpv": "14.0.0", "chuafv": "113.0.5672.136"}, "isScrollable": 0, "totalClicks": 0, "sessionLength": 60, "ippMiss
+     RESP SERVER: cloudflare
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[066] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/09-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[067] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[068] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/09-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 404
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[069] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[070] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/26-06907.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[071] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[072] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[073] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/33-06006.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[074] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[075] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[076] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/45-05205.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[077] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[078] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[079] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/50-05272.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[080] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[081] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[082] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[083] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/05/14/00/26/50-05272.ts?token=5c1c839002db66b15fb38b259441dc2b5a1ee
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: video/MP2T
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+[084] GET https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=181.115.172.46&token=5c1c839002db66b15fb38b259441dc2b5a1eec
+     STATUS: 200
+     REQ REFERER: https://latamvidz1.com/
+     REQ ORIGIN: https://latamvidz1.com
+     RESP SERVER: Streamer 24.03
+     RESP CONTENT-TYPE: application/vnd.apple.mpegurl
+     RESP ACCESS-CONTROL-ALLOW-ORIGIN: *
+
+
+TOTAL REQUESTS RELEVANTES: 84
