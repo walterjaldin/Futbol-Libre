@@ -567,3 +567,114 @@ OPERADOR (hassan.azmw@gmail.com / joezm5a@proton.me)
 - Análisis de xmlrpc.php en pelotalibretv.su.
 
 ---
+
+## Entrada 7 — 14 de mayo de 2026
+
+**Jornada:** Día 8 — Ecosistema ampliado, TECHOFF SRV LIMITED y hosting bulletproof  
+**Hora de inicio:** 00:00 (aprox.)  
+**Hora de fin:** 02:30
+
+### Objetivo de la jornada
+
+Aprovechar el acceso a Internet con herramientas de búsqueda web para investigar el ecosistema ampliado: nuevos dominios descubiertos, caracterización de TECHOFF SRV LIMITED como proveedor HLS, análisis de la familia la*hd.com, y recopilación de artículos de seguridad relevantes para el paper.
+
+### Actividades ejecutadas
+
+1. **Investigación de nuevos dominios con WebSearch y WebFetch:**
+   - SpyOnWeb (sin acceso por permisos) — GA4 IDs no encontrados en resultados públicos de búsqueda
+   - librefutbol.su: registrado ARDIS-SU (mismo operador), redirige a futbol-libre.su, IP 128.0.104.23, Tranco top 500
+   - envivolibre.com: IP 128.0.104.23, muestra cPanel default page (dominio parqueado), Dynadot registrar
+   - vivozly.com: Cloudflare, NameCheap, 8 meses de edad
+
+2. **Familia la*hd.com — mapeo completo:**
+   - la10hd.com → AWS/CloudFront, Afternic NS (posiblemente a la venta)
+   - la12hd.com → 91.218.49.105, HTTP 301 → la14hd.com (alias)
+   - la14hd.com → activo, HLS server: fubohd.com, Adsterra ZoneId 11225378 (DISTINTO)
+   - la16hd.com → Cloudflare, Tucows, registrado marzo 2026 (muy reciente)
+
+3. **fubohd.com — servidor HLS de la14hd.com:**
+   - IP 93.123.109.145
+   - Proveedor: **TECHOFF SRV LIMITED** (mismo que envivoslatam.org)
+   - Software: **Streamer 24.03** (idéntico a envivoslatam.org)
+   - Panel /admin/ expuesto (con autenticación)
+
+4. **TECHOFF SRV LIMITED (AS48090) — identificado como BULLETPROOF HOSTING:**
+   - 768 IPs en 3 bloques /24 (45.148.10.x, 93.123.109.x, 195.178.110.x)
+   - Servicio público: dmzhost.co — **política explícita de ignorar DMCA**
+   - Tags del AS: BitTorrent, Tor, VPN
+   - IP 195.178.110.160 (mismo /24 que envivoslatam.org): **117,660 reportes en AbuseIPDB**
+   - Upstream único: AS57717 FiberXpress BV (Amsterdam)
+   - Estructura corporativa ficticia: virtual office UK, sin storefront real
+   - Dominios identificados en TECHOFF: envivoslatam.org, fubohd.com, streamingtv339.com, kora-plus.dad, uwucdn.sbs
+
+5. **streamingtv339.com** — otro servicio de streaming en TECHOFF:
+   - IP 93.123.109.10, Tucows registrar, **Njalla nameservers** (máxima privacidad)
+   - Registrado marzo 2026
+
+6. **Artículos de seguridad relevantes para el paper:**
+   - ciberprisma.org: RAT + fake browser updates + silent executable activation → robo bancario
+   - cronista.com: "cuenta bancaria saqueada en segundos" vía sitios fútbol libre
+
+7. **URLScan de librefutbol.su revela dominios de tracking:**
+   - gounodogaptofok.net/tag.min.js (URL Solutions, Cloudflare, oct 2024) — random domain
+   - doanaudabu.net (HTTP 204, OpenResty, Dynadot, mar 2026) — servidor de tracking píxel
+   - my.rtmark.net (AWS) — red de afiliados/marketing
+
+### Hallazgos críticos de la jornada
+
+1. **TECHOFF SRV LIMITED = Bulletproof hosting** (dmzhost.co): el proveedor de los servidores HLS del ecosistema tiene política explícita de no atender DMCA. Esto hace el streaming prácticamente indestructible por vía de takedowns de copyright. SOLO una acción sobre el upstream AS57717 (FiberXpress BV) podría cortar la conectividad.
+
+2. **Streamer 24.03 en dos servidores distintos** (envivoslatam.org y fubohd.com): el software HLS es el mismo en dos infraestructuras diferentes, sugiriendo distribución del software por el mismo proveedor o comunidad de operadores.
+
+3. **librefutbol.su = tercera puerta de entrada** al sitio principal: además de futbollibretv.su, el operador tiene librefutbol.su como redireccionamiento alternativo. Todos registrados con ARDIS-SU.
+
+4. **Panel /admin/ de Streamer 24.03 expuesto**: el servidor HLS tiene un panel de administración accesible (con auth) en la URL pública. Si comprometido, permite inyectar contenido en el stream HLS de millones de usuarios.
+
+5. **la14hd.com es un operador diferente** pero vinculado: diferente ZoneId Adsterra (11225378), pero usa la misma infraestructura TECHOFF y el mismo software SwarmCloud, sugiriendo un ecosistema más amplio de operadores interdependientes en la misma infraestructura.
+
+### Decisiones metodológicas
+
+- **SpyOnWeb sin acceso directo:** Los IDs de GA4 no aparecen indexados en búsqueda web pública. Se requiere acceso browser a spyonweb.com directamente. Se mantiene como pendiente.
+- **TECHOFF documentado como proveedor crítico:** Añadido a la arquitectura del paper como hallazgo central sobre por qué el ecosistema es resistente a takedowns.
+
+### Evidencias generadas
+
+- `03_osint/10_ecosistema_ampliado_j8.md`
+- `03_osint/11_techoff_bulletproof.md`
+
+### Arquitectura final del ecosistema (post-Jornada 8)
+
+```
+Usuario (Android Bolivia)
+    ↓ accede a cualquier dominio de entrada
+librefutbol.su ──┐
+futbollibretv.su ─┼──→ HTTP 301 → futbol-libre.su (185.254.197.23, Virtual Systems)
+                  │       ├── Adsterra popunder (ZoneId 10652966)
+                  │       ├── BunnyCDN assets (fltsu)
+                  │       └── iframe → latamvidz1.com/canal.php?stream=X
+                  │               ├── Adsterra 2da carga
+                  │               ├── SwarmCloud P2P
+                  │               └── HLS → envivoslatam.org (TECHOFF, Streamer 24.03)
+                  │                         │
+                  │                   [Bulletproof hosting]
+                  │                   DMCA ignorado
+                  │                   768 IPs, 3 bloques /24
+                  │                   BitTorrent/Tor/VPN tags
+                  │
+pelotalibretv.su ─── WordPress (SOLLUTIUM, 138.226.244.112)
+                       ├── Adsterra (ZoneId 10652966 — IDÉNTICO)
+                       ├── latamvidz1.com (primario)
+                       ├── la14hd.com → fubohd.com (TECHOFF, Streamer 24.03)
+                       └── streamtpcloud.com (inactivo)
+```
+
+### Pendiente para la próxima jornada
+
+- Iniciar sesiones experimentales en AVDs (A14-N-R1, A14-D-R1).
+- SpyOnWeb.com: acceso browser directo para cruzar GA4 IDs.
+- Investigar el bloque 45.148.10.0/24 de TECHOFF (tercer bloque sin dominios identificados).
+- Verificar panel /admin/ de Streamer 24.03 (¿requiere credenciales? ¿expone versión?).
+- Análisis xmlrpc.php en pelotalibretv.su.
+- Borrador secciones 4 y 5 del artículo (resultados y discusión).
+
+---
