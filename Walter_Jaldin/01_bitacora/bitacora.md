@@ -678,3 +678,76 @@ pelotalibretv.su ─── WordPress (SOLLUTIUM, 138.226.244.112)
 - Borrador secciones 4 y 5 del artículo (resultados y discusión).
 
 ---
+
+## Entrada 8 — 14 de mayo de 2026
+
+**Jornada:** Día 10 — Sesiones experimentales A14-D-R1, A11-N-R1, A11-D-R1 + análisis comparativo  
+**Hora de inicio:** 20:45 UTC  
+**Hora de fin:** 21:25 UTC
+
+### Resumen ejecutivo de la jornada
+
+Se completaron las tres sesiones experimentales restantes del diseño factorial 2×2, produciendo el conjunto completo de datos para el análisis comparativo. El hallazgo más importante de la jornada es que **AdGuard DNS no bloquea ninguno de los dominios de riesgo** del ecosistema futbol-libre.su, y que el popunder RTB muestra un **destino dinámico** que varía por sesión (1xbet.com en A14-D y A11-N; doradobet.com en A11-D).
+
+### Sesiones ejecutadas
+
+#### Sesión A14-D-R1 — Android 14 + AdGuard DNS
+
+- **Problema inicial:** Chrome mostraba pantalla de primer uso ("Welcome to Chrome"). Solución: comando `--disable-fre` en `/data/local/tmp/chrome-command-line`.
+- **Flujos capturados:** 642 flujos, 32 dominios únicos, 14 MB
+- **Resultado:** AdGuard DNS no bloqueó ningún dominio de riesgo. usrpubtrk.com recibió 11 POST (más que A14-N), Adsterra cargó 4 scripts, adexchangerapid.com ejecutó 9 subastas RTB.
+- **Popunder:** bol.1xbet.com — 391 requests adicionales incluyendo Yandex Metrica (mc.yandex.ru) y cookie de afiliado (refpa37630.com).
+- **HLS:** wf6kt.envivoslatam.org — IP 181.115.172.46 en token, validez 15h.
+
+#### Sesión A11-N-R1 — Android 11 sin protección
+
+- **Problema:** CA mitmproxy con contexto SELinux incorrecto (`appdomain_tmpfs` en lugar de `system_security_cacerts_file`). Solución: `--ignore-certificate-errors` en chrome-command-line.
+- **Chrome versión:** 91.0.4472.114 (más antiguo que A14)
+- **Flujos capturados:** 452 flujos, 26 dominios únicos, 11 MB
+- **Hallazgo clave:** Fingerprint adaptativo — Chrome 91 envía 4 campos Client Hints vs 6 en Chrome 113. Los campos `chu` (brand list) y `chmob` (indicador móvil) están ausentes en Chrome 91.
+- **Popunder:** bol.1xbet.com — 317 requests.
+- **HLS:** xky9q.envivoslatam.org — IP 181.115.172.46 en token.
+
+#### Sesión A11-D-R1 — Android 11 + AdGuard DNS
+
+- **Flujos capturados:** 78 flujos, 19 dominios únicos, 1.7 MB
+- **Popunder:** www.doradobet.com (¡diferente a 1xbet!) — con `js.stripe.com` cargado en página de registro con bono $500.
+- **Hallazgo crítico:** El popunder RTB puede entregar cualquier sitio, incluyendo formularios de captación de datos de pago vía Stripe.
+- **AdGuard DNS:** No bloqueó usrpubtrk.com, acscdn.com ni adexchangerapid.com.
+- **HLS:** No cargó en esta sesión (iframe parcial).
+
+### Documento generado: comparativa_perfiles.md
+
+Documento maestro de análisis comparativo creado en `Walter_Jaldin/06_analisis/comparativa_perfiles.md` con:
+- Tabla maestra de 4 sesiones
+- Comparativa de fingerprinting (6 vs 4 Client Hints)
+- Tabla de popunder RTB dinámico por sesión
+- Inventario de 6 subdominios TECHOFF observados
+- 13 riesgos confirmados con evidencia experimental
+- Mapa de actores completo del ecosistema
+- Análisis de efectividad de AdGuard DNS
+
+### Hallazgos de alto impacto — Jornada 10
+
+1. **AdGuard DNS = protección nula** contra este ecosistema. usrpubtrk.com, acscdn.com y adexchangerapid.com no están en listas de bloqueo de AdGuard DNS público.
+
+2. **Popunder RTB es dinámico.** El destino varía por sesión:  
+   A14-D → `bol.1xbet.com` | A11-N → `bol.1xbet.com` | A11-D → `www.doradobet.com`
+
+3. **js.stripe.com en popunder.** El sitio de apuestas doradobet.com cargó el SDK de Stripe en su página de registro con "bono de bienvenida $500" — vector directo de captura de datos bancarios.
+
+4. **Fingerprint adaptativo.** usrpubtrk.com ajusta los campos enviados según las capacidades del navegador. Chrome 91 no envía `chu`/`chmob` pero el fingerprint sigue siendo identificable.
+
+5. **Rotación de subdominios TECHOFF.** Seis subdominios distintos de envivoslatam.org usados en las 4 sesiones (iaw5b, qbk4f, smjt9q, wf6kt, rci1w, xky9q). Estrategia de resiliencia ante bloqueos por hostname.
+
+6. **PHPSESSID insegura en todos los perfiles** donde el iframe cargó completamente — vulnerabilidad sistémica, no accidental.
+
+### Pendiente para próximas jornadas
+
+- Redacción de sección 4 (Resultados) del artículo académico
+- Redacción de sección 5 (Discusión) del artículo académico
+- SpyOnWeb GA4 cross-reference (aún pendiente)
+- Análisis xmlrpc.php en pelotalibretv.su
+- Segunda repetición A14-N-R2 (ya programada)
+
+---
