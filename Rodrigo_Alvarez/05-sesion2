@@ -1,96 +1,231 @@
-FASE 2 — RECONOCIMIENTO PASIVO (ANÁLISIS ESTÁTICO)
 3.6 Reconocimiento Pasivo y Estático
 
-El análisis pasivo se realizó sin interactuar con contenido dinámico del sitio, evitando clics en anuncios, pop-ups o reproducciones de streaming.
+El análisis pasivo se realizó en un entorno controlado mediante una máquina virtual aislada con sistema operativo Windows 10, evitando la interacción directa con contenido potencialmente riesgoso como anuncios, pop-ups, formularios o descargas automáticas.
 
-El objetivo fue identificar componentes estáticos sospechosos:
+El objetivo principal de esta fase fue identificar indicadores de riesgo sin ejecutar componentes dinámicos del sitio web. Para ello, se utilizaron herramientas de análisis estático, inspección HTTP, revisión de código fuente y análisis de reputación.
 
-scripts externos
-dominios de terceros
-certificados SSL
-reputación del dominio
-infraestructura de red
+Las actividades realizadas incluyeron:
+
+inspección de código HTML
+análisis de headers HTTP
+identificación de scripts externos
+revisión de iframes
+análisis DNS
+verificación de reputación en VirusTotal
+inspección mediante DevTools
+identificación de trackers y recursos de terceros
 3.6.1 Análisis DNS y HTTP
 URL Analizada
 https://futbol-libre.su
 Resultados Iniciales
 Parámetro	Resultado
-Status HTTP	200
+Status HTTP	200 OK
 Tipo de contenido	text/html; charset=UTF-8
-IP Servidor	185.254.197.23
 Servidor Web	nginx
 Tecnología detectada	Engintron
-Categorías Detectadas
+Compresión	gzip
+IP Servidor	185.254.197.23
+Interpretación Técnica
 
-Según el análisis realizado:
+La presencia de:
 
+nginx
+Engintron
+compresión gzip
+
+indica una infraestructura orientada a optimización de rendimiento y manejo de múltiples conexiones concurrentes, característica común en plataformas de streaming.
+
+Sin embargo, este tipo de configuración también puede dificultar la identificación directa de recursos dinámicos cargados desde terceros.
+
+3.6.2 Clasificación y Reputación del Dominio
+
+El dominio fue analizado mediante VirusTotal y motores de categorización de reputación web.
+
+Clasificaciones Detectadas
 Motor	Clasificación
 alphaMountain.ai	Malicious
 Forcepoint ThreatSeeker	Malicious web sites
 Gridinsoft	Suspicious
-3.6.2 Reputación VirusTotal
-
-El análisis en VirusTotal mostró:
-
+Resultado VirusTotal
 Resultado	Valor
 Motores detectando amenaza	2 / 93
 Reputación general	Sospechoso
-Tipo de recursos detectados	iframes, trackers, external-resources
-Observaciones Relevantes
+Recursos identificados	iframes, trackers, external-resources
+Interpretación
 
-Se identificaron:
+Aunque la mayoría de motores no identificaron malware activo, algunos motores especializados clasificaron el dominio como potencialmente riesgoso debido a:
 
-Recursos externos cargados automáticamente.
-Uso de iframes.
-Presencia de trackers.
-Dominio catalogado parcialmente como sospechoso.
+presencia de trackers
+publicidad agresiva
+redirecciones
+uso de recursos externos dinámicos
 
-Aunque la mayoría de motores marcaron el sitio como “clean”, algunos motores especializados detectaron comportamiento asociado a sitios maliciosos.
+Este comportamiento coincide con patrones observados frecuentemente en plataformas de streaming no oficiales.
 
-3.6.3 Información Técnica del Sitio
+3.6.3 Inspección de Código Fuente y DevTools
+
+Mediante las herramientas DevTools del navegador se realizó una inspección manual del código HTML, scripts cargados y recursos externos.
+
+El análisis permitió identificar componentes legítimos junto con elementos potencialmente asociados a malvertising y redirecciones automáticas.
+
+Google Tag Manager
+
+Se identificó el siguiente script legítimo:
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0N11PVDG3"></script>
+
+Este componente pertenece a Google y es utilizado para:
+
+analítica web
+métricas de navegación
+seguimiento de tráfico
+
+No representa evidencia directa de actividad maliciosa.
+
+Script Externo Sospechoso — aclib.js
+
+Durante la inspección se detectó el siguiente recurso:
+
+<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+
+Dominio asociado:
+
+acscdn.com
+Posibles Funciones del Script
+
+El comportamiento observado sugiere relación con redes publicitarias dinámicas o técnicas de malvertising.
+
+Funciones potenciales:
+
+generación automática de pop-ups
+redirecciones dinámicas
+carga de publicidad externa
+ejecución de scripts de terceros
+tracking del usuario
+monetización mediante tráfico forzado
+Riesgo Asociado
+
+La carga de JavaScript desde dominios externos representa un vector de riesgo debido a que:
+
+el contenido puede modificarse dinámicamente
+el sitio principal pierde control directo sobre el código ejecutado
+terceros pueden inyectar contenido malicioso
+permite campañas de malvertising sin modificar el HTML principal
+3.6.4 Detección de Enlaces Ocultos
+
+Se detectó un enlace HTML oculto utilizando propiedades CSS destinadas a invisibilizar el contenido:
+
+<a href="https://adexchangerapid.com/ad/visit.php?al=1"
+style="display:none; visibility:hidden; position:relative; left:-1000px; top:-1000px;"></a>
+Características Detectadas
+Característica	Observación
+Visibilidad	Oculto al usuario
+Posición	Fuera de pantalla
+Función probable	Redirección automática
+Riesgo estimado	Medio – Alto
+Interpretación Técnica
+
+Este tipo de enlaces suele utilizarse para:
+
+generación artificial de tráfico
+monetización oculta
+activación de campañas publicitarias
+redirecciones invisibles
+tracking automatizado
+
+El uso de elementos invisibles constituye un comportamiento anómalo desde el punto de vista de seguridad y experiencia del usuario.
+
+3.6.5 Ejecución de Pop-Ups y JavaScript Dinámico
+
+El análisis identificó la ejecución automática del siguiente código JavaScript:
+
+<script type="text/javascript">
+aclib.runPop({
+zoneId: '10652966',
+});
+</script>
+Función Detectada
+
+La función:
+
+runPop()
+
+es comúnmente utilizada por redes publicitarias para activar:
+
+ventanas emergentes
+pestañas automáticas
+redirecciones
+publicidad invasiva
+campañas de tráfico automatizado
+Análisis del zoneId
+
+El parámetro:
+
+zoneId
+
+identifica campañas publicitarias específicas dentro de plataformas de anuncios dinámicos.
+
+Esto permite cambiar el contenido servido al usuario en tiempo real sin necesidad de modificar el código principal del sitio.
+
+3.6.6 Headers HTTP y Seguridad
 Headers Detectados
-x-content-type-options: nosniff
-x-xss-protection: 1; mode=block
-server: nginx
-x-server-powered-by: Engintron
-content-encoding: gzip
-Hash SHA256 del contenido HTML
+Header	Valor
+x-content-type-options	nosniff
+x-xss-protection	1; mode=block
+server	nginx
+x-server-powered-by	Engintron
+content-encoding	gzip
+Interpretación
+
+La presencia de ciertos headers de seguridad indica intentos básicos de endurecimiento del servidor.
+
+Sin embargo, estos mecanismos no impiden:
+
+carga de scripts de terceros
+pop-ups publicitarios
+trackers externos
+redirecciones dinámicas
+3.6.7 Hash SHA256 del Contenido HTML
+
+Se generó un hash SHA256 del contenido HTML principal utilizando:
+
+certutil -hashfile archivo.html SHA256
+Resultado
 0280024e9b39f7a79e24ff42989829970f1912750f01f0bc5e0847203bc695c3
-Título HTML Detectado
-Fútbol Libre - Ver Partidos de Fútbol y Canales de Fútbol en Vivo Gratis
-3.6.4 Indicadores Iniciales de Riesgo
-
-Durante la inspección inicial se detectaron posibles indicadores de riesgo:
-
-Indicador	Observación
-Uso de trackers	Sí
-Recursos externos	Sí
+3.6.8 Indicadores Iniciales de Riesgo
+Indicador	Resultado
+Trackers externos	Sí
 Iframes	Sí
-Clasificación sospechosa VT	Sí
-Descargas automáticas	No detectadas aún
-Pop-ups phishing	Pendiente de análisis dinámico
-Scripts externos	Pendiente de inspección DevTools
-3.6.5 Interpretación Inicial
+Scripts publicitarios	Sí
+Recursos de terceros	Sí
+Pop-ups automáticos	Detectados
+Redirecciones dinámicas	Detectadas
+Descargas automáticas	No observadas
+Malware activo	No confirmado
+3.6.9 Relación con la Hipótesis Inicial
 
-Los resultados obtenidos sugieren que el sitio presenta ciertos elementos comúnmente asociados a plataformas de streaming no oficiales:
+Los hallazgos obtenidos fortalecen parcialmente la hipótesis inicial del proyecto:
 
-integración de múltiples recursos externos
-iframes incrustados
-trackers publicitarios
-reputación parcialmente negativa
+“El acceso al sitio genera tráfico sospechoso y comportamiento potencialmente riesgoso mediante scripts externos y redes publicitarias dinámicas.”
 
-Sin embargo, en esta fase no se confirmó presencia directa de malware activo o ejecución automática de payloads maliciosos.
+Los resultados muestran evidencia de:
 
-Por ello, se consideró necesario avanzar hacia una fase dinámica utilizando:
+malvertising
+tracking agresivo
+recursos externos dinámicos
+mecanismos de monetización invasivos
+
+Sin embargo, durante esta fase no se confirmó:
+
+ejecución directa de malware
+descarga automática de payloads
+persistencia en el sistema
+
+Por ello, se consideró necesario avanzar hacia una fase de análisis dinámico utilizando:
 
 Wireshark
-Burp Suite
-ProcMon
+Burp Suite Community
+Process Monitor (ProcMon)
 DevTools Network
 monitoreo de procesos
-3.6.6 Ejemplo de Registro de Evidencia
-Timestamp	Herramienta	Hallazgo	Observación
-2026-05-18 07:15	VirusTotal	2/93 detecciones	Sitio sospechoso
-2026-05-18 07:16	HTTP Headers	nginx + Engintron	Infraestructura web
-2026-05-18 07:17	VT Categories	malicious web sites	Clasificación parcial
-2026-05-18 07:18	HTML Analysis	iframes + trackers	Recursos
+análisis de conexiones activas
