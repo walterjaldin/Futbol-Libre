@@ -1,0 +1,47 @@
+Análisis dinámico de comportamiento
+Métricas de tráfico capturado (Wireshark + Burp Suite)
+
+Conexiones TLS activas
+40+
+desde msedge.exe (PID 6592)
+
+Redes publicitarias
+8
+identificadas vía SNI
+
+Solicitudes HTTP
+53
+capturadas en Burp Suite
+
+IP servidor principal
+185.254.197.23
+futbollibretv.su
+
+Comportamiento observado al visitar el sitio
+Descarga automática de ejecutable malicioso
+Al cargar la página, se disparó automáticamente la descarga de OperaSetup (1).exe desde tracking.prmtracking.com vía red de afiliados CPA (pid=1053, offer_id=2435929). Windows Defender lo marcó como peligroso. El ejecutable es un bundle con adware o browser hijacker, no Opera legítimo.
+
+JavaScript ofuscado (cryptominer / pop-under)
+Se identificó un script fuertemente ofuscado con patrón _0x3c24 / _0xb6c9b8. Implementa técnica de pop-under para abrir tracking.prmtracking.com en segundo plano y coordina llamadas a redes de anuncios. Causa consumo de CPU al 100% mientras la pestaña está abierta (comportamiento de minero JS).
+
+Inyección de módulos de DoradoBet
+El sitio descarga e integra scripts de la plataforma de apuestas DoradoBet: configLanding-doradobet.com_bo_desktop.js, methodsDeposit.js, Register.js, LandingLogin.js. Burp Suite capturó un POST de 1.360 bytes a doradobet.com/form-submission/ — formulario enviado desde el contexto del sitio pirata. Errores SSL confirmaron que el registro intenta comunicarse con partnerapi.virtualsoft.tech.
+
+Streaming redirigido a infraestructura externa
+El video no se sirve desde el propio dominio. Los segmentos HLS (.ts) provienen de envivoslatam.org (IP 195.178.110.14). Wireshark detectó 30+ handshakes TLS continuos hacia este host — tráfico de retransmisión no autorizada. El reproductor usa clappr.min.js cargado desde jsDelivr.
+
+Procesos y estado de la VM tras la visita
+PID 6592 = msedge.exe (Edge): responsable de las 40+ conexiones simultáneas. PID 2876 = SearchApp.exe: telemetría normal de Windows hacia Microsoft. No se detectó malware persistente instalado. La lentitud fue causada por el minero JS activo en la pestaña y la carga masiva de scripts publicitarios en paralelo.
+Flujo de ataque documentado
+
+Usuario visita futbollibretv.su
+→
+JS ofuscado carga
+→
+v.byads.co / propellerads.com
+→
+Pop-under abre tracking.prmtracking.com
+→
+Descarga automática OperaSetup(1).exe
+→
+Windows Defender detecta como peligroso
