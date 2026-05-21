@@ -2,127 +2,251 @@
 
 ---
 
-## 1. Objetivo general
+## 1. Diseño de investigación
 
-Analizar el comportamiento de red, las comunicaciones externas y los mecanismos de tracking presentes durante la navegación en el dominio `futbollibretv.su`, mediante un entorno experimental controlado.
+La presente investigación corresponde a un estudio **observacional, no experimental, descriptivo y analítico**, con enfoque **mixto (cuantitativo y cualitativo)**.
+
+Es observacional porque se centra en el registro y análisis del comportamiento observable del sitio web desde la perspectiva del cliente, sin manipular deliberadamente variables del sistema analizado.
+
+Es no experimental debido a que no se realizan intervenciones orientadas a modificar el comportamiento del sitio ni se ejecutan pruebas de explotación activa.
+
+Es descriptivo porque documenta las características técnicas observadas durante la navegación controlada.
+
+Es analítico porque interpreta los hallazgos obtenidos y los correlaciona con modelos de riesgo y marcos de referencia en ciberseguridad.
+
+El enfoque mixto permite combinar métricas cuantificables de tráfico y comportamiento de red con análisis cualitativo de patrones observados durante las sesiones experimentales.
 
 ---
 
-## 2. Objetivos específicos
+## 2. Pregunta de investigación
+
+### Pregunta principal
+
+¿Qué riesgos observables de seguridad y exposición de información enfrenta un usuario al interactuar con el dominio `futbollibretv.su` durante sesiones controladas de navegación?
+
+### Subpreguntas
+
+- ¿Qué dominios, subdominios y servicios externos participan durante la navegación?
+- ¿Qué patrones de comunicación HTTP/HTTPS se generan durante la interacción con el sitio?
+- ¿Existen mecanismos de tracking o fingerprinting orientados a la identificación del usuario o del entorno cliente?
+- ¿Se observan redirecciones, cargas dinámicas o interacciones con infraestructura externa potencialmente riesgosa?
+- ¿Qué información del entorno cliente puede quedar expuesta durante la navegación?
+- ¿Cómo pueden clasificarse los hallazgos observados según marcos de referencia como OWASP, NIST y MITRE ATT&CK?
+
+---
+
+## 3. Objetivo general
+
+Analizar el comportamiento de red, las comunicaciones externas y los mecanismos de tracking presentes durante la navegación controlada en el dominio `futbollibretv.su`, con el fin de identificar riesgos observables de seguridad y exposición de información para el usuario final.
+
+---
+
+## 4. Objetivos específicos
 
 - Identificar dominios y subdominios involucrados durante la navegación.
-- Analizar solicitudes HTTP/HTTPS generadas por el sitio.
-- Identificar servicios externos utilizados por la plataforma.
-- Detectar mecanismos de tracking y fingerprinting.
-- Correlacionar los hallazgos con modelos de clasificación de riesgos como OWASP y MITRE ATT&CK.
-- Evaluar la exposición de información del usuario durante sesiones de navegación.
+- Analizar solicitudes HTTP y HTTPS generadas durante las sesiones experimentales.
+- Identificar servicios externos, infraestructura de terceros y recursos cargados por la plataforma.
+- Detectar mecanismos de tracking y posibles técnicas de fingerprinting.
+- Evaluar patrones de redirección y comunicación con infraestructura externa.
+- Determinar qué información observable del entorno cliente puede quedar expuesta.
+- Correlacionar los hallazgos técnicos con modelos de clasificación de riesgos como OWASP, NIST y MITRE ATT&CK.
 
 ---
 
-## 3. Tipo de investigación
+## 5. Hipótesis de investigación
 
-La presente investigación corresponde a un análisis experimental de carácter observacional y descriptivo.
+### Hipótesis principal (H1)
 
-El estudio se centra en la observación del comportamiento del sitio web y de las comunicaciones generadas durante sesiones controladas de navegación, sin realizar explotación activa ni modificación deliberada de los sistemas analizados.
+La interacción controlada con el dominio `futbollibretv.su` expone al usuario a riesgos observables de seguridad y privacidad derivados de comunicaciones con infraestructura externa, mecanismos de tracking y comportamiento dinámico del lado cliente.
 
----
+### Hipótesis nula (H0)
 
-## 4. Enfoque metodológico
-
-Se empleó un enfoque práctico basado en:
-
-- análisis de tráfico de red
-- interceptación de tráfico HTTP/HTTPS
-- reconocimiento pasivo (OSINT)
-- correlación de datos de red y aplicación
-
-El análisis se realizó mediante sesiones experimentales independientes ejecutadas dentro de un entorno virtualizado y aislado.
+La interacción controlada con el dominio `futbollibretv.su` no expone al usuario a riesgos observables significativos de seguridad o privacidad durante las sesiones experimentales.
 
 ---
 
-## 5. Variables analizadas
+## 6. Alcance y delimitación
 
-| Variable | Descripción |
-|---|---|
-| Dominios | Servicios y dominios contactados |
-| Direcciones IP | Infraestructura observada |
-| Solicitudes HTTP/HTTPS | Comunicación entre cliente y servidor |
-| Redirecciones | Flujo de navegación |
-| Tracking | Recolección de datos del usuario |
-| Fingerprinting | Identificación del entorno y navegador |
-| Recursos externos | Scripts, CDN y servicios de terceros |
-
----
-
-## 6. Escenarios experimentales
-
-La investigación se divide en múltiples sesiones experimentales, cada una orientada a observar diferentes comportamientos del sitio analizado.
-
-Los escenarios incluyen:
-
-- navegación pasiva
-- interacción mínima
-- reproducción de contenido multimedia
-- interacción con elementos dinámicos
-- observación de persistencia y tracking
-
-Cada sesión es ejecutada desde un estado limpio de la máquina virtual.
-
----
-
-## 7. Alcance
-
-El estudio se limita al análisis del comportamiento observable desde el lado cliente durante sesiones controladas de navegación.
+La investigación se limita al análisis del comportamiento observable desde el lado cliente durante sesiones controladas de navegación ejecutadas en un entorno experimental aislado.
 
 El alcance incluye:
 
-- tráfico de red
-- solicitudes HTTP/HTTPS
+- tráfico de red generado durante la navegación
+- solicitudes HTTP y HTTPS
 - resoluciones DNS
-- recursos cargados
-- servicios externos involucrados
+- dominios y servicios externos involucrados
+- recursos cargados dinámicamente
+- mecanismos de tracking observables
+- patrones de fingerprinting detectables desde el cliente
+- redirecciones y comportamiento de navegación inducida
 
-No se realizaron actividades orientadas a:
+El estudio no incluye:
 
-- explotación de vulnerabilidades
-- alteración de servicios
-- evasión de mecanismos de seguridad
-- acceso no autorizado
+- explotación activa de vulnerabilidades
+- modificación deliberada del comportamiento del sitio
+- evasión de controles de seguridad
+- acceso no autorizado a infraestructura externa
+- análisis interno de servidores o sistemas no accesibles desde el cliente
+- ejecución deliberada de archivos potencialmente maliciosos
 
 ---
 
-## 8. Limitaciones
+## 7. Unidad de análisis
+
+La unidad principal de análisis corresponde a la **sesión controlada de navegación**.
+
+Cada sesión experimental representa una ejecución independiente del protocolo definido, realizada desde un estado limpio del entorno virtualizado, con el objetivo de observar el comportamiento técnico del sitio bajo condiciones reproducibles.
+
+Adicionalmente, se consideran como unidades secundarias de observación:
+
+- eventos HTTP/HTTPS
+- solicitudes DNS
+- recursos externos cargados
+- eventos de redirección
+- patrones de tracking
+- interacciones dinámicas observables
+
+---
+
+## 8. Variables e indicadores
+
+| Variable | Indicador | Métrica | Instrumento |
+|---------|-----------|---------|-------------|
+| Dominios externos | cantidad de dominios contactados | conteo por sesión | Burp Suite / Wireshark |
+| Infraestructura IP | IPs observadas | conteo y clasificación | Wireshark |
+| Solicitudes HTTP/HTTPS | volumen de tráfico web | número de requests | Burp Suite |
+| Redirecciones | eventos de navegación inducida | frecuencia por sesión | Burp Suite / Logger |
+| Tracking | cookies y recursos de terceros | presencia / cantidad | Burp Suite / navegador |
+| Fingerprinting | acceso a artefactos del entorno cliente | presencia de patrones | análisis HTTP / navegador |
+| Recursos externos | scripts, iframes, CDNs | conteo y clasificación | Burp Suite |
+| Exposición de información | metadatos enviados por el cliente | observación cualitativa | Burp Suite / Wireshark |
+
+---
+
+## 9. Instrumentos de recolección
+
+Para la ejecución del estudio se emplean los siguientes instrumentos técnicos:
+
+- VMware Workstation (virtualización del entorno experimental)
+- Windows 10 (sistema operativo del entorno cliente)
+- Firefox (navegador de prueba)
+- Burp Suite (interceptación y análisis HTTP/HTTPS)
+- Wireshark (captura y análisis de tráfico de red)
+- Logger++ (registro detallado de tráfico HTTP)
+- Highlighter and Extractor (HaE) para clasificación rápida de patrones observables
+
+---
+
+## 10. Enfoque metodológico
+
+El proceso metodológico se desarrolla en múltiples fases complementarias:
+
+### Reconocimiento pasivo (OSINT)
+
+Orientado a recopilar información pública sobre el dominio antes de la interacción experimental.
+
+Incluye:
+
+- observación de DNS
+- perfil de certificados
+- reputación pública
+- inteligencia pasiva disponible
+
+### Validación estática
+
+Orientada a caracterizar el comportamiento inicial del sitio con interacción mínima.
+
+Incluye:
+
+- inspección inicial
+- análisis de cabeceras
+- recursos cargados
+- cookies iniciales
+
+### Sesiones experimentales dinámicas
+
+Orientadas a observar comportamiento emergente durante interacción controlada.
+
+Incluye:
+
+- navegación
+- interacción con elementos del flujo principal
+- observación de recursos dinámicos
+- registro de tráfico
+
+---
+
+## 11. Técnicas de análisis
+
+### Análisis cuantitativo
+
+Se aplicará estadística descriptiva sobre variables observables, incluyendo:
+
+- frecuencia de solicitudes
+- número de dominios externos
+- cantidad de recursos cargados
+- eventos de redirección
+- indicadores de tracking
+
+### Análisis cualitativo
+
+Se realizará clasificación temática de patrones observados, incluyendo:
+
+- comportamiento sospechoso
+- tracking agresivo
+- navegación inducida
+- carga dinámica de recursos
+- exposición de información del entorno cliente
+
+### Correlación con marcos de referencia
+
+Los hallazgos serán interpretados utilizando:
+
+- OWASP
+- NIST
+- MITRE ATT&CK
+
+---
+
+## 12. Limitaciones
 
 Las principales limitaciones del estudio son:
 
-- el análisis se limita al tráfico observable desde el cliente
-- no se tiene acceso a infraestructura interna del sitio
-- algunos servicios externos utilizan cifrado y CDN distribuidos
-- la infraestructura observada puede variar dinámicamente
-
-Asimismo, ciertos mecanismos de tracking podrían activarse únicamente bajo interacciones específicas no cubiertas durante las sesiones iniciales.
-
----
-
-## 9. Consideraciones éticas
-
-La investigación fue realizada únicamente con fines académicos y educativos.
-
-Todas las pruebas se ejecutaron dentro de un entorno aislado y controlado, evitando afectar sistemas externos o terceros.
-
-No se realizaron actividades de explotación activa ni acciones orientadas a comprometer la disponibilidad, integridad o confidencialidad de los servicios analizados.
+- el análisis se restringe al comportamiento observable desde el cliente
+- no existe acceso a infraestructura interna del dominio analizado
+- ciertos servicios externos pueden utilizar infraestructura distribuida y dinámica
+- el comportamiento del sitio puede variar según fecha, región o condiciones de navegación
+- algunos mecanismos de tracking podrían activarse bajo interacciones específicas no observadas
 
 ---
 
-## 10. Reproducibilidad
+## 13. Consideraciones éticas
 
-Con el fin de garantizar la reproducibilidad de los resultados:
+La investigación se realiza exclusivamente con fines académicos.
 
-- se utilizó un snapshot limpio antes de cada sesión
-- se documentó la configuración del entorno experimental
-- se conservaron capturas de tráfico y registros HTTP
-- se registraron los procedimientos ejecutados durante cada prueba
+Todas las pruebas son ejecutadas dentro de un entorno virtualizado, aislado y controlado.
 
-Esto permite repetir las sesiones bajo condiciones similares y validar los hallazgos obtenidos.
+No se realizan actividades orientadas a:
+
+- comprometer sistemas externos
+- alterar el comportamiento del dominio analizado
+- explotar vulnerabilidades
+- acceder sin autorización a recursos restringidos
+
+El estudio mantiene un enfoque estrictamente observacional.
+
+---
+
+## 14. Reproducibilidad
+
+Con el fin de garantizar reproducibilidad metodológica:
+
+- cada sesión se ejecuta desde un snapshot limpio
+- el entorno experimental es documentado técnicamente
+- se conservan registros HTTP y capturas de tráfico
+- se documentan procedimientos, observaciones y evidencia
+- las sesiones siguen un protocolo experimental definido
+
+Esto permite repetir el proceso bajo condiciones equivalentes y validar la consistencia de los hallazgos.
 
 ---

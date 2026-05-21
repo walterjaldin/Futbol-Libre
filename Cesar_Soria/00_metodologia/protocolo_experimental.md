@@ -4,108 +4,53 @@
 
 ## 1. Objetivo del protocolo
 
-Establecer un procedimiento reproducible para la ejecución de sesiones experimentales orientadas al análisis de tráfico web, comportamiento de red y mecanismos de tracking presentes durante la navegación en el dominio analizado.
+Establecer un procedimiento técnico, controlado y reproducible para la ejecución de sesiones de observación orientadas al análisis del comportamiento de red, comunicaciones HTTP/HTTPS, servicios externos, mecanismos de tracking y exposición observable de información durante la navegación en el dominio `futbollibretv.su`.
 
 El protocolo busca garantizar:
 
 - consistencia entre sesiones
-- integridad de los datos recolectados
-- aislamiento del entorno experimental
-- reproducibilidad de los resultados
+- integridad de la evidencia recolectada
+- control del entorno experimental
+- trazabilidad metodológica
+- reproducibilidad de resultados
 
 ---
 
-## 2. Preparación del entorno
+## 2. Unidad experimental
 
-Antes de iniciar cada sesión experimental se deben ejecutar las siguientes acciones:
+La unidad experimental corresponde a una **sesión controlada de navegación** ejecutada dentro de un entorno virtualizado previamente definido.
 
-### 2.1 Restauración del entorno
+Cada sesión constituye una ejecución independiente del protocolo, iniciada desde un estado limpio del sistema y documentada individualmente.
 
-- Restaurar el snapshot base denominado:
-  - `maquina_limpia`
-- Verificar que la máquina virtual se encuentre en estado limpio y sin actividad previa.
-
-### 2.2 Configuración de red
-
-- Verificar que el adaptador de red de la máquina virtual esté configurado en modo:
-  - NAT
-- Confirmar conectividad a Internet.
-
-### 2.3 Verificación de herramientas
-
-Iniciar las herramientas necesarias para la captura y análisis:
-
-| Herramienta | Propósito |
-|---|---|
-| Wireshark | Captura de tráfico de red |
-| Burp Suite | Interceptación HTTP/HTTPS |
-| Firefox | Navegación controlada |
-
-### 2.4 Configuración de Burp Suite
-
-- Verificar proxy local:
-  - `127.0.0.1:8080`
-- Confirmar instalación del certificado CA.
-- Configurar:
-  - `Intercept OFF`
-
-### 2.5 Configuración del navegador
-
-Antes de cada sesión:
-
-- limpiar caché
-- eliminar cookies
-- cerrar sesiones previas
-- verificar ausencia de extensiones
+Cada sesión debe mantener condiciones equivalentes para permitir comparabilidad entre observaciones.
 
 ---
 
-## 3. Inicio de captura
+## 3. Entorno experimental
 
-### 3.1 Captura de red
+Las sesiones experimentales se ejecutarán bajo el siguiente entorno técnico:
 
-En Wireshark:
-
-- iniciar captura sobre la interfaz de red activa
-- verificar recepción de paquetes
-
-### 3.2 Registro HTTP
-
-En Burp Suite:
-
-- confirmar registro de tráfico HTTP/HTTPS
-- verificar funcionamiento del proxy
+| Componente | Configuración |
+|----------|---------------|
+| Virtualización | VMware Workstation |
+| Sistema operativo | Windows 10 |
+| Navegador | Firefox |
+| Proxy HTTP/HTTPS | Burp Suite |
+| Captura de tráfico | Wireshark |
+| Logging HTTP | Logger++ |
+| Clasificación rápida | HaE |
 
 ---
 
-## 4. Ejecución experimental
+## 4. Preparación previa de cada sesión
 
-Cada sesión experimental debe seguir un escenario previamente definido.
-
-Las acciones pueden incluir:
-
-- navegación pasiva
-- interacción con enlaces
-- apertura de streams
-- interacción con iframes
-- observación de publicidad
-- reproducción multimedia
-
-Durante la sesión:
-
-- evitar actividades ajenas al experimento
-- registrar observaciones relevantes
-- mantener consistencia entre pruebas
+Antes de iniciar cualquier sesión experimental deben ejecutarse las siguientes acciones.
 
 ---
 
-## 5. Recolección de evidencia
+### 4.1 Restauración del entorno
 
-Finalizada la sesión experimental:
-
-### 5.1 Exportación de tráfico de red
-
-Guardar captura Wireshark en formato:
+Restaurar el snapshot base:
 
 ```text
-.pcapng
+maquina_limpia
