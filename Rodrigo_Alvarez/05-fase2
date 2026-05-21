@@ -1,8 +1,10 @@
 3.6 Reconocimiento Pasivo y Estático
 
-El análisis pasivo se realizó en un entorno controlado mediante una máquina virtual aislada con sistema operativo Windows 10, evitando la interacción directa con contenido potencialmente riesgoso como anuncios, pop-ups, formularios o descargas automáticas.
+El análisis pasivo se realizó en un entorno controlado mediante una máquina virtual aislada con sistema operativo Windows 10, evitando la interacción directa 
+con contenido potencialmente riesgoso como anuncios, pop-ups, formularios o descargas automáticas.
 
-El objetivo principal de esta fase fue identificar indicadores de riesgo sin ejecutar componentes dinámicos del sitio web. Para ello, se utilizaron herramientas de análisis estático, inspección HTTP, revisión de código fuente y análisis de reputación.
+El objetivo principal de esta fase fue identificar indicadores de riesgo sin ejecutar componentes dinámicos del sitio web. Para ello, se utilizaron herramientas
+de análisis estático, inspección HTTP, revisión de código fuente y análisis de reputación.
 
 Las actividades realizadas incluyeron:
 
@@ -33,7 +35,8 @@ nginx
 Engintron
 compresión gzip
 
-indica una infraestructura orientada a optimización de rendimiento y manejo de múltiples conexiones concurrentes, característica común en plataformas de streaming.
+indica una infraestructura orientada a optimización de rendimiento y manejo de múltiples conexiones concurrentes, característica común en plataformas de 
+streaming.
 
 Sin embargo, este tipo de configuración también puede dificultar la identificación directa de recursos dinámicos cargados desde terceros.
 
