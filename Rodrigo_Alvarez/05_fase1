@@ -1,7 +1,8 @@
 FASE 1 — PREPARACIÓN DEL ENTORNO CONTROLADO
 3.1 Diseño del Estudio
 
-La investigación se desarrolló bajo un enfoque exploratorio–descriptivo utilizando un entorno controlado virtualizado para minimizar riesgos sobre el sistema anfitrión.
+La investigación se desarrolló bajo un enfoque exploratorio–descriptivo utilizando un entorno controlado virtualizado para minimizar riesgos sobre el sistema 
+anfitrión.
 
 El análisis se realizó sobre el sitio:
 
@@ -60,7 +61,8 @@ sc query type= service state= all > C:\baseline_services.txt
 
 La hipótesis principal establecida fue:
 
-“El acceso al sitio puede generar tráfico sospechoso, redirecciones ocultas, ejecución de scripts externos o comportamiento potencialmente malicioso dentro del sistema operativo.”
+“El acceso al sitio puede generar tráfico sospechoso, redirecciones ocultas, ejecución de scripts externos o comportamiento potencialmente malicioso dentro del 
+sistema operativo.”
 
 También se planteó analizar:
 
