@@ -2,8 +2,8 @@
 
 **Estado:** Borrador inicial  
 **Autor:** Walter Jaldín Gonzales  
-**Fecha:** 14 de mayo de 2026  
-**Basado en:** Jornadas 1–10, sesiones experimentales A14-N-R1, A14-D-R1, A11-N-R1, A11-D-R1
+**Fecha:** 24 de mayo de 2026  
+**Basado en:** Jornadas 1–10, sesiones experimentales A14-N-R1, A14-D-R1, A11-N-R1, A11-D-R1, deobfuscación de scripts Adsterra
 
 ---
 
@@ -39,7 +39,21 @@ Este patrón de diseño es consistente con lo descrito en la literatura de segur
 
 ---
 
-### 5.3 Ineficacia de la protección DNS como medida individual
+### 5.3 La ofuscación de scripts como barrera al análisis
+
+El esquema de ofuscación identificado en los 5 scripts de Adsterra merece un análisis específico. Se trata de un patrón homogéneo: un array de strings codificadas en Base64 con un alfabeto reordenado (mayúsculas y minúsculas intercambiadas respecto al estándar), referenciadas mediante índices hexadecimales que son restados por un offset específico por script. Este esquema:
+
+1. **Impide la inspección directa del código fuente:** en su forma ofuscada, el código es una secuencia de referencias a índices numéricos sin significado semántico aparente.
+2. **Dificulta la búsqueda automatizada de strings:** los nombres de funciones, URLs de endpoints y dominios de tracking aparecen exclusivamente como índices, no como cadenas de texto legibles.
+3. **Utiliza offsets variables por script** (0x93, 0x1ef, 0x1b6), impidiendo que una misma herramienta de deobfuscación funcione sin conocer el offset de cada archivo.
+
+Este nivel de ofuscación supera al típicamente empleado por redes publicitarias legítimas y se aproxima al de muestras de malware. La presencia de mecanismos de anti-detección adicionales (Headless detection, Puppeteer, CDP, DevTools) sugiere que Adsterra ha diseñado su plataforma específicamente para operar en entornos de alto escrutinio, donde sus scripts son objetivo de bloqueo o análisis.
+
+La implicación para la metodología de este estudio es que las técnicas de análisis estático (descarga del script + deobfuscación fuera de línea) son necesarias pero insuficientes: el comportamiento real de los scripts depende de parámetros de configuración recibidos del servidor de Adsterra en tiempo de ejecución, que solo pueden observarse mediante análisis dinámico en un navegador real. Para este estudio, la combinación de ambas técnicas (estática para los strings ofuscados, dinámica para el comportamiento observado en las sesiones experimentales) permitió reconstruir la funcionalidad completa de la infraestructura publicitaria.
+
+---
+
+### 5.4 Ineficacia de la protección DNS como medida individual
 
 Los resultados del diseño 2×2 (Android 14/11 × con/sin AdGuard DNS) revelan que la protección DNS-over-TLS mediante AdGuard no ofrece ninguna reducción de los riesgos de tracking y publicidad agresiva identificados. Este hallazgo contradice la recomendación común en comunidades técnicas de adoptar resolvers DNS alternativos como medida de privacidad.
 
@@ -49,7 +63,7 @@ Esto sugiere que la mitigación efectiva requiere intervención en capas más pr
 
 ---
 
-### 5.4 Diferencias entre versiones de Android y sus implicaciones
+### 5.5 Diferencias entre versiones de Android y sus implicaciones
 
 La comparativa entre Android 14/Chrome 113 y Android 11/Chrome 91 revela una diferencia importante en la riqueza del fingerprint: Chrome 113 implementa la especificación completa de User-Agent Client Hints (UA-CH), enviando seis campos incluyendo el brand list completo y el indicador de dispositivo móvil. Chrome 91 solo envía cuatro campos.
 
@@ -59,7 +73,7 @@ Este hallazgo tiene implicaciones relevantes para el contexto boliviano, donde l
 
 ---
 
-### 5.5 El popunder como vector de fraude financiero
+### 5.6 El popunder como vector de fraude financiero
 
 La variabilidad del destino RTB del popunder constituye el hallazgo de mayor impacto directo sobre el usuario. En la sesión A11-D-R1, el popunder abrió `www.doradobet.com/registro_regalo_bienvenida_500.htm`, una página de registro con un "bono de bienvenida de $500" que cargó el SDK de pagos de Stripe.
 
@@ -75,7 +89,7 @@ Artículos de ciberseguridad latinoamericanos documentan consecuencias financier
 
 ---
 
-### 5.6 Vulnerabilidades del servidor — implicaciones para el ecosistema completo
+### 5.7 Vulnerabilidades del servidor — implicaciones para el ecosistema completo
 
 La identificación de CVE-2023-38408 (CVSS 9.8) en el servidor principal de futbol-libre.su (OpenSSH 8.7 en 185.254.197.23) tiene implicaciones que trascienden el sitio individual. Un compromiso exitoso del servidor principal permitiría a un atacante:
 
@@ -89,7 +103,7 @@ Estas vulnerabilidades no afectan directamente al usuario visitante (quien no ti
 
 ---
 
-### 5.7 Limitaciones del estudio
+### 5.8 Limitaciones del estudio
 
 **Representatividad del perfil de usuario:** Las sesiones experimentales usaron emuladores AVD con configuraciones controladas de laboratorio. Un usuario real en Bolivia podría tener instaladas aplicaciones adicionales que modifiquen el comportamiento del navegador, versiones más antiguas de Chrome, o configuraciones de red corporativas/ISP que alteren el tráfico observado.
 
@@ -103,7 +117,7 @@ Estas vulnerabilidades no afectan directamente al usuario visitante (quien no ti
 
 ---
 
-### 5.8 Implicaciones para políticas públicas y recomendaciones
+### 5.9 Implicaciones para políticas públicas y recomendaciones
 
 Los hallazgos de este estudio sugieren que la exposición de usuarios bolivianos al usar sitios de streaming pirata no se limita a infringir derechos de autor. El riesgo técnico documentado justifica consideraciones adicionales:
 

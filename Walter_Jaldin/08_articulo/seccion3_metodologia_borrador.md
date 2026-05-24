@@ -2,8 +2,8 @@
 
 **Estado:** Borrador inicial — pendiente de revisión por el equipo  
 **Autor:** Walter Jaldín Gonzales  
-**Fecha:** 13 de mayo de 2026  
-**Basado en:** Jornadas 1–7 de investigación
+**Fecha:** 24 de mayo de 2026  
+**Basado en:** Jornadas 1–10 de investigación
 
 ---
 
@@ -44,7 +44,7 @@ El reconocimiento activo implicó interacción directa con el servidor mediante 
 
 - **Análisis de headers HTTP:** mediante `curl -sI` para inspeccionar cabeceras de respuesta y evaluar la presencia de headers de seguridad (CSP, HSTS, X-Frame-Options, Referrer-Policy, Permissions-Policy, Cache-Control).
 - **Análisis del código fuente HTML:** descarga de las páginas principales y de canal para identificar scripts externos, iframes, atributos SRI, y endpoints de terceros.
-- **Análisis de aclib.js:** descarga y deofuscación parcial del script de Adsterra (166 KB, altamente ofuscado con patrón `_0x*`) mediante decodificación Python de strings Base64 internos.
+- **Análisis de scripts de Adsterra:** descarga y deobfuscación completa de **5 scripts** del CDN `acscdn.com` (aclib.js, suv5.js, banner.js, interstitial.js, at.js) y del Service Worker `sw.js` desde `latamvidz1.com`. Los scripts emplean un esquema de ofuscación basado en un array de strings codificadas en Base64 con alfabeto personalizado (`a–z, A–Z, 0–9, +, /` en lugar del orden estándar `A–Z, a–z, 0–9, +, /`). El proceso de deobfuscación consistió en: (1) extracción del array de strings ofuscados, (2) reordenamiento del alfabeto Base64 al estándar, (3) decodificación de cada string, (4) reconstrucción del mapa de referencias hexadecimales (`_0x*`), y (5) substitución de todas las referencias en el código. Este proceso se automatizó mediante un script en Python. Las tablas de strings decodificados se documentaron íntegramente en `06_analisis/scripts/`.
 - **Análisis del servidor de streams:** solicitud a `latamvidz1.com/canal.php?stream=espn` con cabecera `Referer` correcta para obtener el HTML completo del reproductor, incluyendo URL HLS, token de autenticación y configuración SwarmCloud.
 - **Verificación de puertos con netcat:** confirmación de accesibilidad de puertos cPanel (2082-2087), MySQL (3306) y RTMP (1935).
 
@@ -128,7 +128,7 @@ Los hallazgos de las fases 1 y 2 se analizan bajo tres dimensiones:
 
 1. **AbuseIPDB:** no se pudo obtener API key para consultas automatizadas de reputación de IPs. Las consultas de reputación se realizaron mediante VirusTotal y URLhaus como alternativas.
 
-2. **Análisis dinámico de aclib.js:** la deofuscación completa del script de Adsterra requiere ejecución en browser real con DevTools. El análisis estático parcial fue posible mediante decodificación de strings Base64.
+2. **Análisis dinámico de aclib.js:** la deofuscación completa del script de Adsterra fue posible mediante análisis estático y decodificación Python del array de strings ofuscados. Sin embargo, el comportamiento en tiempo real (por ejemplo, la selección dinámica de dominio de tracking basada en respuesta del servidor) solo puede observarse mediante ejecución en browser real con DevTools.
 
 3. **SpyOnWeb/BuiltWith:** no disponibles vía API gratuita para el cruce de Google Analytics IDs. Pendiente de análisis manual en browser.
 

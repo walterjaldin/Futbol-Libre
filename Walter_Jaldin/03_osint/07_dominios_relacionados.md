@@ -1,6 +1,6 @@
 # 1.7 — Ecosistema de dominios relacionados
 
-**Fecha de consulta:** 10 de mayo de 2026  
+**Fecha de consulta:** 10 de mayo de 2026 (actualizado 24 may 2026)  
 **Investigador:** Walter Jaldín  
 **Herramientas:** dig, whois, curl, HackerTarget Reverse IP API, análisis de código fuente HTML
 
@@ -47,9 +47,15 @@ Esta sub-fase consolida y profundiza el ecosistema de dominios identificado en l
 ### Infraestructura técnica
 
 | Dominio | IP actual | Estado | Función |
-|---|---|---|---|
+|---|---|---|---|---|
 | **latamvidz1.com** | 128.0.104.23 | Activo (410 sin params) | Servidor de streams (PHP backend) |
 | **cdn.futbol-libre.su** | BunnyCDN (Miami) | Activo (200 OK) | CDN de assets estáticos |
+| **acscdn.com** | Cloudflare | Activo | CDN de scripts Adsterra (ver 06_analisis/scripts/) |
+| **adexchangerapid.com** | Cloudflare | Activo | RTB ad exchange |
+| **usrpubtrk.com** | Cloudflare | Activo | Fingerprinting |
+| **wkbc42.com** | Sin DNS | Sin resolver | Tracking Adsterra (parked) |
+| **wkbc21.com** | Sin DNS | Sin resolver | Tracking Adsterra (parked) |
+| **quesid.com** | 104.21.3.211 / 172.67.131.52 | Activo (403, openresty) | Tracking/analytics Adsterra |
 
 ---
 
@@ -172,10 +178,13 @@ OPERADOR (alias: hassan.azmw@gmail.com / joezm5a@proton.me)
 │   ├── latamvidz1.com  [servidor PHP de streams, 128.0.104.23]
 │   └── cdn.futbol-libre.su [BunnyCDN Miami, assets estáticos]
 │
-├── PUBLICIDAD
-│   └── Adsterra (acscdn.com, zoneId: 10652966) [popunder en todas las páginas]
-│
-├── TRACKING
+├── PUBLICIDAD Y TRACKING (Adsterra)
+│   ├── acscdn.com          [CDN scripts: aclib.js, suv5.js, banner.js, interstitial.js, at.js]
+│   ├── adexchangerapid.com [RTB: url5.php, hb.php, visit.php, czcf.php]
+│   ├── usrpubtrk.com       [fingerprinting Client Hints/WebGL/Canvas]
+│   ├── wkbc42.com          [tracking — sin DNS activo]
+│   ├── wkbc21.com          [tracking — sin DNS activo]
+│   ├── quesid.com          [tracking — openresty, Cloudflare]
 │   └── Google Analytics GA4: G-L0N11PVD63
 │
 └── DOMINIOS EXTERNOS (relación circunstancial por IP histórica)
@@ -194,5 +203,6 @@ OPERADOR (alias: hassan.azmw@gmail.com / joezm5a@proton.me)
 4. **doeemain.org** está caído (HTTP 500), lo que puede indicar abandono o reconfiguración.
 5. **yourewatching.org** tiene una IP iraní en su resolución, hallazgo anómalo que requiere seguimiento.
 6. **GA4 ID G-L0N11PVD63** como nuevo vector de vinculación del operador pendiente de explorar.
+7. **(Posterior) 6 scripts Adsterra deobfuscados** — aclib.js, suv5.js, banner.js, interstitial.js, at.js, sw.js. Se descubren wkbc42.com, wkbc21.com, quesid.com como dominios de tracking. Detalle en `06_analisis/scripts/`.
 
 ---

@@ -2,8 +2,8 @@
 
 **Estado:** Borrador inicial  
 **Autor:** Walter Jaldín Gonzales  
-**Fecha:** 14 de mayo de 2026  
-**Basado en:** Jornadas 1–10, sesiones A14-N-R1, A14-D-R1, A11-N-R1, A11-D-R1
+**Fecha:** 24 de mayo de 2026  
+**Basado en:** Jornadas 1–10, sesiones A14-N-R1, A14-D-R1, A11-N-R1, A11-D-R1, deobfuscación de scripts Adsterra
 
 ---
 
@@ -55,6 +55,38 @@ El endpoint `https://pelotalibretv.su/xmlrpc.php` responde HTTP 200 a peticiones
 - `wp.setOptions` — modificación de configuración del sitio
 
 El endpoint no presenta rate limiting observable. La combinación de `system.multicall` + falta de rate limiting constituye un vector activo de compromiso de credenciales.
+
+#### 4.1.5 Deobfuscación de scripts de Adsterra — ingeniería inversa de la infraestructura publicitaria
+
+Mediante deobfuscación estática de los scripts servidos desde `acscdn.com` se identificaron los componentes de la red publicitaria Adsterra que opera en el sitio. La Tabla 1.5 resume los scripts analizados:
+
+**Tabla 1.5. Scripts de Adsterra deobfuscados**
+
+| Script | Tamaño | Strings | Función |
+|---|---|---|---|
+| `aclib.js` | 166,680 B | 1,556 | Orquestador: popunder, interstitial, fingerprinting, RTB |
+| `suv5.js` | 62,862 B | 687 | SmartURL v5: ejecución y renderizado de overlays |
+| `banner.js` | 26,834 B | 330 | Despliegue de banners display |
+| `interstitial.js` | 46,333 B | 487 | Overlay full‑page con subasta RTB |
+| `at.js` | 30,821 B | 359 | Auto‑tag: tracking de comportamiento de usuario |
+
+El esquema de ofuscación es idéntico en los 5 scripts: un array de strings codificadas en Base64 con alfabeto personalizado (`abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=` en lugar del estándar `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`), referenciadas mediante índices hexadecimales con un offset específico a cada script. Cada script define su propio offset (aclib.js: 0x93, suv5.js: 0x1ef, at.js: 0x1b6), indicando que la ofuscación fue generada por una misma herramienta pero con parámetros independientes por archivo.
+
+El análisis reveló **tres dominios de tracking previamente no documentados** en el ecosistema:
+
+- **wkbc42.com** y **wkbc21.com:** referenciados en `at.js` como destinos de envío de métricas de comportamiento de usuario (clicks, scroll, touch, session length, Client Hints). Ninguno de los dos dominios resuelve actualmente (mayo 2026), sugiriendo que son dominios de tracking personalizados que estuvieron activos en el pasado o serán activados en el futuro.
+- **quesid.com:** endpoint de analytics que responde 403 Forbidden con openresty (nginx + LuaJIT). Activo desde 2021, registrado en NameCheap con privacidad de Islandia, protegido por Cloudflare. Solo contactado por sitios que cargan scripts de Adsterra.
+
+`aclib.js` implementa además mecanismos de **anti-detección** que identifican entornos de análisis automatizado:
+
+| Técnica | Código deofuscado |
+|---|---|
+| Headless detection | `navigator.webdriver` |
+| Puppeteer detection | `navigator.plugins.length === 0` |
+| CDP detection | `chrome.runtime` |
+| DevTools detection | `Firebug` / `__fxdriver_unwrapped` |
+
+Estos mecanismos confirman que Adsterra despliega defensas activas contra el análisis de sus scripts, consistentes con un diseño orientado a operar en entornos de alto riesgo de bloqueo.
 
 ---
 
@@ -111,14 +143,21 @@ La frecuencia de envío fue de aproximadamente 1 POST cada 20 segundos, acumulan
 
 #### 4.2.2 Scripts de publicidad agresiva — Adsterra
 
-En las cuatro sesiones se registró la carga de los scripts `aclib.js` (166 KB, 7,995 tokens ofuscados `_0x*`) y `suv5.js` desde el dominio `acscdn.com` (CDN de Adsterra). Ambos scripts se cargaron **dos veces por visita al canal**: una desde la página principal de futbol-libre.su y una segunda desde el iframe de latamvidz1.com. Esta doble carga expone al usuario a cuatro ejecuciones del motor de publicidad por visita.
+En las cuatro sesiones se registró la carga de múltiples scripts desde el CDN `acscdn.com` (infraestructura Adsterra). Los scripts observados en tráfico de red fueron:
 
-`aclib.js` configura un mecanismo de popunder:
+- **aclib.js** (166 KB) — orquestador principal de publicidad
+- **suv5.js** (62 KB) — motor de ejecución de overlays (SmartURL v5)
+- **at.js** (30 KB) — auto-tag para tracking de comportamiento
+- **banner.js** (26 KB) — despliegue de banners display
+
+Los scripts se cargaron **dos veces por visita al canal**: una desde la página principal de futbol-libre.su y una segunda desde el iframe de latamvidz1.com. Esta doble carga expone al usuario a cuatro ejecuciones del motor de publicidad por visita.
+
+`aclib.js` configura un mecanismo de popunder mediante la llamada:
 ```javascript
 aclib.runPop({ zoneId: '10652966' });
 ```
 
-El ZoneId `10652966` identifica la cuenta Adsterra del operador. El script `suv5.js` ("SmartURL versión 5") solicita al servidor `adexchangerapid.com` la URL de destino del popunder mediante una subasta en tiempo real (RTB — Real-Time Bidding).
+El ZoneId `10652966` identifica la cuenta Adsterra del operador. El script `suv5.js` ("SmartURL versión 5") solicita al servidor `adexchangerapid.com` la URL de destino del popunder mediante una subasta en tiempo real (RTB — Real-Time Bidding), mientras que `at.js` recolecta métricas de comportamiento del usuario (clicks, scroll, touch, session length) y las envía a los dominios de tracking `wkbc42.com` y `wkbc21.com`.
 
 #### 4.2.3 Subasta RTB y destino dinámico del popunder
 
@@ -237,5 +276,8 @@ AdGuard DNS (dns.adguard.com, DNS-over-TLS) no bloqueó ninguno de los dominios 
 | V10 | RCE en servidor (OpenSSH 8.7, CVE-2023-38408) | Shodan — CVSS 9.8 | A6 | Crítica |
 | V11 | Tracking GA4 inmediato sin consentimiento | POST inmediato a google-analytics.com | — | Informativo |
 | V12 | AdGuard DNS inefectivo contra este ecosistema | 0 dominios de riesgo bloqueados | — | Informativo |
+| V13 | at.js: tracking agresivo de comportamiento (clicks, touch, scroll, session) | Código deobfuscado de at.js. Envío a wkbc42.com, wkbc21.com | A4 | Alta |
+| V14 | Múltiples scripts Adsterra ejecutándose dos veces por visita | Doble carga desde página principal + iframe (4 ejecuciones) | A8 | Media |
+| V15 | Anti-detección: detección de Headless/Puppeteer/CDP/DevTools | Código deobfuscado en aclib.js | A4 | Informativo |
 
 ---

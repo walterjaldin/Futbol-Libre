@@ -1,6 +1,6 @@
 # OSINT — Caracterización y resumen consolidado
 
-**Última actualización:** 13 de mayo de 2026  
+**Última actualización:** 24 de mayo de 2026  
 **Investigador:** Walter Jaldín  
 **Sitio investigado:** futbollibretv.su (dominio de entrada) → futbol-libre.su (dominio canónico)
 
@@ -54,7 +54,7 @@ BunnyCDN (Miami, USA)
 
 ---
 
-## Ecosistema de dominios identificados (actualizado 13 may 2026)
+## Ecosistema de dominios identificados (actualizado 24 may 2026)
 
 | Dominio | Estado | Familia | IP/Hosting |
 |---|---|---|---|
@@ -75,6 +75,12 @@ BunnyCDN (Miami, USA)
 | yourewatching.org | Activo (anómalo: IP iraní) | Anglófona | V. Systems + Cloudflare |
 | yourewatching1.org | No verificado | Anglófona | Desconocido |
 | yourewatching2.org | No verificado | Anglófona | Desconocido |
+| acscdn.com | Activo (CDN scripts) | Publicidad Adsterra | Cloudflare |
+| adexchangerapid.com | Activo (RTB) | Publicidad Adsterra | Cloudflare |
+| usrpubtrk.com | Activo (fingerprinting) | Publicidad Adsterra | Cloudflare |
+| wkbc42.com | Sin DNS (tracking) | Publicidad Adsterra | Desconocido (parked) |
+| wkbc21.com | Sin DNS (tracking) | Publicidad Adsterra | Desconocido (parked) |
+| quesid.com | Activo (403, openresty) | Tracking Adsterra | Cloudflare |
 
 ---
 
@@ -93,6 +99,12 @@ BunnyCDN (Miami, USA)
 | Google Analytics pelotalibretv.su | G-65329600J2 |
 | Google Search Console | Verificado en ambos dominios .su principales |
 | Red de publicidad | Adsterra (popunder, **ZoneId 10652966 — IDÉNTICO en ambos sitios**) |
+| Scripts de publicidad | aclib.js (popunder, fingerprinting), suv5.js (SmartURL v5), banner.js, interstitial.js, at.js (auto-tag) — todos desde acscdn.com |
+| CDN de scripts Adsterra | acscdn.com (Cloudflare) |
+| RTB ad exchange | adexchangerapid.com (url5.php, hb.php, visit.php, czcf.php) |
+| Fingerprinting | usrpubtrk.com (Client Hints, WebGL, Canvas) |
+| Dominios de tracking Adsterra | wkbc42.com, wkbc21.com, quesid.com |
+| Service Worker | sw.js (latamvidz1.com) → SwarmCloud P2P (jsDelivr) |
 | CDN de streams primario | latamvidz1.com (PHP, 128.0.104.23) |
 | CDN de streams backup | la14hd.com (91.218.49.105, Virtual Systems) |
 | CDN de assets futbol-libre.su | BunnyCDN (pull zone: fltsu) |
@@ -118,6 +130,9 @@ BunnyCDN (Miami, USA)
 | MySQL 3306 expuesto en Internet | Dos IPs con puerto 3306 abierto sin filtrado | ALTA |
 | WordPress API REST expuesta | Slug de usuario "futbollibre" visible públicamente | MEDIA |
 | SwarmCloud P2P involuntario | Usuario = nodo P2P, IP expuesta, datos consumidos | ALTA |
+| at.js tracking agresivo | Captura clicks, scroll, touch, mouse, Client Hints, session length → wkbc42/wkbc21 | ALTA |
+| aclib.js anti‑detección | Headless, WebDriver, Puppeteer, CDP, DevTools detection | MEDIA |
+| Interstitial sin control | Overlay full‑screen con RTB, posible click hijacking | ALTA |
 
 ---
 
@@ -145,7 +160,9 @@ El servidor principal 185.254.197.23 tiene **17 CVEs** según Shodan InternetDB:
 4. **streamtpcloud.com** — monitorear DNS para ver cuándo activa.
 5. **xmlrpc.php en pelotalibretv.su** — verificar si está habilitado (riesgo adicional WordPress).
 6. **yourewatching.org + IP iraní** — verificar si es temporal o indica nueva jurisdicción.
-7. **Sesiones experimentales** — iniciar con A14-N-R1 y A14-D-R1 en AVD.
-8. **aclib.js deofuscación dinámica** — requiere browser + DevTools en sesión experimental.
+7. ~~**Sesiones experimentales** — iniciar con A14-N-R1 y A14-D-R1 en AVD.~~ COMPLETADA
+8. ~~**aclib.js deofuscación dinámica** — requiere browser + DevTools en sesión experimental.~~ COMPLETADA (deobfuscación completa + 5 scripts analizados)
+9. **APKs de 1xbet.com y doradobet.com** — buscar en APKPure, APKCombo, VirusTotal.
+10. **Herramienta de deobfuscación automatizada** — script Python reutilizable para esquema Adsterra.
 
 ---

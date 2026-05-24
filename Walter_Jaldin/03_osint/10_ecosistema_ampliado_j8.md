@@ -1,9 +1,9 @@
 # 1.10 — Ecosistema ampliado: hallazgos de Jornada 8
 
-**Fecha de análisis:** 14 de mayo de 2026  
+**Fecha de análisis:** 14 de mayo de 2026 (actualizado 24 may 2026)  
 **Investigador:** Walter Jaldín  
 **Herramientas:** WebSearch, WebFetch, curl, dig, whois, Shodan InternetDB, HackerTarget Reverse IP  
-**Metodología:** Investigación con acceso a Internet (browser + herramientas de red)
+**Metodología:** Investigación con acceso a Internet (browser + herramientas de red) + deobfuscación completa de scripts Adsterra
 
 ---
 
@@ -256,7 +256,49 @@ rtmark.net es conocida como plataforma de marketing de afiliados. Su presencia e
 
 ---
 
-## Artículos de seguridad sobre fútbol libre — contexto para el paper
+## Deobfuscación de scripts Adsterra — infraestructura de publicidad descubierta
+
+Entre el 21–24 de mayo de 2026 se deobfuscan y analizan **5 scripts** de `acscdn.com`. Se descubren nuevos dominios de tracking y se mapea la arquitectura completa de Adsterra.
+
+### Scripts analizados
+
+| Script | Tamaño | Strings | Función principal |
+|---|---|---|---|
+| aclib.js | 166,680 B | 1,556 | Popunder, interstitial, fingerprinting, RTB, Service Worker |
+| suv5.js | 62,862 B | 687 | SmartURL v5 — motor de ejecución/rendering de overlays |
+| banner.js | 26,834 B | 330 | Banner display ads |
+| interstitial.js | 46,333 B | 487 | Full‑page interstitial overlays con RTB |
+| at.js | 30,821 B | 359 | Auto‑tag / tracking de comportamiento de usuario |
+
+### Dominios de tracking de Adsterra descubiertos
+
+| Dominio | Propósito | Estado OSINT |
+|---|---|---|
+| **wkbc42.com** | Tracking de visitas (endpoints: /ad/visit.php, /al/visit.php, /ut/aft.php, /ut/aut.php) | Sin DNS activo (parked/desactivado) |
+| **wkbc21.com** | Dominio alternativo de tracking (mismos endpoints inferidos) | Sin DNS activo (parked/desactivado) |
+| **quesid.com** | Endpoint de analytics/tracking (openresty, 403) | Cloudflare, activo desde 2021 |
+
+### Infraestructura Adsterra inferida
+
+```
+acscdn.com (Cloudflare)
+├── aclib.js         → Configuración, detección, fingerprinting → usrpubtrk.com
+├── suv5.js          → Ejecución de overlays (popunder, interstitial)
+├── banner.js        → Banners display
+├── interstitial.js  → Overlay full‑page con RTB
+└── at.js            → Auto‑tag / tracking → wkbc42.com, wkbc21.com, quesid.com
+
+adexchangerapid.com (Cloudflare)
+├── url5.php         → Endpoint RTB para solicitudes de anuncios
+├── hb.php           → Header bidding
+├── visit.php        → Registro de visitas
+└── czcf.php         → Control de frecuencia / capping
+
+usrpubtrk.com (Cloudflare)
+└── Endpoint de fingerprinting (Client Hints, WebGL, Canvas)
+```
+
+---
 
 Búsquedas web identificaron dos artículos académicamente relevantes sobre riesgos:
 
@@ -279,7 +321,7 @@ Documenta impacto financiero directo:
 
 ---
 
-## Diagrama del ecosistema ampliado (Jornada 8)
+## Diagrama del ecosistema ampliado (Jornada 8, actualizado 24 may 2026)
 
 ```
 ECOSISTEMA FUTBOL LIBRE (operador: hassan.azmw@gmail.com)
@@ -307,8 +349,14 @@ ECOSISTEMA FUTBOL LIBRE (operador: hassan.azmw@gmail.com)
 │   ├── 93.123.109.11/12  — subdominos envivoslatam.org
 │   └── 93.123.109.145    — fubohd.com (la14hd.com stream)
 │
-├── PUBLICIDAD
-│   └── Adsterra: ZoneId 10652966 (futbol-libre.su + pelotalibretv.su)
+├── PUBLICIDAD (Adsterra)
+│   ├── ZoneId 10652966 (futbol-libre.su + pelotalibretv.su)
+│   ├── acscdn.com     (CDN scripts: aclib.js, suv5.js, banner.js, interstitial.js, at.js)
+│   ├── adexchangerapid.com (RTB: url5.php, hb.php, visit.php, czcf.php)
+│   ├── usrpubtrk.com  (fingerprinting: Client Hints, WebGL, Canvas)
+│   ├── wkbc42.com     (tracking — sin DNS)
+│   ├── wkbc21.com     (tracking — sin DNS)
+│   └── quesid.com     (tracking/analytics — openresty, Cloudflare)
 │
 └── ECOSISTEMA RELACIONADO (operadores distintos, infraestructura compartida)
     ├── la14hd.com → fubohd.com (HLS) / Adsterra ZoneId 11225378
