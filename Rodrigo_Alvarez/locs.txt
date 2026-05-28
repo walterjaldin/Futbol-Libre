@@ -1,0 +1,49 @@
+# IOCs — Instalador falso Opera GX / futbollibretv.su
+# Fecha: 21 mayo 2026
+# Tipo: PUA Dropper
+
+## DOMINIOS
+futbollibretv.su
+watchman.gotoda.co
+trochi.gotoda.co
+trochilus-web.gotoda.co
+watchman-sdk.gotoda.co
+sentry-new.gotoda.co
+e.gotoda.co
+static.mocortech.com
+public.mocortech.com
+opt.mocortech.com
+ab.dgshen.com
+www.dgshen.com
+pixelfnt-us.dsp-api.moloco.com
+pixelfnt-v6-us.dsp-api.moloco.com
+
+## IPs
+175.41.214.195     # watchman.gotoda.co
+57.181.145.109     # e.gotoda.co
+52.198.131.78      # e.gotoda.co
+18.178.22.112      # trochi.gotoda.co
+18.179.90.104      # trochi.gotoda.co
+13.192.57.237      # sentry-new.gotoda.co
+35.77.163.144      # sentry-new.gotoda.co
+190.129.123.40     # trochilus-web.gotoda.co
+190.129.123.51     # watchman-sdk.gotoda.co
+52.192.189.47      # ab.dgshen.com
+35.76.150.77       # www.dgshen.com
+54.168.153.130     # www.dgshen.com
+34.111.130.7       # moloco.com DSP API
+
+## ARCHIVO MALICIOSO
+Nombre:  OperaSetup (1).exe
+Tamaño:  3,248,624 bytes
+MD5:     [pendiente]
+SHA256:  [pendiente]
+Firma:   Opera Norway AS — 19/05/2026 00:41:03 (manipulada)
+
+## REGISTRO
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+  Opera Browser Assistant
+  Opera Stable
+
+## TAREA PROGRAMADA
+Opera scheduled assistant Autoupdate 1779378948
