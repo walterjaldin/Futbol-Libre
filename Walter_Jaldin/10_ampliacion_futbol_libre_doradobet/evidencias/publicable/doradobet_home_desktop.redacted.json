@@ -1,0 +1,4567 @@
+{
+  "scenario": "doradobet_home_desktop",
+  "generatedAt": "2026-06-01T00:37:55.890Z",
+  "url": "https://doradobet.com/",
+  "mobile": false,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "chromeProfile": "[LOCAL_PATH_REDACTED]",
+  "downloadDir": "/Users/walterjaldin/Documents/Claude/Projects/Futbol-Libre/evidencias/extended/doradobet_home_desktop/downloads",
+  "state": {
+    "url": "https://doradobet.com/",
+    "title": "",
+    "text": "Iniciar Sesión\nRegístrate\nES\nAPUESTAS DEPORTIVAS\nCASINO\nCASINO EN VIVO\nPROMOCIONES\nTOP CASINO EN VIVO\n\nRuleta Latina Doradobet\n\nJUGAR AHORA\nTOP\n\nMoney Time\n\nJUGAR AHORA\nTOP\n\nBlackjackx 5\n\nJUGAR AHORA\nTOP\n\nBlackjack Latino 11\n\nJUGAR AHORA\nTOP\n\nLive Baccarat\n\nJUGAR AHORA\nTOP\n\nFree Bet Blackjack Latino 2\n\nJUGAR AHORA\nTOP\n\nFree Bet Blackjack Latino 1\n\nJUGAR AHORA\nTOP\n\nBlackjack Latino 12\n\nJUGAR AHORA\nTOP\n\nBlackjack 163\n\nJUGAR AHORA\nTOP\n\nBlackjack 161\n\nJUGAR AHORA\nTOP\n\nFootball Blitz Top Card\n\nJUGAR AHORA\nTOP\n\nVegas Roulette 500x\n\nJUGAR AHORA\nTOP\n\nBlackjack 162\n\nJUGAR AHORA\nTOP\n\nOne Blackjack Latino\n\nJUGAR AHORA\nTOP\n\nGates Of Olympus Roulette\n\nJUGAR AHORA\nTOP\n\nGerman Roulette\n\nJUGAR AHORA\nTOP\n\nFootball Thrill\n\nJUGAR AHORA\nTOP\n\nCrystal Roulette\n\nJUGAR AHORA\nTOP\n\nLive Roulette European\n\nJUGAR AHORA\nTOP\n\nFootball Studio\n\nJUGAR AHORA\nTOP\n\nInstant Blackjack\n\nJUGAR AHORA\nTOP\n\nMega Sic Bac\n\nJUGAR AHORA\nTOP\n\nSweet Bonanza Candyland\n\nJUGAR AHORA\nTOP\n\nMega Roulette 3000\n\nJUGAR AHORA\nTOP\n\nBlackjack 18\n\nJUGAR AHORA\nTOP\nInformación General\nReglas de apuestas\nDepósitos\nRetiros\nLímite de Apuestas\nNuestras Secciones\nPromociones\nApuestas en vivo\nCasino\nSeguridad & Privacidad\nPolitica de Privacidad\nJuego Responsable\nTérminos y Condiciones\nPreguntas Frecuentes\nLavado de Dinero\nPolíticas KyC\nRecargas, Retiros y Promociones\n¿Necesitas Ayuda?\nPrograma de afiliados\nContáctanos\nChat\nResolución de Disputas\nMEDIOS DE PAGO:\nSíguenos en\nPatrocinador Oficial:\n\nDoradobet is owned and operated by VS Services Ltd, registration number 15728, registered address Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros. Contact us: services.vs.ltd@gmail.com. Doradobet is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros, and operates under License No. ALSI-132405045-F13. Doradobet has passed all regulatory compliance and is legally authorized to conduct gaming operations for any and all games of chance and wagering.\n\nSitio Desarrollado Por",
+    "htmlLength": 264950,
+    "scripts": [
+      "https://a2.adform.net/Serving/TrackPoint/?pm=3165913&ADFPageName=DoradoBet_HomePage&ADFdivider=%7C&ord=370617898418&ADFtpmode=2&itm=eyJzdjEiOltdfQ&loc=https%3A%2F%2Fdoradobet.com%2F&Set1=es-419%7Ces-419%7C800x600%7C24",
+      "https://analytics.tiktok.com/i18n/pixel/static/main.MWFmMzU5MmI0MQ.js",
+      "https://analytics.tiktok.com/i18n/pixel/static/identify_5cff1caf.js",
+      "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4FSV7JC77U10O2J671G&lib=ttq",
+      "https://static.woopra.com/js/w.js",
+      "https://cdn-st.adsmurai.com/sdk.js?tv=7.7",
+      "https://a2.adform.net/serving/scripts/trackpoint/async/",
+      "https://www.googletagmanager.com/gtag/js?id=G-XP4CJEY4D2&cx=c&gtm=4e65r2",
+      "https://www.googletagmanager.com/gtm.js?id=GTM-PCLWGWFB&gtg_health=1",
+      "https://v.byads.co/d/.js?oref=&ourl=https%3A%2F%2Fdoradobet.com%2F&opt=&vtm=1780274266650",
+      "https://acdn.adnxs.com/dmp/up/pixie.js",
+      "https://analytics.tiktok.com/i18n/pixel/static/main.MWFmMzU5MmI0MQ.js",
+      "https://scripts.clarity.ms/0.8.64/clarity.js",
+      "https://a.sportradarserving.com/pixel?type=js&aid=1251&id=3281",
+      "https://tracker.ads.sportradar.com/dist/tracker.js",
+      "https://www.gstatic.com/recaptcha/releases/hsFBb1u5wWWWkWP4in1ua2cQ/recaptcha__es.js",
+      "https://www.googletagmanager.com/gtag/destination?id=G-2BEQH0TT68&cx=c&gtm=4e65r2",
+      "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4NEQC3C77U10O2JH6FG&lib=ttq",
+      "https://www.clarity.ms/tag/p2mcxlyx08",
+      "https://load.t.doradobet.com/tools.js",
+      "https://tm.ads.sportradar.com/dist/tag-manager.js?id=STM-AAAAKI",
+      "https://a.mgid.com/mgsensor.js?d=1780274265446&source=gtm",
+      "https://www.googletagmanager.com/gtag/js?id=G-FL93K2MBRJ&cx=c&gtm=4e65r2",
+      "https://www.googletagmanager.com/gtm.js?id=GTM-W3K6C9P",
+      "https://cdn.amplitude.com/libs/plugin-ga-events-forwarder-browser-0.4.2-min.js.gz",
+      "https://cdn.amplitude.com/libs/analytics-browser-2.11.0-min.js.gz",
+      "INLINE:\n\n        ",
+      "https://cdnconfigs.virtualsoft.tech/configs/files/configLanding-doradobet.com_bo_desktop_es-vv1780262804.js?v=vv1780262804",
+      "INLINE:\n\n                        window.versionConfig = 'https://cdnconfigs.virtualsoft.tech/configs/files/config-doradobet.com_bo_desktop_es-vv1780262804.js?v=vv17802",
+      "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.hrgGWkEtNmph4o6e8.js",
+      "INLINE:\n  !function(){\"use strict\";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error(\"Amplitude snippet has been lo",
+      "INLINE:\n\n            setTimeout(() => {\n                if (window.cconfig && window.cconfig.favicon) {\n                    const link = document.createElement(\"link\")",
+      "INLINE:\n                {\n                    \"@context\": \"http://schema.org\",\n                    \"@type\": \"BreadcrumbList\",\n                    \"itemListElement\": [\n",
+      "INLINE:\n\n                {\n                    \"@context\": \"https://schema.org\",\n                    \"@type\": \"FAQPage\",\n                    \"mainEntity\": [\n          ",
+      "INLINE:\n                var FP_KEY2 = \"visitor_fp5\";\n\n            if (!localStorage.getItem(FP_KEY2) ) {\n\n                                var FP_KEY = \"visitor_fp\";\n\n ",
+      "https://accounts.google.com/gsi/client",
+      "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjouangaming.org/anj-seal.js",
+      "https://www.google.com/recaptcha/api.js?hl=es",
+      "https://ctag.containermedia.net/secure/initializer.js",
+      "https://pulse-vs.vercel.app/pulse.js?v=10005",
+      "https://ctag.containermedia.net/secure/647a74a36425fba90e361f00.js",
+      "https://tracker.ads.sportradar.com/dist//sp-3.8.0.js",
+      "https://cc-bq.com/audit.js",
+      "https://www.rtb123.com/tags/7BA8C57E-6373-1F7D-9F93-06DFB2B51CBD/btp.js",
+      "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjouangaming.org/anj-seal.js",
+      "INLINE:\n            window.contingency = {\n                \"on\": false,\n                \"icon\": \"https://images.virtualsoft.tech/m/msjT1696622276.png\",\n               ",
+      "INLINE:\n\n\n            \n            \n\n            document.addEventListener('click', function (event) {\n    let el = event.target;\n    let depth = 0;\n    let found = nu",
+      "INLINE:(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a04a26a9",
+      "https://cwcentribot.centribal.com/sdk_v1.js",
+      "INLINE:var taboolaId;google_tag_manager[\"rm\"][\"6703087\"](19)==\"ec\"?taboolaId=1506447:google_tag_manager[\"rm\"][\"6703087\"](20)==\"cl\"?taboolaId=1506430:google_tag_manager",
+      "INLINE:function fRegistSuccess(uid){var ppcid=google_tag_manager[\"rm\"][\"6703087\"](26);var rollerid=google_tag_manager[\"rm\"][\"6703087\"](27);var tacolo_cid=google_tag_ma",
+      "INLINE:function fLoadSuccess(uid,frm){var pais=google_tag_manager[\"rm\"][\"6703087\"](40);if(uid!=\"\"&&uid>0)if(frm==\"lgn\")try{srtmCommands.push({event:\"track.user.login\",",
+      "INLINE:function fDepositSuccess(a,c,d){var b=google_tag_manager[\"rm\"][\"6703087\"](41);window.OWATracker!=void 0&&OWATracker.trackAction(\"Deposito\",\"Envio de Deposito\",\"",
+      "INLINE:(function(a,c,d,e,b,f){a[b]=a[b]||[];a.x=c.createElement(d);a.y=c.getElementsByTagName(d)[0];x.src=e+\"?id\\x3d\"+f;x.setAttribute(\"data-srtmn\",b);y.parentNode.ins",
+      "INLINE:if(window.countryL!=\"sv\")try{var script=document.createElement(\"script\");script.async=!1;script.rel=\"prefetch\";script.src=\"https://7e07ed73-4b31-437a-bd49-e8c63",
+      "INLINE:var script=document.createElement(\"script\");script.async=!1;script.rel=\"prefetch\";script.src=\"https://www.google.com/recaptcha/api.js?hl\\x3des\";document.head.ap",
+      "INLINE:function containerTag(){var a=document.createElement(\"script\");a.src=\"https://ctag.containermedia.net/secure/initializer.js\";a.async=\"true\";document.head.append",
+      "INLINE:(function(){try{var a=google_tag_manager[\"rm\"][\"6703087\"](42);a=(a||\"\").toLowerCase();var d={pe:\"https://static-cdn.trackier.com/rtg/695ef6d5b0c89c5e354cae82.js",
+      "INLINE:var utm_source=google_tag_manager[\"rm\"][\"6703087\"](43),gclid=google_tag_manager[\"rm\"][\"6703087\"](44);function createCookie(c,d){var b=2592E3;b*=1E3;var a=new Da",
+      "INLINE:var utm_campaign=google_tag_manager[\"rm\"][\"6703087\"](45),utm_source=google_tag_manager[\"rm\"][\"6703087\"](46),vs_utm_campaign=google_tag_manager[\"rm\"][\"6703087\"](",
+      "INLINE:function fPlaceBetSuccess(a,b){try{srtmCommands.push({event:\"track.betting.betPlaced\",payload:{userId:a[0].PlayerId,transactionId:a[0].betId,amount:a[0].totalSt",
+      "INLINE:var cid=google_tag_manager[\"rm\"][\"6703087\"](58),cidd=cid;",
+      "INLINE:window.fSportbookStateChange=function(b){window.objetcEvent=b.event.name};\nwindow.fSportbookEventDetailCallback=function(b){var d=b.event.id;b=document.cookie.s",
+      "INLINE:var pixelID;\"ec\"==google_tag_manager[\"rm\"][\"6703087\"](59)?pixelID=\"oey1h\":\"cl\"==google_tag_manager[\"rm\"][\"6703087\"](60)?pixelID=\"ofu34\":\"pe\"==google_tag_manager",
+      "https://rum.cronitor.io/script.js",
+      "INLINE:(function(b,c,d,a,e){b[a]=b[a]||[];b[a].push({\"gtm.start\":(new Date).getTime(),event:\"gtm.js\"});b=c.getElementsByTagName(d)[0];c=c.createElement(d);a=a!=\"dataLa",
+      "INLINE:setTimeout(function(){var b=6048E5,a=getCookie(\"btag\");if(a!=null&&a!=void 0){var c=new Date;b=c.getTime()+b;c.setTime(b);a=\"btag\\x3d\"+a+\";path\\x3d/; \";a+=\"Same",
+      "INLINE:(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src=\"https://www.clarity.ms/tag/\"+g;d=e.get",
+      "INLINE:var tiktokPixelId=null;tiktokPixelId=google_tag_manager[\"rm\"][\"6703087\"](62)==\"ec\"?\"D75UHLRC77U71LJABO70\":\"D4NEQC3C77U10O2JH6FG\";\n(function(d,g,e){d.TiktokAnaly",
+      "INLINE:!function(a,b,d){var c=a.pulse=a.pulse||function(){(c.q=c.q||[]).push(arguments)};c.q=c.q||[];a=b.createElement(d);a.async=1;a.src=\"https://pulse-vs.vercel.app/",
+      "https://dynamic.criteo.com/js/ld/ld.js?a=126083&a=126082&a=125840&a=125813&a=126084&a=125839",
+      "INLINE:window.criteo_q=window.criteo_q||[];window.criteo_q.push({event:\"setAccount\",account:google_tag_manager[\"rm\"][\"6703087\"](88)},{event:\"setEmail\",email:google_tag",
+      "INLINE:window.cronitor=window.cronitor||function(){(window.cronitor.q=window.cronitor.q||[]).push(arguments)};cronitor(\"config\",{clientKey:\"ea12a6ea456feb383b02cf27681",
+      "https://sslwidget.criteo.com/event?a=%5B126083%2C126082%2C125840%2C125813%2C126084%2C125839%5D&v=5.46.0&csp-nonce=undefined&p0=e%3Dce%26m%3D%255B%255D%26h%3Dsha256&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvh%26tms%3Dgtm-criteo-custom&p3=e%3Ddis%26a%3D%255B126083%252C126082%252C125840%252C125813%252C126084%252C125839%255D&sc=%7B%22fbp%22%3A%22fb.1.1780274266658.9990627468%22%2C%22ttp%22%3A%2201KT09V0P64KP4PGCY4FQPVHJY_.tt.1%22%7D&tld=doradobet.com&dy=1&fu=https%253A%252F%252Fdoradobet.com%252F&ceid=7dc2af95-3e3b-478e-9427-f29a2c73b471",
+      "INLINE:(function(a,b,g,r,c,n,t,h,k,l,d,p,f,q){q=\"https:\"===a.location.protocol?\"secure; \":\"\";a[c]||(a[c]=function(e){a[c].state.callbackQueue.push(e)},a[c].state={call",
+      "INLINE:\"ontouchstart\"in document.documentElement||localStorage.setItem(\"__op\",!0);",
+      "https://track.adform.net/Serving/Cookie/?adfaction=getjs;adfcookname=uid",
+      "INLINE:var swarmSession=localStorage.getItem(\"auth_token\");\nif(swarmSession){var rid=Math.floor(Math.random()*1E13).toString(),payload={command:\"get\",params:{source:\"u",
+      "INLINE:!function(){var a,f,b=window,g=document,c=arguments,h=\"script\",k=\"call cancelAction config identify push track trackClick trackForm update visit\".split(\" \"),n=f",
+      "INLINE:(function(e,f){XMLHttpRequest.prototype.open=function(c,b){this._method=c;this._url=b;e.apply(this,arguments)};XMLHttpRequest.prototype.send=function(c){this.ad",
+      "https://my.rtmark.net/p.js?f=sync&lr=1&partner=a16bde85bfd109f5e5eaa02bc93613b72c24280d875088377a532827ec711edd",
+      "INLINE:(function(e,f){XMLHttpRequest.prototype.open=function(d,b){this._method=d;this._url=b;e.apply(this,arguments)};XMLHttpRequest.prototype.send=function(d){this.ad",
+      "INLINE:(function(h,k){XMLHttpRequest.prototype.open=function(f,a){this._method=f;this._url=a;h.apply(this,arguments)};XMLHttpRequest.prototype.send=function(f){this.ad",
+      "https://cdn01.basis.net/assets/up.js?um=1",
+      "INLINE:!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods=\"page track identify instances debug on off once ready alias group enableCookie disable",
+      "INLINE:woopra.identify({id:google_tag_manager[\"rm\"][\"187675675\"](129),client_id:\"1768204819.1780274266\",adformUid:\"undefined\",fbc:\"undefined\",fbp:\"fb.1.1780274266658.9",
+      "INLINE:(function(){function e(c,h,f){a:{var b=window.location.hostname;for(var a=0;a<d.length;a++)if(b===d[a]||b.endsWith(\".\"+d[a])){b=d[a];break a}b=null}b&&(a=\"\",f&&",
+      "INLINE:var setCookie,getCookie,crearIframe,adpoints;\n(function(){function g(d){for(var b=2140879,h=d.length,c=[],a=0;a<h;a++)c[a]=d.charAt(a);for(a=0;a<h;a++){d=b*(a+6",
+      "INLINE:function getQueryParam(a){var b=new URLSearchParams(window.location.search);return b.has(a)?b.get(a):null}function checkAndPushAdformUid(){var a=getQueryParam(\"",
+      "INLINE:cntrUpTag.track(\"cntrData\",\"9b80bc4c72891aba\");"
+    ],
+    "iframes": [
+      {
+        "src": "",
+        "sandbox": null,
+        "allow": null,
+        "width": "1",
+        "height": "1"
+      },
+      {
+        "src": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:true,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22doradobet.com%22,%22topUrl%22:%22doradobet.com%22,%22version%22:%225_46_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2297317dc7-92ea-4b98-82e4-03e85e410d79%22}",
+        "sandbox": "allow-scripts allow-same-origin",
+        "allow": null,
+        "width": "",
+        "height": ""
+      },
+      {
+        "src": "javascript:false",
+        "sandbox": null,
+        "allow": null,
+        "width": "",
+        "height": ""
+      },
+      {
+        "src": "https://a2.adform.net/serving/container/?pm=3165913&lid=141310029&ctype=0&media=0&PageName=DoradoBet_HomePage&rnd=1006315996&cpref=&loc=https%3a%2f%2fdoradobet.com%2f",
+        "sandbox": null,
+        "allow": null,
+        "width": "1",
+        "height": "1"
+      }
+    ],
+    "forms": [],
+    "links": [
+      {
+        "text": "",
+        "href": "https://doradobet.com/home",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/home",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Regístrate",
+        "href": "https://doradobet.com/registro",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/doradobet.com/new-casino/574778",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/doradobet.com/deportes/liga/16808",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "INICIO",
+        "href": "https://doradobet.com/home",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "REGISTRATE",
+        "href": "https://doradobet.com/registro",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "INVITA A UN AMIGO",
+        "href": "https://doradobet.com/referido/agregar_referidos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "APUESTAS DEPORTIVAS",
+        "href": "https://doradobet.com/deportes",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "APUESTAS EN VIVO",
+        "href": "https://doradobet.com/deportes-en-vivo",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "CASINO",
+        "href": "https://doradobet.com/new-casino",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "5 Lions Gold",
+        "href": "https://doradobet.com/new-casino/543599",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "CASINO EN VIVO",
+        "href": "https://doradobet.com/live-casino-vivo",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Bingo",
+        "href": "https://doradobet.com/bingos/categoria/bingos-1651",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Football Studio Dice",
+        "href": "https://doradobet.com/live-casino-vivo/545561",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "APUESTAS VIRTUALES",
+        "href": "https://doradobet.com/virtuales-lobby",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Promociones",
+        "href": "https://doradobet.com/promociones-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "App móvil",
+        "href": "https://doradobet.com/landing/app-pwa",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Terminos y condiciones",
+        "href": "https://doradobet.com/terminosycondiciones",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Politica de Privacidad",
+        "href": "https://doradobet.com/politica-de-privacidad/politica-de-privacidad",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Contactenos",
+        "href": "https://doradobet.com/contactenos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Juego Responsable",
+        "href": "https://doradobet.com/juego-responsable/juego-responsable",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Promociones",
+        "href": "https://doradobet.com/promociones-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/doradobet.com/new-casino/574778",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/doradobet.com/deportes/liga/16808",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/home",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/registro",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/referido/agregar_referidos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/deportes",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/deportes-en-vivo",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/new-casino",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/new-casino/543599",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/live-casino-vivo",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/bingos/categoria/bingos-1651",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/live-casino-vivo/545561",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/virtuales-lobby",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/promociones-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/landing/app-pwa",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "APUESTAS DEPORTIVAS",
+        "href": "https://doradobet.com/deportes",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "CASINO",
+        "href": "https://doradobet.com/new-casino",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "CASINO EN VIVO",
+        "href": "https://doradobet.com/live-casino-vivo",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "PROMOCIONES",
+        "href": "https://doradobet.com/promociones-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/home",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Regístrate",
+        "href": "https://doradobet.com/registro",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Reglas de apuestas",
+        "href": "https://doradobet.com/terminosycondiciones/modalidades-tipos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Depósitos",
+        "href": "https://doradobet.com/terminosycondiciones/recargas-retiros-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Retiros",
+        "href": "https://doradobet.com/terminosycondiciones/recargas-retiros-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Límite de Apuestas",
+        "href": "https://doradobet.com/terminosycondiciones/topes-valor-apuesta",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Promociones",
+        "href": "https://doradobet.com/promociones-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Apuestas en vivo",
+        "href": "https://doradobet.com/apuestas-en-vivo",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Casino",
+        "href": "https://doradobet.com/new-casino",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Politica de Privacidad",
+        "href": "https://doradobet.com/politica-de-privacidad",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Juego Responsable",
+        "href": "https://doradobet.com/juego-responsable",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Términos y Condiciones",
+        "href": "https://doradobet.com/terminosycondiciones",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Preguntas Frecuentes",
+        "href": "https://doradobet.com/preguntasfrecuentes",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Lavado de Dinero",
+        "href": "https://doradobet.com/terminosycondiciones/lavado-activos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Políticas KyC",
+        "href": "https://doradobet.com/terminosycondiciones/datos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Recargas, Retiros y Promociones",
+        "href": "https://doradobet.com/terminosycondiciones/recargas-retiros-bonos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Programa de afiliados",
+        "href": "https://afiliados.doradobet.com/",
+        "target": "_blank",
+        "rel": ""
+      },
+      {
+        "text": "Contáctanos",
+        "href": "https://doradobet.com/contactenos",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Resolución de Disputas",
+        "href": "https://doradobet.com/terminosycondiciones/disputas",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/gestion/deposito",
+        "target": "_blank",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/gestion/deposito",
+        "target": "_blank",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/profile.php?id=61585133644608",
+        "target": "_blank",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/doradobetbolivia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "target": "_blank",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/landing/app-pwa",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://doradobet.com/#",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://verification.anjouangamingboard.org/validate?domain=doradobet.com&seal_id=c856bb98758e141e2eb6fa1ca59a64b72c7d9f47a2532552a387ab1e4cba4a0852437ee5078c1d0b48ccd5abf4d68a21&stamp=f0696c5ee48de7badc0932505b37cb4b",
+        "target": "_blank",
+        "rel": "nonoopener"
+      },
+      {
+        "text": "",
+        "href": "https://virtualsoftlatam.com/",
+        "target": "_blank",
+        "rel": ""
+      }
+    ],
+    "localStorage": {
+      "fp_visitor_id": "[REDACTED_FP]",
+      "_vid_lr": "[[\"SsHT0Wry0y02\",\"fH+DfTYLA1BMZM58cCExIUb0XmxmJG5I7AopOXJ9RuJeb3dydkb8TDk1fXxS40w6V2B8Xv1LMTdgYlH5RVEhfG4Hp14xITo/S/pSOy",
+      "_vid_t": "HizPKnlhVCvOKjhWyqsrcwZtUzshSxclXq7i6kIVX1CYAo5LP9shkA6mSdh3dOiFjuMwmHPGVFm3KPviZD7ANEcpUTFyOAh8ulZaz64y7zKbPOTTbBNY",
+      "CTID": "647a74a36425fba90e361f00",
+      "ctagcountry": "peru",
+      "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":17802742",
+      "visitor_fp5": "[REDACTED_FP]",
+      "AMP_unsent_d5d403d14a": "[]",
+      "CTUUID": "551b78df-d770-4e86-94f7-02ce8e817546",
+      "__op": "true",
+      "cntr_attr": "[]",
+      "user_source": "UNKNOWN",
+      "changeThemeColor": "true",
+      "visitor_fp": "[REDACTED_FP]",
+      "timestampIdentifier_1731072394495": "1780274266876"
+    },
+    "sessionStorageKeys": [
+      "tt_sessionId",
+      "tt_pixel_session_index",
+      "tt_appInfo",
+      "_cltk"
+    ],
+    "notificationPermission": "default",
+    "serviceWorkerController": false
+  },
+  "cookies": "[REDACTED_COOKIES]",
+  "targets": [
+    {
+      "id": "88933653EEEE29E5592C5E45908C9B34",
+      "type": "page",
+      "url": "https://doradobet.com/",
+      "title": "doradobet.com"
+    },
+    {
+      "id": "F40C734085CBCF28649BE79566BC6300",
+      "type": "iframe",
+      "url": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:true,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22doradobet.com%22,%22topUrl%22:%22doradobet.com%22,%22version%22:%225_46_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2297317dc7-92ea-4b98-82e4-03e85e410d79%22}",
+      "title": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&amp;origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:true,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22doradobet.com%22,%22topUrl%22:%22doradobet.com%22,%22version%22:%225_46_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2297317dc7-92ea-4b98-82e4-03e85e410d79%22}"
+    },
+    {
+      "id": "73B2EB45CD2A066FF229157500844EB6",
+      "type": "iframe",
+      "url": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1",
+      "title": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1"
+    },
+    {
+      "id": "2D0942EC7D1E5D5864F2B36A5B2D574A",
+      "type": "iframe",
+      "url": "https://a2.adform.net/serving/container/?pm=3165913&lid=141310029&ctype=0&media=0&PageName=DoradoBet_HomePage&rnd=1006315996&cpref=&loc=https%3a%2f%2fdoradobet.com%2f",
+      "title": "https://a2.adform.net/serving/container/?pm=3165913&amp;lid=141310029&amp;ctype=0&amp;media=0&amp;PageName=DoradoBet_HomePage&amp;rnd=1006315996&amp;cpref=&amp;loc=https%3a%2f%2fdoradobet.com%2f"
+    },
+    {
+      "id": "A0FD10F0303D0FAB6073C395BBB08A7F",
+      "type": "service_worker",
+      "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+      "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js"
+    }
+  ],
+  "pageEvents": {
+    "domains": [
+      "7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjcdn.org",
+      "7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjouangaming.org",
+      "a.mgid.com",
+      "a.sportradarserving.com",
+      "a2.adform.net",
+      "accounts.google.com",
+      "acdn.adnxs.com",
+      "ad.360yield.com",
+      "ads.betweendigital.com",
+      "analytics-ipv6.tiktokw.us",
+      "analytics.google.com",
+      "analytics.tiktok.com",
+      "api.fpjs.io",
+      "api2.amplitude.com",
+      "c.bing.com",
+      "c.clarity.ms",
+      "cc-bq.com",
+      "cdn-st.adsmurai.com",
+      "cdn.amplitude.com",
+      "cdn01.basis.net",
+      "cdncode2.virtualsoft.tech",
+      "cdnconfigs.virtualsoft.tech",
+      "ctag.containermedia.net",
+      "cwcentribot.centribal.com",
+      "doradobet.com",
+      "dsp.nrich.ai",
+      "dynamic.criteo.com",
+      "fpjscdn.net",
+      "gameservice.virtualsoft.tech",
+      "gum.criteo.com",
+      "ib.adnxs.com",
+      "images.virtualsoft.tech",
+      "j.clarity.ms",
+      "load.t.doradobet.com",
+      "my.rtmark.net",
+      "pixel-sync.sitescout.com",
+      "pixel.sitescout.com",
+      "pulse-vs.vercel.app",
+      "rum.cronitor.io",
+      "s2.adform.net",
+      "scripts.clarity.ms",
+      "sslwidget.criteo.com",
+      "static.virtualsoft.tech",
+      "static.woopra.com",
+      "static2.virtualsoft.tech",
+      "stats.g.doubleclick.net",
+      "tm.ads.sportradar.com",
+      "track.adform.net",
+      "tracker.ads.sportradar.com",
+      "tsyndicate.com",
+      "us-u.openx.net",
+      "v.byads.co",
+      "visitor-betweenx.omnitagjs.com",
+      "www.clarity.ms",
+      "www.google-analytics.com",
+      "www.google.com",
+      "www.google.com.bo",
+      "www.googletagmanager.com",
+      "www.gstatic.com",
+      "www.rtb123.com",
+      "www.woopra.com",
+      "x.bidswitch.net"
+    ],
+    "requests": [
+      {
+        "url": "https://doradobet.com/",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/single-spa.EpowPnCCNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/path-to-regexp.CkFk_EclNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdnconfigs.virtualsoft.tech/manifest/manifest-v2-0.webmanifest?v=1232146232150",
+        "method": "GET",
+        "type": "Manifest",
+        "initiator": "parser",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.hrgGWkEtNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdnconfigs.virtualsoft.tech/configs/files/configLanding-doradobet.com_bo_desktop_es-vv1780262804.js?v=vv1780262804",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "about:blank"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/favicon/favicon_0.png",
+        "method": "GET",
+        "type": "Other",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/8fc8ed1d8752/main.js?",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "about:blank"
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.10606690116396111:1780272021:rFB99MEzBn_nQNSnKtySyBoKhwG-kRdTKhYR_6Ebkxg/a04a26a93f568bab",
+        "method": "POST",
+        "type": "XHR",
+        "initiator": "script",
+        "documentURL": "about:blank"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msjT1618338208.png?w=144&h=144&fm=png",
+        "method": "GET",
+        "type": "Other",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdn.amplitude.com/libs/plugin-ga-events-forwarder-browser-0.4.2-min.js.gz",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdn.amplitude.com/libs/analytics-browser-2.11.0-min.js.gz",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://fpjscdn.net/v4/PmGJOlgFXlEl6IqCC6Bi",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/jspdf.BORrcB6ENmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/firebase.BPWt3MuYNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@firebase.CGBd_4zpNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@tecnologia-general.DZMNz-yjNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@babel.5NZstiOhNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/fflate.XZmX483VNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/fast-png.BWtK2hiTNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/iobuffer.DZ1zOcUTNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/pako.B9FS3IR_Nmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/idb.Bn1DMRygNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "blob:https://doradobet.com/80feb714-fa07-4eff-8dcd-92609521192b",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "blob:https://doradobet.com/80feb714-fa07-4eff-8dcd-92609521192b"
+      },
+      {
+        "url": "https://api.fpjs.io/xridvya/qAo6p?q=PmGJOlgFXlEl6IqCC6Bi",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/main.ClGbhgIrNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/pinia.hXtx5Yc7Nmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.Cm5kRa7HNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue-router.CrZN6hhLNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.DLU6e0BzNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/axios.BI6PhSDqNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue3-cookies.Bn5rtZfINmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@elastic.DFK4Jyt7Nmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/promise-polyfill.Bndhg3HkNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/error-stack-parser.D0aji7SNNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/stackframe.B4fueNoyNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/single-spa-vue.C1RMnop2Nmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue3-lazyload.fe-ZGUbuNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue-i18n.CZv1-fdsNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@intlify.DFB51_IxNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@chenfengyuan.Du8IwkiZNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@fortawesome.GeklHDaVNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/mitt.DJ65BbbFNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/tiny-emitter.Csx9l71CNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue3-google-login.BxhLV3MMNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/main.DEuET1qyNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.10606690116396111:1780272021:rFB99MEzBn_nQNSnKtySyBoKhwG-kRdTKhYR_6Ebkxg/a04a26a93f568bab",
+        "method": "POST",
+        "type": "XHR",
+        "initiator": "script",
+        "documentURL": "about:blank"
+      },
+      {
+        "url": "https://api.fpjs.io/?ci=js/4.0.3&q=PmGJOlgFXlEl6IqCC6Bi",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://static2.virtualsoft.tech/config?partner=0&lang=es&country=bo&collectionKey=translations&mobile=0&logged=0&useScope=0&useLogin=0",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://accounts.google.com/gsi/client",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cwcentribot.centribal.com/sdk_v1.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/layout_3.D00u6nmyNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ContingencyAlert.COySzu-bNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ContingencyAlert.CaThRYdTNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Header.DBYpMeSsNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SearchIcon.DIx3b6sqNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SelectLanguage.Dc9hjTrWNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Global.BZUsoVTRNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/flags.BpMHm1I_Nmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/CloseIcon.BwyGaY0mNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Header.BoO5qBGLNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuMain.o2_q0u9PNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ExitIcon.CZFDG1SdNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuMain.BAhTxFp-Nmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://static2.virtualsoft.tech/config?partner=0&lang=es&country=bo&collectionKey=banner_home&mobile=0&logged=0&useScope=1&useLogin=1",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/BannerV1.DHZgmLIsNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/flags.CLCR5pG4Nmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/InfoIcons.Cyv3IARYNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/IconCheckv2Rounde.tn0RQdqMNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/WTopEventCarousel.V8fej-vENmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Sportbook.BNTeLY6kNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Jackpots4.x1bWIeEdNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/AppComponent.9N_pi_twNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/useTouchEvent.B9t_-S_cNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/general.DlFjTCdqNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Jackpots4.DkW-8TnkNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SliderCasino.5eBDeuSjNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ApiService.Dls7FRRINmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/stringUtils.DFsY7Fm_Nmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SliderCasino.EQQENy-3Nmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuDownMobile.BdIg0g_vNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuDownMobile.DdUFvqwNNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Footer.jJvBuhrDNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Copyright.BH-woWSQNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Copyright.UTcdgk-XNmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SeoP2.Ckhsk-BdNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SeoP2.DHpzhvnINmph4o6e8.css",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ComplaintsBook.DMiN-FvuNmph4o6e8.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://static2.virtualsoft.tech/config?partner=0&lang=es&country=bo&collectionKey=banner_home&mobile=0&logged=0&useScope=1&useLogin=1",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/pronosticos.webp?fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/casino.webp?fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/casino-en-vivo.webp?fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/promociones.webp?fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746208166.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746208981.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746209518.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746207884.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746208166.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/flags.Cof7gUIdNmph4o6e8.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1748294524.png?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T41e6ac23-cd96-4471-9418-b9bdc525a977.gif?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768580744.gif?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/inicio.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/registrate.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/chat%20(1).webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Tb42e643c-a7a6-4c4d-bbb3-c2f9b60c2655.png?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/pronosticos-deportivos.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/pronosticos-vivo.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/casino.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768921388.png?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/casino-en-vivo.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768932496.png?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768921601.png?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/virtuales.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/promociones.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/app-movil.webp?w=1440&fm=webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msjT1666886104.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1739909673.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1766163764.png?w=65&auto=format%2Ccompress&fit=max&q=78&dpr=2",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1766163779.png?w=65&auto=format%2Ccompress&fit=max&q=78&dpr=2",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msjT1666885792.png?w=46&auto=format%2Ccompress&fit=max&q=78&dpr=2",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://api2.amplitude.com/2/httpapi",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://api2.amplitude.com/2/httpapi",
+        "method": "OPTIONS",
+        "type": "Other",
+        "initiator": "preflight",
+        "documentURL": "https://api2.amplitude.com/2/httpapi"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Td4608fba-f219-4f9c-8802-6e7f5cece0c6.jpg?w=768&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Td6b59edd-9fca-478b-8425-3066d6518088.jpg?w=800&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Td4608fba-f219-4f9c-8802-6e7f5cece0c6.jpg?w=800&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T91315336-6ed1-4f38-9326-22ad65fd5d81.jpg?w=800&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T62aa939c-a586-4d83-9eb1-758407396a5c.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T3d618919-cf58-4775-b3bb-82801f040b95.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T52048185-8e0a-43c1-b7a1-3397912571f9.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T0b2bd30b-5227-471a-aae7-e87c4b29b998.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://static.virtualsoft.tech/setvid",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://static.virtualsoft.tech/setvid",
+        "method": "OPTIONS",
+        "type": "Other",
+        "initiator": "preflight",
+        "documentURL": "https://static.virtualsoft.tech/setvid"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-W3K6C9P",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://gameservice.virtualsoft.tech/cms/products/games/?action=getGames2&partner_id=0&offset=0&typelobby=0&limit=20&category=447&country=bo&isMobile=false&vrsn=1780262804",
+        "method": "GET",
+        "type": "XHR",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://gameservice.virtualsoft.tech/?action=getGames2&partner_id=0&offset=0&typelobby=2&limit=25&category=all&provider=all&country=bo&isMobile=false&vrsn=1780262804",
+        "method": "GET",
+        "type": "XHR",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-FL93K2MBRJ&cx=c&gtm=4e65r2",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a.mgid.com/mgsensor.js?d=1780274265446&source=gtm",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://tm.ads.sportradar.com/dist/tag-manager.js?id=STM-AAAAKI",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjouangaming.org/anj-seal.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google.com/recaptcha/api.js?hl=es",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ctag.containermedia.net/secure/initializer.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://rum.cronitor.io/script.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://load.t.doradobet.com/tools.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.clarity.ms/tag/p2mcxlyx08",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4NEQC3C77U10O2JH6FG&lib=ttq",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/pulse.js?v=10005",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://dynamic.criteo.com/js/ld/ld.js?a=126083&a=126082&a=125840&a=125813&a=126084&a=125839",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/destination?id=G-2BEQH0TT68&cx=c&gtm=4e65r2",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FL93K2MBRJ&gtm=45je65r2v880926126z876703087za20gzb76703087zd76703087&_p=[REDACTED]&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=[REDACTED_CID]&frm=0&pscdl=noapi&rcb=10&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115938465~115938468~119034491&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Fdoradobet.com%2F&dt=&en=page_view&_fv=1&_nsi=1&_ss=1&up.pais=bo&up.partner=doradobet&tfd=8801",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjcdn.org/sealassets/f0696c5ee48de7badc0932505b37cb4b-doradobet.com-c856bb98758e141e2eb6fa1ca59a64b72c7d9f47a2532552a387ab1e4cba4a0852437ee5078c1d0b48ccd5abf4d68a21-c2VhbC5wbmc%3D?status=valid",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.gstatic.com/recaptcha/releases/hsFBb1u5wWWWkWP4in1ua2cQ/recaptcha__es.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://tracker.ads.sportradar.com/dist/tracker.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a.sportradarserving.com/pixel?type=js&aid=1251&id=3281",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://scripts.clarity.ms/0.8.64/clarity.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://c.clarity.ms/c.gif",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjcdn.org/54f396e0-b046-49b1-9cb3-0c69281d7ea9-beacon.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ctag.containermedia.net/secure/647a74a36425fba90e361f00.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/v1/presence",
+        "method": "OPTIONS",
+        "type": "Other",
+        "initiator": "preflight",
+        "documentURL": "https://pulse-vs.vercel.app/api/v1/presence"
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/v1/presence",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/facebook/tracked-events?write_key=pulse_c4ae196819bbf3f7a40b316514deffe6",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/devices",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/devices",
+        "method": "OPTIONS",
+        "type": "Other",
+        "initiator": "preflight",
+        "documentURL": "https://pulse-vs.vercel.app/api/devices"
+      },
+      {
+        "url": "https://rum.cronitor.io/api/rum/events",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://tracker.ads.sportradar.com/dist//sp-3.8.0.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/static/main.MWFmMzU5MmI0MQ.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-2BEQH0TT68&gtm=45je65r2v9244887801z876703087za20gzb76703087zd76703087&_p=[REDACTED]&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=[REDACTED_CID]&frm=0&pscdl=noapi&rcb=13&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115938465~115938468~119034493&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Fdoradobet.com%2F&dt=&en=change_theme_color_ligth&_fv=1&_ss=1&up.pais=bo&tfd=9270",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a.mgid.com/1x1.gif?id=965881&type=c&tg=&r=https%3A%2F%2Fdoradobet.com%2F&nv=1&clid=&d=1780274266390",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://acdn.adnxs.com/dmp/up/pixie.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cc-bq.com/audit.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ctag.containermedia.net/api/event?type=Page%20View&userid=[REDACTED]&host=doradobet.com&path=/&account=647a74a36425fba90e361f00&impressionId=",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&origin=onetag",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "script",
+        "documentURL": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&origin=onetag"
+      },
+      {
+        "url": "https://a.sportradarserving.com/ul_cb/pixel?type=js&aid=1251&id=3281",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://v.byads.co/d/.js?oref=&ourl=https%3A%2F%2Fdoradobet.com%2F&opt=&vtm=1780274266650",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://track.adform.net/Serving/Cookie/?adfaction=getjs;adfcookname=uid",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PCLWGWFB&gtg_health=1",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-XP4CJEY4D2&cx=c&gtm=4e65r2",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a2.adform.net/serving/scripts/trackpoint/async/",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdn-st.adsmurai.com/sdk.js?tv=7.7",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://static.woopra.com/js/w.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://my.rtmark.net/p.js?f=sync&lr=1&partner=a16bde85bfd109f5e5eaa02bc93613b72c24280d875088377a532827ec711edd",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://cdn01.basis.net/assets/up.js?um=1",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4FSV7JC77U10O2J671G&lib=ttq",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&ae=g&auid=1270558782.1780274267&en=page_view&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=load.t.doradobet.com&rnd=1594490828.1780274267&navt=n&npa=1&ep.ads_data_redaction=0&gtm=45Fe65r2v9187675675za204zd9187675675xea&gcd=13l3l3l2l1l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~116701382~118131808~119034491~119064591&apve=1&apvf=f&gap.gtb=1&apvc=1&tft=1780274266662&tfd=9632",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://load.t.doradobet.com/fbs?event_name=%22PageView%22&content_category=%22gambling%22&customProperties=%5B%7B%22provider%22%3A%22all%22%2C%22propertyName%22%3A%22product%22%2C%22propertyValue%22%3A%22Doradobet%22%7D%5D&event_id=%221780274266658%22&action_source=%22website%22&fbp=%22fb.1.1780274266658.9990627468%22&fbc=null&event_source_url=%22https%3A%2F%2Fdoradobet.com%2F%22&event_time=1780274266",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://tsyndicate.com/api/v1/retargeting/set/4c838c38-4cec-4910-abc3-c9f54235cae5?event=page_view&domain=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=ADCC2493FB8542CF8EDAAA269F430BD6&RedC=c.clarity.ms&MXFR=3D65A425107F653F34B1B34E147F6B30",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/static/identify_5cff1caf.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics-ipv6.tiktokw.us/ipv6/enrich_ipv6",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/sync?dsp_id=409&expires=14&user_group=2&user_id=[REDACTED]&cb=32ff7235-6b3b-4010-926b-6d097da92c3c",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/sync?dsp_id=409&expires=14&user_group=2&user_id=[REDACTED]&cb=d87d7c92-7d92-4d3d-9125-a7e0bd4d2a71",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/sync?dsp_id=409&expires=14&user_group=2&user_id=[REDACTED]&cb=abd3152d-ab08-4474-a18b-d548256a4c0f",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/syncd?dsp_id=409&user_id=[REDACTED]&user_group=2&redir=%2F%2Fuse.sportradarserving.com%2Fbsw_sync%3Fbsw_uid%3D%24%7BBSW_UID%7D",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ib.adnxs.com/pixie/up?pi=40457eb2-208e-4b49-837d-1e60b0766b55",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://j.clarity.ms/collect",
+        "method": "POST",
+        "type": "XHR",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&ae=g&auid=1270558782.1780274267&en=user_id_update&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=load.t.doradobet.com&rnd=1594490828.1780274267&navt=n&npa=1&ep.ads_data_redaction=0&ga_uid=G-XP4CJEY4D2.&gtm=45Fe65r2v9187675675za204zd9187675675xea&gcs=G1--&gcd=13l3l3R2l5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~116701382~118131808~119034491~119064591&apve=1&apvf=f&gap.gtb=2&apvc=1&tft=1780274267146&tfd=10116",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&auid=1270558782.1780274267&en=page_view&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=www.googletagmanager.com&rnd=1594490828.1780274267&navt=n&npa=1&uid=&ga_uid=G-XP4CJEY4D2.&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675xec&gcs=G1--&gcd=13l3l3R2l5l1&dma=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&apve=1&apvf=f&apvc=0&tids=AW-16691899775~AW-17079578274&tid=AW-16691899775&tft=1780274267147&tfd=10117",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&ae=g&auid=1270558782.1780274267&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=www.googletagmanager.com&rnd=1594490828.1780274267&navt=n&npa=1&uid=&ga_uid=G-XP4CJEY4D2.&_tu=CA&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675xea&gcs=G1--&gcd=13l3l3R2l5l1&dma=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&apve=1&apvf=f&apvc=0&tids=AW-17079578274&tid=AW-17079578274&tft=1780274267147&tfd=10117",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-XP4CJEY4D2&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675&_p=[REDACTED]&em=tv.1~em.Tceg2JziyRZzFZF6ww4g_pLz88G_ZT6dNBII-2UESAY&_gaz=1&gcs=G1--&gcd=13l3l3R2l5l1&npa=1&dma=0&ecid=1751336751&_eu=AAAACGAC&are=1&cid=[REDACTED_CID]&ec_mode=a&frm=0&pscdl=noapi&rcb=16&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&gaf=2&_s=1&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&uid=&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Fdoradobet.com%2F&dt=&en=page_view&_fv=1&_ss=1&up.id=&tfd=10117",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-XP4CJEY4D2&cid=[REDACTED_CID]&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675&rcb=16&aip=1&dma=0&gcs=G1--&gcd=13l3l3R2l5l1&npa=1&frm=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.google.com.bo/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-XP4CJEY4D2&cid=[REDACTED_CID]&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675&rcb=16&aip=1&dma=0&gcs=G1--&gcd=13l3l3R2l5l1&npa=1&frm=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&z=254738012",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.woopra.com/track/ce/?project=doradobet.com&instance=woopra&meta=&screen=800x600&language=es-419&app=js-client&referer=&cookie=vcVDxiD3mPgg&event=pv&timeout=300000&idptnc=Lu3Z8fn2XJLf&cv_id=%5B%5D&cv_client_id=1768204819.1780274266&cv_fbp=fb.1.1780274266658.9990627468&ce_url=%2F&ce_title=&ce_slug=%2F&ce_domain=doradobet.com&ce_uri=https%3A%2F%2Fdoradobet.com%2F&ce_scroll%20depth=0.2978823529411765&ce_returning=false",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://s2.adform.net/banners/scripts/st/trackpoint-async.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://api2.amplitude.com/2/httpapi",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=ADCC2493FB8542CF8EDAAA269F430BD6&MUID=25B1B5E757EA63AF0B69A28C56FE62CC",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://sslwidget.criteo.com/event?a=%5B126083%2C126082%2C125840%2C125813%2C126084%2C125839%5D&v=5.46.0&csp-nonce=undefined&p0=e%3Dce%26m%3D%255B%255D%26h%3Dsha256&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvh%26tms%3Dgtm-criteo-custom&p3=e%3Ddis%26a%3D%255B126083%252C126082%252C125840%252C125813%252C126084%252C125839%255D&sc=%7B%22fbp%22%3A%22fb.1.1780274266658.9990627468%22%2C%22ttp%22%3A%2201KT09V0P64KP4PGCY4FQPVHJY_.tt.1%22%7D&tld=doradobet.com&dy=1&fu=https%253A%252F%252Fdoradobet.com%252F&ceid=7dc2af95-3e3b-478e-9427-f29a2c73b471",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ib.adnxs.com/pixie?e=PageView&pi=40457eb2-208e-4b49-837d-1e60b0766b55&it=1780274266840&v=0.0.45&u=https%3A%2F%2Fdoradobet.com%2F&st=1780274266840&et=1780274267434&if=0&uetmsmid=0219e6a2-9792-489c-b5e7-49ed81536273&asce=0&ascc=0&tcfhl=0&tcfe=0&tcfgdpr=0&tcfc=0",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/ul_cb/sync?dsp_id=409&expires=14&user_group=2&user_id=[REDACTED]&cb=abd3152d-ab08-4474-a18b-d548256a4c0f",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/ul_cb/sync?dsp_id=409&expires=14&user_group=2&user_id=[REDACTED]&cb=32ff7235-6b3b-4010-926b-6d097da92c3c",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/ul_cb/sync?dsp_id=409&expires=14&user_group=2&user_id=[REDACTED]&cb=d87d7c92-7d92-4d3d-9125-a7e0bd4d2a71",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://us-u.openx.net/w/1.0/sd?id=537072968&val=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=&us_privacy=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ads.betweendigital.com/match?bidder_id=22&external_user_id=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ad.360yield.com/match?publisher_dsp_id=191&external_user_id=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://my.rtmark.net/img.gif?f=sync&partner=a16bde85bfd109f5e5eaa02bc93613b72c24280d875088377a532827ec711edd&ttl=&rurl=https%3A%2F%2Fdoradobet.com%2F",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a2.adform.net/Serving/TrackPoint/?pm=3165913&ADFPageName=DoradoBet_HomePage&ADFdivider=%7C&ord=370617898418&ADFtpmode=2&itm=eyJzdjEiOltdfQ&loc=https%3A%2F%2Fdoradobet.com%2F&Set1=es-419%7Ces-419%7C800x600%7C24",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "script",
+        "documentURL": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync"
+      },
+      {
+        "url": "https://pixel.sitescout.com/up/9b80bc4c72891aba?cntr_url=https%3A%2F%2Fdoradobet.com%2F",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://us-u.openx.net/w/1.0/sd?cc=1&id=537072968&val=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=&us_privacy=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a2.adform.net/Serving/TrackPoint/?CC=1&pm=3165913&ADFPageName=DoradoBet_HomePage&ADFdivider=%7C&ord=370617898418&ADFtpmode=2&itm=eyJzdjEiOltdfQ&loc=https%3A%2F%2Fdoradobet.com%2F&Set1=es-419%7Ces-419%7C800x600%7C24",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ads.betweendigital.com/match?bidder_id=22&external_user_id=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=&crf=1&rts=-6723004427815369911",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://a2.adform.net/serving/container/?pm=3165913&lid=141310029&ctype=0&media=0&PageName=DoradoBet_HomePage&rnd=1006315996&cpref=&loc=https%3a%2f%2fdoradobet.com%2f",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "script",
+        "documentURL": "https://a2.adform.net/serving/container/?pm=3165913&lid=141310029&ctype=0&media=0&PageName=DoradoBet_HomePage&rnd=1006315996&cpref=&loc=https%3a%2f%2fdoradobet.com%2f"
+      },
+      {
+        "url": "https://x.bidswitch.net/sync?ssp=between&uid=[REDACTED]&gdpr=0&gdpr_consent=&us_privacy=${GPP_STRING_123}&redir=https%3A%2F%2Fads.betweendigital.com%2Fmatch%3Fbidder_id%3D22%26external_user_id%3D%24%7BUUID%7D",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ad.360yield.com/ul_cb/match?publisher_dsp_id=191&external_user_id=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://dsp.nrich.ai/bidswitch/sync?bidswitch_ssp_id=between&bsw_custom_parameter=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=0&gdpr_consent=&gdpr_pd=&us_privacy=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "script",
+        "documentURL": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1"
+      },
+      {
+        "url": "https://pixel.sitescout.com/up/9b80bc4c72891aba?cookieQ=1&cntr_url=https%3A%2F%2Fdoradobet.com%2F",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://www.rtb123.com/tags/7BA8C57E-6373-1F7D-9F93-06DFB2B51CBD/btp.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://x.bidswitch.net/sync?dsp_id=283&user_id=[REDACTED]&expires=1&user_group=5&ssp=between&bsw_param=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=0&gdpr_consent=&gdpr_pd=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://ads.betweendigital.com/match?bidder_id=22&external_user_id=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=0&gdpr_consent=",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://visitor-betweenx.omnitagjs.com/visitor/bsync?uid=[REDACTED]&name=gen01&url=https%3A%2F%2Fads.betweendigital.com%2Fmatch%3Fbidder_id%3D416%26external_user_id%3DPARTNER_USER_ID&visitor=6371ffe1-2569-5598-9673-a253fc6f760d&gdpr=0&gdpr_consent=&us_privacy=${GPP_STRING_123}",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "other",
+        "documentURL": "https://doradobet.com/"
+      },
+      {
+        "url": "https://j.clarity.ms/collect",
+        "method": "POST",
+        "type": "XHR",
+        "initiator": "script",
+        "documentURL": "https://doradobet.com/"
+      }
+    ],
+    "responses": [
+      {
+        "url": "https://doradobet.com/",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[2606:4700::6812:c0e6]",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2606:4700::6812:c0e6]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/8fc8ed1d8752/main.js?",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2606:4700::6812:c0e6]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/favicon/favicon_0.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Other",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.10606690116396111:1780272021:rFB99MEzBn_nQNSnKtySyBoKhwG-kRdTKhYR_6Ebkxg/a04a26a93f568bab",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2606:4700::6812:c0e6]",
+        "type": "XHR",
+        "headers": {
+          "contentType": "text/plain; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/single-spa.EpowPnCCNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.hrgGWkEtNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/path-to-regexp.CkFk_EclNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdnconfigs.virtualsoft.tech/manifest/manifest-v2-0.webmanifest?v=1232146232150",
+        "status": 200,
+        "mimeType": "application/octet-stream",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Manifest",
+        "headers": {
+          "contentType": "application/octet-stream"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msjT1618338208.png?w=144&h=144&fm=png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Other",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://cdnconfigs.virtualsoft.tech/configs/files/configLanding-doradobet.com_bo_desktop_es-vv1780262804.js?v=vv1780262804",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/iobuffer.DZ1zOcUTNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/firebase.BPWt3MuYNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@babel.5NZstiOhNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/fast-png.BWtK2hiTNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://fpjscdn.net/v4/PmGJOlgFXlEl6IqCC6Bi",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdn.amplitude.com/libs/analytics-browser-2.11.0-min.js.gz",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://cdn.amplitude.com/libs/plugin-ga-events-forwarder-browser-0.4.2-min.js.gz",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/jspdf.BORrcB6ENmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@firebase.CGBd_4zpNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/fflate.XZmX483VNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@tecnologia-general.DZMNz-yjNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/pako.B9FS3IR_Nmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/idb.Bn1DMRygNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://doradobet.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.10606690116396111:1780272021:rFB99MEzBn_nQNSnKtySyBoKhwG-kRdTKhYR_6Ebkxg/a04a26a93f568bab",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2606:4700::6812:c0e6]",
+        "type": "XHR",
+        "headers": {
+          "contentType": "text/plain; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/main.ClGbhgIrNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue-router.CrZN6hhLNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue3-cookies.Bn5rtZfINmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.Cm5kRa7HNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/promise-polyfill.Bndhg3HkNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/index.DLU6e0BzNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/pinia.hXtx5Yc7Nmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@elastic.DFK4Jyt7Nmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/error-stack-parser.D0aji7SNNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/stackframe.B4fueNoyNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/single-spa-vue.C1RMnop2Nmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue3-lazyload.fe-ZGUbuNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/axios.BI6PhSDqNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue-i18n.CZv1-fdsNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/mitt.DJ65BbbFNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@chenfengyuan.Du8IwkiZNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/tiny-emitter.Csx9l71CNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@intlify.DFB51_IxNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/vue3-google-login.BxhLV3MMNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/main.DEuET1qyNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@fortawesome.GeklHDaVNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://api.fpjs.io/xridvya/qAo6p?q=PmGJOlgFXlEl6IqCC6Bi",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ContingencyAlert.CaThRYdTNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ContingencyAlert.COySzu-bNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/layout_3.D00u6nmyNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SelectLanguage.Dc9hjTrWNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SearchIcon.DIx3b6sqNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/CloseIcon.BwyGaY0mNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/flags.BpMHm1I_Nmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Header.BoO5qBGLNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/IconCheckv2Rounde.tn0RQdqMNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuMain.BAhTxFp-Nmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ExitIcon.CZFDG1SdNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/flags.CLCR5pG4Nmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/BannerV1.DHZgmLIsNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/InfoIcons.Cyv3IARYNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Header.DBYpMeSsNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/WTopEventCarousel.V8fej-vENmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Sportbook.BNTeLY6kNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/AppComponent.9N_pi_twNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/useTouchEvent.B9t_-S_cNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Global.BZUsoVTRNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Jackpots4.DkW-8TnkNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SliderCasino.EQQENy-3Nmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuDownMobile.DdUFvqwNNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuMain.o2_q0u9PNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/stringUtils.DFsY7Fm_Nmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Copyright.UTcdgk-XNmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SeoP2.DHpzhvnINmph4o6e8.css",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ApiService.Dls7FRRINmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Footer.jJvBuhrDNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SliderCasino.5eBDeuSjNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/general.DlFjTCdqNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/ComplaintsBook.DMiN-FvuNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/MenuDownMobile.BdIg0g_vNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Jackpots4.x1bWIeEdNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Copyright.BH-woWSQNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/SeoP2.Ckhsk-BdNmph4o6e8.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "status": 200,
+        "mimeType": "image/gif",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://static2.virtualsoft.tech/config?partner=0&lang=es&country=bo&collectionKey=banner_home&mobile=0&logged=0&useScope=1&useLogin=1",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/pronosticos.webp?fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/casino.webp?fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/casino-en-vivo.webp?fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/general/Webp/Cards/promociones.webp?fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746208981.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746209518.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1746207884.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj19212T1748294524.png?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768921388.png?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://accounts.google.com/gsi/client",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4003:c01::54]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/chat%20(1).webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/casino-en-vivo.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/pronosticos-deportivos.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/pronosticos-vivo.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Tb42e643c-a7a6-4c4d-bbb3-c2f9b60c2655.png?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/registrate.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768580744.gif?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T41e6ac23-cd96-4471-9418-b9bdc525a977.gif?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://static2.virtualsoft.tech/config?partner=0&lang=es&country=bo&collectionKey=banner_home&mobile=0&logged=0&useScope=1&useLogin=1",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cwcentribot.centribal.com/sdk_v1.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2600:9000:214e:fe00:a:cebb:8180:93a1]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/inicio.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msjT1666886104.png",
+        "status": 200,
+        "mimeType": "image/jpeg",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/jpeg"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1739909673.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1766163764.png?w=65&auto=format%2Ccompress&fit=max&q=78&dpr=2",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1766163779.png?w=65&auto=format%2Ccompress&fit=max&q=78&dpr=2",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Td4608fba-f219-4f9c-8802-6e7f5cece0c6.jpg?w=768&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/jpeg",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/jpeg"
+        }
+      },
+      {
+        "url": "https://api.fpjs.io/?ci=js/4.0.3&q=PmGJOlgFXlEl6IqCC6Bi",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/flags.Cof7gUIdNmph4o6e8.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Td4608fba-f219-4f9c-8802-6e7f5cece0c6.jpg?w=800&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/jpeg",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/jpeg"
+        }
+      },
+      {
+        "url": "https://static2.virtualsoft.tech/config?partner=0&lang=es&country=bo&collectionKey=translations&mobile=0&logged=0&useScope=0&useLogin=0",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msjT1666885792.png?w=46&auto=format%2Ccompress&fit=max&q=78&dpr=2",
+        "status": 200,
+        "mimeType": "image/jpeg",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/jpeg"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768921601.png?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/virtuales.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/promociones.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/casino.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T1768932496.png?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/site/doradobet/Webp/Home/app-movil.webp?w=1440&fm=webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212Td6b59edd-9fca-478b-8425-3066d6518088.jpg?w=800&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/jpeg",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/jpeg"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T62aa939c-a586-4d83-9eb1-758407396a5c.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T3d618919-cf58-4775-b3bb-82801f040b95.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T52048185-8e0a-43c1-b7a1-3397912571f9.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T0b2bd30b-5227-471a-aae7-e87c4b29b998.png?w=450&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://images.virtualsoft.tech/m/msj0212T91315336-6ed1-4f38-9326-22ad65fd5d81.jpg?w=800&auto=format%2Ccompress&fit=max&q=74",
+        "status": 200,
+        "mimeType": "image/jpeg",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/jpeg"
+        }
+      },
+      {
+        "url": "https://api2.amplitude.com/2/httpapi",
+        "status": 200,
+        "mimeType": "",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Preflight",
+        "headers": {}
+      },
+      {
+        "url": "https://static.virtualsoft.tech/setvid",
+        "status": 204,
+        "mimeType": "",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Preflight",
+        "headers": {}
+      },
+      {
+        "url": "https://static.virtualsoft.tech/setvid",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://api2.amplitude.com/2/httpapi",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-W3K6C9P",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:80d::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://gameservice.virtualsoft.tech/?action=getGames2&partner_id=0&offset=0&typelobby=2&limit=25&category=all&provider=all&country=bo&isMobile=false&vrsn=1780262804",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "XHR",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://gameservice.virtualsoft.tech/cms/products/games/?action=getGames2&partner_id=0&offset=0&typelobby=0&limit=20&category=447&country=bo&isMobile=false&vrsn=1780262804",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[2606:4700::6812:288]",
+        "type": "XHR",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://www.google.com/recaptcha/api.js?hl=es",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2001:4860:482a:7700::]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-FL93K2MBRJ&cx=c&gtm=4e65r2",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:80d::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://a.mgid.com/mgsensor.js?d=1780274265446&source=gtm",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2606:4700::6811:c841]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjouangaming.org/anj-seal.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2600:9000:291b:6800:1b:ad6b:e880:93a1]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://tm.ads.sportradar.com/dist/tag-manager.js?id=STM-AAAAKI",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:240:e:5::be62:a029]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript",
+          "contentDisposition": "inline"
+        }
+      },
+      {
+        "url": "https://www.clarity.ms/tag/p2mcxlyx08",
+        "status": 200,
+        "mimeType": "application/x-javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/x-javascript"
+        }
+      },
+      {
+        "url": "https://ctag.containermedia.net/secure/initializer.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/pulse.js?v=10005",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8",
+          "contentDisposition": "inline; filename=\"pulse.js\""
+        }
+      },
+      {
+        "url": "https://rum.cronitor.io/script.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2600:9000:2342:3c00:17:6b8:a740:93a1]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://tracker.ads.sportradar.com/dist/tracker.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:240:e:5::be62:a029]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4NEQC3C77U10O2JH6FG&lib=ttq",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/destination?id=G-2BEQH0TT68&cx=c&gtm=4e65r2",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:80d::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjcdn.org/54f396e0-b046-49b1-9cb3-0c69281d7ea9-beacon.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[2600:9000:291b:6800:1b:ad6b:e880:93a1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://rum.cronitor.io/api/rum/events",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2600:9000:2342:3c00:17:6b8:a740:93a1]",
+        "type": "Ping",
+        "headers": {
+          "contentType": "text/plain; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://tracker.ads.sportradar.com/dist//sp-3.8.0.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:240:e:5::be62:a029]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://ctag.containermedia.net/secure/647a74a36425fba90e361f00.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/v1/presence",
+        "status": 204,
+        "mimeType": "",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Preflight",
+        "headers": {}
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/devices",
+        "status": 204,
+        "mimeType": "",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Preflight",
+        "headers": {}
+      },
+      {
+        "url": "https://dynamic.criteo.com/js/ld/ld.js?a=126083&a=126082&a=125840&a=125813&a=126084&a=125839",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2620:100:a00b::6]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FL93K2MBRJ&gtm=45je65r2v880926126z876703087za20gzb76703087zd76703087&_p=[REDACTED]&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=[REDACTED_CID]&frm=0&pscdl=noapi&rcb=10&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115938465~115938468~119034491&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Fdoradobet.com%2F&dt=&en=page_view&_fv=1&_nsi=1&_ss=1&up.pais=bo&up.partner=doradobet&tfd=8801",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:3f0:4001:842::200e]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain"
+        }
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-2BEQH0TT68&gtm=45je65r2v9244887801z876703087za20gzb76703087zd76703087&_p=[REDACTED]&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=[REDACTED_CID]&frm=0&pscdl=noapi&rcb=13&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115938465~115938468~119034493&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Fdoradobet.com%2F&dt=&en=change_theme_color_ligth&_fv=1&_ss=1&up.pais=bo&tfd=9270",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:3f0:4001:842::200e]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain"
+        }
+      },
+      {
+        "url": "https://a.mgid.com/1x1.gif?id=965881&type=c&tg=&r=https%3A%2F%2Fdoradobet.com%2F&nv=1&clid=&d=1780274266390",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[2606:4700::6811:c841]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://7e07ed73-4b31-437a-bd49-e8c632d4a7bc.snippet.anjcdn.org/sealassets/f0696c5ee48de7badc0932505b37cb4b-doradobet.com-c856bb98758e141e2eb6fa1ca59a64b72c7d9f47a2532552a387ab1e4cba4a0852437ee5078c1d0b48ccd5abf4d68a21-c2VhbC5wbmc%3D?status=valid",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[2600:9000:291b:6800:1b:ad6b:e880:93a1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://load.t.doradobet.com/tools.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2606:4700::6811:5f13]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&ae=g&auid=1270558782.1780274267&en=page_view&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=load.t.doradobet.com&rnd=1594490828.1780274267&navt=n&npa=1&ep.ads_data_redaction=0&gtm=45Fe65r2v9187675675za204zd9187675675xea&gcd=13l3l3l2l1l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~116701382~118131808~119034491~119064591&apve=1&apvf=f&gap.gtb=1&apvc=1&tft=1780274266662&tfd=9632",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2001:4860:482a:7700::]",
+        "type": "Fetch",
+        "headers": {}
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/facebook/tracked-events?write_key=pulse_c4ae196819bbf3f7a40b316514deffe6",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://scripts.clarity.ms/0.8.64/clarity.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2620:1ec:29:1::33]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript;charset=utf-8"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PCLWGWFB&gtg_health=1",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:80d::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/static/main.MWFmMzU5MmI0MQ.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://a.sportradarserving.com/ul_cb/pixel?type=js&aid=1251&id=3281",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://acdn.adnxs.com/dmp/up/pixie.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/v1/presence",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://ctag.containermedia.net/api/event?type=Page%20View&userid=[REDACTED]&host=doradobet.com&path=/&account=647a74a36425fba90e361f00&impressionId=",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdn-st.adsmurai.com/sdk.js?tv=7.7",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://pulse-vs.vercel.app/api/devices",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4FSV7JC77U10O2J671G&lib=ttq",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://analytics.tiktok.com/i18n/pixel/static/identify_5cff1caf.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-XP4CJEY4D2&cx=c&gtm=4e65r2",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:80d::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://static.woopra.com/js/w.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&ae=g&auid=1270558782.1780274267&en=user_id_update&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=load.t.doradobet.com&rnd=1594490828.1780274267&navt=n&npa=1&ep.ads_data_redaction=0&ga_uid=G-XP4CJEY4D2.&gtm=45Fe65r2v9187675675za204zd9187675675xea&gcs=G1--&gcd=13l3l3R2l5l1&dma_cps=a&dma=1&tag_exp=0~115616986~115938465~115938469~116701382~118131808~119034491~119064591&apve=1&apvf=f&gap.gtb=2&apvc=1&tft=1780274267146&tfd=10116",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2001:4860:482a:7700::]",
+        "type": "Fetch",
+        "headers": {}
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&auid=1270558782.1780274267&en=page_view&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=www.googletagmanager.com&rnd=1594490828.1780274267&navt=n&npa=1&uid=&ga_uid=G-XP4CJEY4D2.&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675xec&gcs=G1--&gcd=13l3l3R2l5l1&dma=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&apve=1&apvf=f&apvc=0&tids=AW-16691899775~AW-17079578274&tid=AW-16691899775&tft=1780274267147&tfd=10117",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2001:4860:482a:7700::]",
+        "type": "Fetch",
+        "headers": {}
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&ae=g&auid=1270558782.1780274267&dl=https%3A%2F%2Fdoradobet.com%2F&scrsrc=www.googletagmanager.com&rnd=1594490828.1780274267&navt=n&npa=1&uid=&ga_uid=G-XP4CJEY4D2.&_tu=CA&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675xea&gcs=G1--&gcd=13l3l3R2l5l1&dma=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&apve=1&apvf=f&apvc=0&tids=AW-17079578274&tid=AW-17079578274&tft=1780274267147&tfd=10117",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2001:4860:482a:7700::]",
+        "type": "Fetch",
+        "headers": {}
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://www.gstatic.com/recaptcha/releases/hsFBb1u5wWWWkWP4in1ua2cQ/recaptcha__es.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:83a::2003]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&origin=onetag",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[2620:100:a00b::3d]",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://ib.adnxs.com/pixie/up?pi=40457eb2-208e-4b49-837d-1e60b0766b55",
+        "status": 200,
+        "mimeType": "application/xml",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/xml"
+        }
+      },
+      {
+        "url": "https://my.rtmark.net/p.js?f=sync&lr=1&partner=a16bde85bfd109f5e5eaa02bc93613b72c24280d875088377a532827ec711edd",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2a06:98c1:3103::ac40:92ea]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://j.clarity.ms/collect",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "XHR",
+        "headers": {}
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://api2.amplitude.com/2/httpapi",
+        "status": 200,
+        "mimeType": "application/json",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "application/json"
+        }
+      },
+      {
+        "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=ADCC2493FB8542CF8EDAAA269F430BD6&MUID=25B1B5E757EA63AF0B69A28C56FE62CC",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[2620:1ec:48:1::33]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://ib.adnxs.com/pixie?e=PageView&pi=40457eb2-208e-4b49-837d-1e60b0766b55&it=1780274266840&v=0.0.45&u=https%3A%2F%2Fdoradobet.com%2F&st=1780274266840&et=1780274267434&if=0&uetmsmid=0219e6a2-9792-489c-b5e7-49ed81536273&asce=0&ascc=0&tcfhl=0&tcfe=0&tcfgdpr=0&tcfc=0",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://track.adform.net/Serving/Cookie/?adfaction=getjs;adfcookname=uid",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://x.bidswitch.net/syncd?dsp_id=409&user_id=[REDACTED]&user_group=2&redir=%2F%2Fuse.sportradarserving.com%2Fbsw_sync%3Fbsw_uid%3D%24%7BBSW_UID%7D",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://cdn01.basis.net/assets/up.js?um=1",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2600:1419:4e00:1d::212:7f68]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-XP4CJEY4D2&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675&_p=[REDACTED]&em=tv.1~em.Tceg2JziyRZzFZF6ww4g_pLz88G_ZT6dNBII-2UESAY&_gaz=1&gcs=G1--&gcd=13l3l3R2l5l1&npa=1&dma=0&ecid=1751336751&_eu=AAAACGAC&are=1&cid=[REDACTED_CID]&ec_mode=a&frm=0&pscdl=noapi&rcb=16&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&gaf=2&_s=1&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&uid=&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Fdoradobet.com%2F&dt=&en=page_view&_fv=1&_ss=1&up.id=&tfd=10117",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:3f0:4001:844::200e]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain"
+        }
+      },
+      {
+        "url": "https://tsyndicate.com/api/v1/retargeting/set/4c838c38-4cec-4910-abc3-c9f54235cae5?event=page_view&domain=",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[2a02:b4c:10:2314:6b:efff:feb1:bbf]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://www.google.com.bo/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-XP4CJEY4D2&cid=[REDACTED_CID]&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675&rcb=16&aip=1&dma=0&gcs=G1--&gcd=13l3l3R2l5l1&npa=1&frm=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591&z=254738012",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[2800:3f0:4001:800::2003]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-XP4CJEY4D2&cid=[REDACTED_CID]&gtm=45je65r2v9172225098z89187675675za20gzb9187675675zd9187675675&rcb=16&aip=1&dma=0&gcs=G1--&gcd=13l3l3R2l5l1&npa=1&frm=0&tag_exp=0~115938465~115938468~116701382~118131808~119034493~119064591",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:3f0:4003:c02::9a]",
+        "type": "Ping",
+        "headers": {
+          "contentType": "text/plain"
+        }
+      },
+      {
+        "url": "https://analytics-ipv6.tiktokw.us/ipv6/enrich_ipv6",
+        "status": 200,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:cd0:1:1::be81:7b22]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://s2.adform.net/banners/scripts/st/trackpoint-async.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://sslwidget.criteo.com/event?a=%5B126083%2C126082%2C125840%2C125813%2C126084%2C125839%5D&v=5.46.0&csp-nonce=undefined&p0=e%3Dce%26m%3D%255B%255D%26h%3Dsha256&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvh%26tms%3Dgtm-criteo-custom&p3=e%3Ddis%26a%3D%255B126083%252C126082%252C125840%252C125813%252C126084%252C125839%255D&sc=%7B%22fbp%22%3A%22fb.1.1780274266658.9990627468%22%2C%22ttp%22%3A%2201KT09V0P64KP4PGCY4FQPVHJY_.tt.1%22%7D&tld=doradobet.com&dy=1&fu=https%253A%252F%252Fdoradobet.com%252F&ceid=7dc2af95-3e3b-478e-9427-f29a2c73b471",
+        "status": 200,
+        "mimeType": "application/x-javascript",
+        "remoteIPAddress": "[2620:100:a00b::38]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/x-javascript"
+        }
+      },
+      {
+        "url": "https://my.rtmark.net/img.gif?f=sync&partner=a16bde85bfd109f5e5eaa02bc93613b72c24280d875088377a532827ec711edd&ttl=&rurl=https%3A%2F%2Fdoradobet.com%2F",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[2a06:98c1:3103::ac40:92ea]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://a2.adform.net/Serving/TrackPoint/?CC=1&pm=3165913&ADFPageName=DoradoBet_HomePage&ADFdivider=%7C&ord=370617898418&ADFtpmode=2&itm=eyJzdjEiOltdfQ&loc=https%3A%2F%2Fdoradobet.com%2F&Set1=es-419%7Ces-419%7C800x600%7C24",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://us-u.openx.net/w/1.0/sd?cc=1&id=537072968&val=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=&us_privacy=",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://ad.360yield.com/ul_cb/match?publisher_dsp_id=191&external_user_id=41ef1170-aaf3-4b3f-aec0-c687bbc6d6b7&gdpr=&gdpr_consent=",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html;charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://pixel.sitescout.com/up/9b80bc4c72891aba?cookieQ=1&cntr_url=https%3A%2F%2Fdoradobet.com%2F",
+        "status": 200,
+        "mimeType": "image/gif",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/gif"
+        }
+      },
+      {
+        "url": "https://a2.adform.net/serving/container/?pm=3165913&lid=141310029&ctype=0&media=0&PageName=DoradoBet_HomePage&rnd=1006315996&cpref=&loc=https%3a%2f%2fdoradobet.com%2f",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://www.rtb123.com/tags/7BA8C57E-6373-1F7D-9F93-06DFB2B51CBD/btp.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript"
+        }
+      },
+      {
+        "url": "https://j.clarity.ms/collect",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "XHR",
+        "headers": {}
+      },
+      {
+        "url": "https://www.woopra.com/track/ce/?project=doradobet.com&instance=woopra&meta=&screen=800x600&language=es-419&app=js-client&referer=&cookie=vcVDxiD3mPgg&event=pv&timeout=300000&idptnc=Lu3Z8fn2XJLf&cv_id=%5B%5D&cv_client_id=1768204819.1780274266&cv_fbp=fb.1.1780274266658.9990627468&ce_url=%2F&ce_title=&ce_slug=%2F&ce_domain=doradobet.com&ce_uri=https%3A%2F%2Fdoradobet.com%2F&ce_scroll%20depth=0.2978823529411765&ce_returning=false",
+        "status": 202,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/html"
+        }
+      }
+    ],
+    "popups": [],
+    "downloads": [],
+    "consoleEntries": [
+      {
+        "type": "warning",
+        "args": "Amplitude Logger [Warn]: `options.defaultTracking` is set to undefined. This implicitly configures your Amplitude instance to track Page Views, Sessions, File Downloads, and Form Interactions. You can suppress this warning by explicitly setting a value to `options.defaultTracking`. The value must either be a boolean, to enable and disable all default events, or an object, for advanced configuration. For example:\n\namplitude.init(<YOUR_API_KEY>, {\n  defaultTracking: true,\n});\n\nVisit https://www.docs.developers.amplitude.com/data/sdks/browser-2/#tracking-default-events for more details."
+      },
+      {
+        "type": "debug",
+        "args": " "
+      },
+      {
+        "type": "info",
+        "args": "No firebasestorage configured — skipping remote config fetch."
+      },
+      {
+        "type": "log",
+        "args": "[AnalyticsSDK] initialized with 2 adapter(s)"
+      },
+      {
+        "type": "warning",
+        "args": "Firestore not active — skipping initialization."
+      },
+      {
+        "type": "log",
+        "args": ""
+      },
+      {
+        "type": "log",
+        "args": "images.virtualsoft.tech/m"
+      },
+      {
+        "type": "log",
+        "args": "true"
+      },
+      {
+        "type": "log",
+        "args": "ligthMode true"
+      },
+      {
+        "type": "log",
+        "args": "entraa D"
+      },
+      {
+        "type": "log",
+        "args": "true"
+      },
+      {
+        "type": "log",
+        "args": "ligthMode true"
+      },
+      {
+        "type": "log",
+        "args": "entraa D"
+      },
+      {
+        "type": "error",
+        "args": "TypeError: Cannot read properties of undefined (reading '_s')\n    at a (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/pinia.hXtx5Yc7Nmph4o6e8.js:5:3144)\n    at setup (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/Jackpots4.x1bWIeEdNmph4o6e8.js:1:2207)\n    at ln (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:38)\n    at Ec (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:51557)\n    at wc (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:51346)\n    at te (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:34733)\n    at W (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:34623)\n    at y (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:31346)\n    at oi.M [as fn] (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:13:35800)\n    at oi.run (https://cdncode2.virtualsoft.tech/sites-online/ass_1779466779368668758/@vue.D5OXS4CHNmph4o6e8.js:9:2076)"
+      },
+      {
+        "type": "log",
+        "args": "Partner Country socket has been opened!"
+      },
+      {
+        "type": "log",
+        "args": "FP OK"
+      },
+      {
+        "type": "log",
+        "args": ""
+      }
+    ]
+  },
+  "iframeEvents": [
+    {
+      "target": {
+        "id": "F40C734085CBCF28649BE79566BC6300",
+        "type": "iframe",
+        "url": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:true,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22doradobet.com%22,%22topUrl%22:%22doradobet.com%22,%22version%22:%225_46_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2297317dc7-92ea-4b98-82e4-03e85e410d79%22}",
+        "title": "https://gum.criteo.com/syncframe?topUrl=doradobet.com&amp;origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:true,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22doradobet.com%22,%22topUrl%22:%22doradobet.com%22,%22version%22:%225_46_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2297317dc7-92ea-4b98-82e4-03e85e410d79%22}"
+      },
+      "events": {
+        "domains": [],
+        "requests": [],
+        "responses": [],
+        "popups": [],
+        "downloads": [],
+        "consoleEntries": []
+      }
+    },
+    {
+      "target": {
+        "id": "73B2EB45CD2A066FF229157500844EB6",
+        "type": "iframe",
+        "url": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1",
+        "title": "https://pixel-sync.sitescout.com/dmp/asyncPixelSync?cookieQ=1"
+      },
+      "events": {
+        "domains": [],
+        "requests": [],
+        "responses": [],
+        "popups": [],
+        "downloads": [],
+        "consoleEntries": []
+      }
+    },
+    {
+      "target": {
+        "id": "2D0942EC7D1E5D5864F2B36A5B2D574A",
+        "type": "iframe",
+        "url": "https://a2.adform.net/serving/container/?pm=3165913&lid=141310029&ctype=0&media=0&PageName=DoradoBet_HomePage&rnd=1006315996&cpref=&loc=https%3a%2f%2fdoradobet.com%2f",
+        "title": "https://a2.adform.net/serving/container/?pm=3165913&amp;lid=141310029&amp;ctype=0&amp;media=0&amp;PageName=DoradoBet_HomePage&amp;rnd=1006315996&amp;cpref=&amp;loc=https%3a%2f%2fdoradobet.com%2f"
+      },
+      "events": {
+        "domains": [],
+        "requests": [],
+        "responses": [],
+        "popups": [],
+        "downloads": [],
+        "consoleEntries": []
+      }
+    }
+  ],
+  "browserEvents": []
+}

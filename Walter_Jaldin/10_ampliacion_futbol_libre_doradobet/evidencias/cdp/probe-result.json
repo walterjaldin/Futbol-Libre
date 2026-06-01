@@ -1,0 +1,632 @@
+{
+  "generatedAt": "2026-06-01T00:17:16.674Z",
+  "chromeProfile": "/Users/walterjaldin/Documents/Claude/Projects/Futbol-Libre/evidencias/cdp/chrome-profile",
+  "downloadDir": "/Users/walterjaldin/Documents/Claude/Projects/Futbol-Libre/evidencias/cdp/downloads",
+  "preClick": {
+    "url": "https://futbol-libre.su/espn-1/",
+    "title": "Ver ESPN 1 En Vivo Gratis - Fútbol Libre TV",
+    "iframes": [
+      {
+        "src": "https://latamvidz1.com/canal.php?stream=espn",
+        "rect": {
+          "x": 222.671875,
+          "y": 150.75,
+          "width": 842.65625,
+          "height": 473.984375
+        }
+      }
+    ],
+    "anchors": [
+      {
+        "text": "Fútbol Libre",
+        "href": "https://futbol-libre.su/"
+      },
+      {
+        "text": "",
+        "href": "https://futbol-libre.su/"
+      },
+      {
+        "text": "Futbol Libre",
+        "href": "https://futbol-libre.su/"
+      },
+      {
+        "text": "Pelota Libre",
+        "href": "https://pelotalibretv.su/"
+      },
+      {
+        "text": "DMCA",
+        "href": "https://futbol-libre.su/dmca/"
+      }
+    ]
+  },
+  "afterClickTargets": [
+    {
+      "id": "8D2BEDAF70C67018D614F70E6A152B37",
+      "type": "page",
+      "url": "https://futbol-libre.su/espn-1/",
+      "title": "Ver ESPN 1 En Vivo Gratis - Fútbol Libre TV"
+    },
+    {
+      "id": "3E077A61FC1A61E12A006B71583B6CF4",
+      "type": "iframe",
+      "url": "https://latamvidz1.com/canal.php?stream=espn",
+      "title": "https://latamvidz1.com/canal.php?stream=espn"
+    },
+    {
+      "id": "BD7DBA991607FD73F33FD3EF31D7F1F8",
+      "type": "service_worker",
+      "url": "https://latamvidz1.com/sw.js",
+      "title": "Service Worker https://latamvidz1.com/sw.js"
+    },
+    {
+      "id": "3814E7A666FD7DE7AA0C04FF47AFA6BF",
+      "type": "service_worker",
+      "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+      "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js"
+    }
+  ],
+  "pageEvents": {
+    "domains": [
+      "cdn.futbol-libre.su",
+      "cdnjs.cloudflare.com",
+      "code.jquery.com",
+      "futbol-libre.su",
+      "latamvidz1.com",
+      "www.google-analytics.com",
+      "www.googletagmanager.com"
+    ],
+    "requests": [
+      {
+        "url": "https://futbol-libre.su/espn-1/",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "other",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/css/canal.css?v=1.2",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.4/luxon.min.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/js/canal.js?v=1.3",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/logo-futbolLibre.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-L0N11PVD63",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://latamvidz1.com/canal.php?stream=espn",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "parser",
+        "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-L0N11PVD63&gtm=45je65r2v9119778136za200zd9119778136&_p=1780273019022&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=1053749647.1780273019&frm=0&pscdl=noapi&rcb=18&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115616986~115938465~115938469~118228214~119027224~119034491&sid=1780273019&sct=1&seg=0&dl=https%3A%2F%2Ffutbol-libre.su%2Fespn-1%2F&dt=Ver%20ESPN%201%20En%20Vivo%20Gratis%20-%20F%C3%BAtbol%20Libre%20TV&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1848",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/futbol-libre-favicon.png",
+        "method": "GET",
+        "type": "Other",
+        "initiator": "other",
+        "documentURL": "https://futbol-libre.su/espn-1/"
+      }
+    ],
+    "responses": [
+      {
+        "url": "https://futbol-libre.su/espn-1/",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "185.254.197.23",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2a04:4e42:600::649]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.4/luxon.min.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2606:4700::6811:190e]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/css/canal.css?v=1.2",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1356:1]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/logo-futbolLibre.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1356:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/js/canal.js?v=1.3",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1356:1]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-L0N11PVD63",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:814::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-L0N11PVD63&gtm=45je65r2v9119778136za200zd9119778136&_p=1780273019022&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=1053749647.1780273019&frm=0&pscdl=noapi&rcb=18&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115616986~115938465~115938469~118228214~119027224~119034491&sid=1780273019&sct=1&seg=0&dl=https%3A%2F%2Ffutbol-libre.su%2Fespn-1%2F&dt=Ver%20ESPN%201%20En%20Vivo%20Gratis%20-%20F%C3%BAtbol%20Libre%20TV&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1848",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:3f0:4001:80e::200e]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain"
+        }
+      },
+      {
+        "url": "https://latamvidz1.com/canal.php?stream=espn",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "128.0.104.23",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/futbol-libre-favicon.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1356:1]",
+        "type": "Other",
+        "headers": {
+          "contentType": "image/png"
+        }
+      }
+    ],
+    "popups": [],
+    "downloads": [],
+    "consoleEntries": []
+  },
+  "iframeEvents": [
+    {
+      "target": {
+        "id": "3E077A61FC1A61E12A006B71583B6CF4",
+        "url": "https://latamvidz1.com/canal.php?stream=espn",
+        "title": "https://latamvidz1.com/canal.php?stream=espn",
+        "type": "iframe"
+      },
+      "events": {
+        "domains": [
+          "qbk4f.envivoslatam.org",
+          "us.meshify.cloud"
+        ],
+        "requests": [
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/06/01/00/17/52-06006.ts?token=[REDACTED_TOKEN]",
+            "method": "GET",
+            "type": "XHR",
+            "initiator": "script",
+            "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/06/01/00/17/58-06006.ts?token=[REDACTED_TOKEN]",
+            "method": "GET",
+            "type": "XHR",
+            "initiator": "script",
+            "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=[REDACTED_IP]&token=[REDACTED_TOKEN]",
+            "method": "GET",
+            "type": "XHR",
+            "initiator": "script",
+            "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/06/01/00/18/04-06006.ts?token=[REDACTED_TOKEN]",
+            "method": "GET",
+            "type": "XHR",
+            "initiator": "script",
+            "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+          },
+          {
+            "url": "https://us.meshify.cloud/v1/channel",
+            "method": "POST",
+            "type": "Fetch",
+            "initiator": "script",
+            "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=[REDACTED_IP]&token=[REDACTED_TOKEN]",
+            "method": "GET",
+            "type": "XHR",
+            "initiator": "script",
+            "documentURL": "https://latamvidz1.com/canal.php?stream=espn"
+          }
+        ],
+        "responses": [
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/06/01/00/17/52-06006.ts?token=[REDACTED_TOKEN]",
+            "status": 404,
+            "mimeType": "video/mp2t",
+            "type": "XHR",
+            "headers": {
+              "contentType": "video/MP2T"
+            }
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/06/01/00/17/58-06006.ts?token=[REDACTED_TOKEN]",
+            "status": 200,
+            "mimeType": "video/mp2t",
+            "remoteIPAddress": "195.178.110.212",
+            "type": "XHR",
+            "headers": {
+              "contentType": "video/MP2T"
+            }
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=[REDACTED_IP]&token=[REDACTED_TOKEN]",
+            "status": 200,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "type": "XHR",
+            "headers": {
+              "contentType": "application/vnd.apple.mpegurl"
+            }
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/2026/06/01/00/18/04-06006.ts?token=[REDACTED_TOKEN]",
+            "status": 200,
+            "mimeType": "video/mp2t",
+            "remoteIPAddress": "195.178.110.212",
+            "type": "XHR",
+            "headers": {
+              "contentType": "video/MP2T"
+            }
+          },
+          {
+            "url": "https://us.meshify.cloud/v1/channel",
+            "status": 200,
+            "mimeType": "application/octet-stream",
+            "remoteIPAddress": "[2606:4700:10::6814:2ac7]",
+            "type": "Fetch",
+            "headers": {
+              "contentType": "application/octet-stream"
+            }
+          },
+          {
+            "url": "https://qbk4f.envivoslatam.org/espn/tracks-v1a1/mono.m3u8?ip=[REDACTED_IP]&token=[REDACTED_TOKEN]",
+            "status": 200,
+            "mimeType": "application/vnd.apple.mpegurl",
+            "type": "XHR",
+            "headers": {
+              "contentType": "application/vnd.apple.mpegurl"
+            }
+          }
+        ],
+        "popups": [
+          {
+            "url": "about:blank",
+            "windowName": "_blank",
+            "windowFeatures": [
+              "menubar",
+              "toolbar",
+              "status",
+              "scrollbars",
+              "resizable"
+            ],
+            "userGesture": true
+          }
+        ],
+        "downloads": [],
+        "consoleEntries": [
+          {
+            "type": "error",
+            "args": "clappr-p2p-plugin is deprecated and will be removed soon, please update: https://github.com/swarm-cloud/hls-p2p-engine/blob/main/demo/clappr.html"
+          },
+          {
+            "type": "log",
+            "args": "Error"
+          }
+        ]
+      }
+    }
+  ],
+  "browserEvents": [
+    {
+      "ts": 1780273017333,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "3814E7A666FD7DE7AA0C04FF47AFA6BF",
+          "type": "service_worker",
+          "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+          "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273017333,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "type": "page",
+          "title": "about:blank",
+          "url": "about:blank",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273017334,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "C6EFB0FC62086AB274BBA73E8C54889B",
+          "type": "background_page",
+          "title": "Google Hangouts",
+          "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273017336,
+      "method": "Target.targetInfoChanged",
+      "params": {
+        "targetInfo": {
+          "targetId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "type": "page",
+          "title": "about:blank",
+          "url": "about:blank",
+          "attached": true,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273018533,
+      "method": "Target.targetInfoChanged",
+      "params": {
+        "targetInfo": {
+          "targetId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "type": "page",
+          "title": "futbol-libre.su/espn-1/",
+          "url": "https://futbol-libre.su/espn-1/",
+          "attached": true,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273019915,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "3E077A61FC1A61E12A006B71583B6CF4",
+          "type": "iframe",
+          "title": "",
+          "url": "",
+          "attached": false,
+          "canAccessOpener": false,
+          "parentFrameId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273019917,
+      "method": "Target.targetInfoChanged",
+      "params": {
+        "targetInfo": {
+          "targetId": "3E077A61FC1A61E12A006B71583B6CF4",
+          "type": "iframe",
+          "title": "https://latamvidz1.com/canal.php?stream=espn",
+          "url": "https://latamvidz1.com/canal.php?stream=espn",
+          "attached": false,
+          "canAccessOpener": false,
+          "parentFrameId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273020524,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "BD7DBA991607FD73F33FD3EF31D7F1F8",
+          "type": "service_worker",
+          "title": "Service Worker https://latamvidz1.com/sw.js",
+          "url": "https://latamvidz1.com/sw.js",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273020630,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "28A863CBC232489A8F5381BDB45B5B31",
+          "type": "worker",
+          "title": "",
+          "url": "",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273020638,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "13248CE9B2ADC801041804FB99376FDF",
+          "type": "worker",
+          "title": "",
+          "url": "",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273020645,
+      "method": "Target.targetDestroyed",
+      "params": {
+        "targetId": "28A863CBC232489A8F5381BDB45B5B31"
+      }
+    },
+    {
+      "ts": 1780273020645,
+      "method": "Target.targetDestroyed",
+      "params": {
+        "targetId": "13248CE9B2ADC801041804FB99376FDF"
+      }
+    },
+    {
+      "ts": 1780273026541,
+      "method": "Target.targetInfoChanged",
+      "params": {
+        "targetInfo": {
+          "targetId": "3E077A61FC1A61E12A006B71583B6CF4",
+          "type": "iframe",
+          "title": "https://latamvidz1.com/canal.php?stream=espn",
+          "url": "https://latamvidz1.com/canal.php?stream=espn",
+          "attached": true,
+          "canAccessOpener": false,
+          "parentFrameId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273026611,
+      "method": "Target.targetCreated",
+      "params": {
+        "targetInfo": {
+          "targetId": "0C996BD8F2E48E51768103609D72A4CF",
+          "type": "page",
+          "title": "",
+          "url": "",
+          "attached": false,
+          "openerId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "canAccessOpener": true,
+          "openerFrameId": "3E077A61FC1A61E12A006B71583B6CF4",
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273026665,
+      "method": "Target.targetInfoChanged",
+      "params": {
+        "targetInfo": {
+          "targetId": "0C996BD8F2E48E51768103609D72A4CF",
+          "type": "page",
+          "title": "about:blank",
+          "url": "about:blank",
+          "attached": false,
+          "openerId": "8D2BEDAF70C67018D614F70E6A152B37",
+          "canAccessOpener": true,
+          "openerFrameId": "3E077A61FC1A61E12A006B71583B6CF4",
+          "browserContextId": "D6A7522266EFF8F59951E78FC501336F"
+        }
+      }
+    },
+    {
+      "ts": 1780273026669,
+      "method": "Target.targetDestroyed",
+      "params": {
+        "targetId": "0C996BD8F2E48E51768103609D72A4CF"
+      }
+    },
+    {
+      "ts": 1780273032325,
+      "method": "Target.targetDestroyed",
+      "params": {
+        "targetId": "C6EFB0FC62086AB274BBA73E8C54889B"
+      }
+    }
+  ]
+}

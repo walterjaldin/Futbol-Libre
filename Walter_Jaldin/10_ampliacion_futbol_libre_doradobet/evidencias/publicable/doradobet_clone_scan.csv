@@ -1,0 +1,11 @@
+domain,a_records,status,server,x_powered_by,location,title,wordpress_detected
+doradobet.com,104.18.192.230 | 104.18.193.230,HTTP/2 200,cloudflare,,,,False
+doradobet.online,172.67.149.254 | 104.21.29.241,HTTP/2 200,cloudflare,PHP/5.6.40,,Doradobet Casino Perú | 300% + S/50 Gratis o 50 Giros,False
+dorado-bet.org,104.21.3.251 | 172.67.131.100,HTTP/2 403,cloudflare,,,403 Forbidden,False
+doradobet.org.pe,104.21.68.197 | 172.67.198.39,HTTP/2 403,cloudflare,,,403 Forbidden,False
+dorado-bet.pe,104.21.55.168 | 172.67.171.194,HTTP/2 200,cloudflare,,,Doradobet Casino Online y Apuestas Deportivas en Perú 2026,True
+doradobet-peru.org,104.21.57.132 | 172.67.146.75,HTTP/2 200,cloudflare,,,Doradobet Perú – Apuestas Deportivas y Casino Online Legal con Bono de Bienvenida,True
+doradobetapp.com,104.21.63.174 | 172.67.148.214,,,,,,False
+doradobet.bet,153.92.9.135,HTTP/2 200,LiteSpeed,,,DoradoBet Reseña de Perú - Cómo Apostar y Retirar Ganancias Fácilmente,False
+doradobet.pe,15.197.225.128 | 3.33.251.168,HTTP/2 405,,,,,False
+doradobet-review.com,104.21.31.180 | 172.67.178.242,HTTP/2 503,cloudflare,,,Account Suspended — doradobet-review.com,False

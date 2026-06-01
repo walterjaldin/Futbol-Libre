@@ -1,0 +1,707 @@
+{
+  "scenario": "futbol_home_desktop",
+  "generatedAt": "2026-06-01T00:36:48.438Z",
+  "url": "https://futbol-libre.su/",
+  "mobile": false,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "chromeProfile": "[LOCAL_PATH_REDACTED]",
+  "downloadDir": "/Users/walterjaldin/Documents/Claude/Projects/Futbol-Libre/evidencias/extended/futbol_home_desktop/downloads",
+  "state": {
+    "url": "https://futbol-libre.su/",
+    "title": "Fútbol Libre - Ver Partidos de Fútbol y Canales de Futbol en Vivo Gratis",
+    "text": "Fútbol Libre\nESPN\nDirectTV Sports\nTyC Sports\nWin Sports+\nTUDN\nFox Sports\nFútbol Libre TV\n\nFutbol Libre es una plataforma donde puedes ver todos tus Partidos de Futbol favoritos gratis. Ver Fútbol Libre TV online en vivo y en directo. Canales gratis de stream para ver partidos del fútbol argentino, Liga Profesional, Copa Libertadores, Liga 1, Copa Sudamericana, LaLiga, Serie A, Primera División, Liga Pro y Champions League entre otros.\n\nVer Futbol Libre Para Todos en Vivo\nVer Canales de Futbol Online en Vivo y en Directo\nESPN\n\nVer ESPN online en vivo y en directo.\n\nVer Canal\nDirecTV Sports\n\nVer DSports online en vivo y en directo.\n\nVer Canal\nTyC Sports\n\nVer TyC Sports online en vivo y en directo.\n\nVer Canal\nWin Sports+\n\nVer Win Sports+ online en vivo y en directo.\n\nVer Canal\nFox Sports\n\nVer Fox Sports online en vivo y en directo.\n\nVer Canal\nTUDN\n\nVer TUDN online en vivo y en directo.\n\nVer Canal\nESPN Premium\n\nVer ESPN Premium en vivo y en directo.\n\nVer Canal\nTNT Sports\n\nVer TNT Sports online en vivo y en directo.\n\nVer Canal\nPreguntas Frecuentes\n¿Qué es Futbol Libre?\n\nFutbol Libre tiene todos los canales gratis en vivo y en directo para ver fútbol Argentino por internet, ademas de la Copa Sudamericana, Copa Libertadores, partidos de Boca Juniors y River Plate, Selección Argentina y mucho más.\n\n¿Cómo ver un partido por fútbol libre en vivo y en directo?\n\nPara ver Futbol Libre online en vivo y en directo debes ingresar a esta pagina y luego seleccionar el partido de fútbol en vivo que quieres ver que aparecen en la agenda diaria o simplemente ingresar al canal que pasa el partido a la hora del encuentro.\n\n¿Cómo ver Futbol Libre en vivo desde la computadora / PC o desde el Teléfono móvil?\n\nPara poder ver Futbol Libre TV desde la computadora o el Teléfono móvil solo debes ingresar a Futbol Libre desde Android o Iphone iOS y elegir el canal que deseas ver en directo.\n\n¿Qué partidos de fútbol transmite Fútbol Libre TV?\n\nEn Fútbol Libre TV se podran ver todos los partidos del futbol argentino que incluyen los de Boca Juniors y River Plate por el campeonato Argentino, Copa Libertadores y Copa Sudamericana.\n\n\n\n\nFútbol Libre TV 2026 © Todos los derechos reservados.\nPelota Libre\nDMCA",
+    "htmlLength": 13872,
+    "scripts": [
+      "https://code.jquery.com/jquery-3.7.1.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.4/luxon.min.js",
+      "https://cdn.futbol-libre.su/js/menu.js?v=1.06",
+      "INLINE:{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://futbol-libre.su/\",\"url\":\"https://futbol-libre.su/\",\"name\":\"Fútbol Libre - Ver Parti",
+      "https://acscdn.com/script/suv5.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-L0N11PVD63",
+      "INLINE:\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-L0N11PVD63');\n",
+      "https://acscdn.com/script/aclib.js",
+      "INLINE:\n    aclib.runPop({\n        zoneId: '10652966',\n    });\n"
+    ],
+    "iframes": [
+      {
+        "src": "https://futbol-libre.su/agenda/",
+        "sandbox": null,
+        "allow": null,
+        "width": "100%",
+        "height": "500"
+      }
+    ],
+    "forms": [],
+    "links": [
+      {
+        "text": "Fútbol Libre",
+        "href": "https://futbol-libre.su/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "ESPN",
+        "href": "https://futbol-libre.su/espn-1/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "DirectTV Sports",
+        "href": "https://futbol-libre.su/directv-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "TyC Sports",
+        "href": "https://futbol-libre.su/tyc-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Win Sports+",
+        "href": "https://futbol-libre.su/win-sports-premium/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "TUDN",
+        "href": "https://futbol-libre.su/tudn/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Fox Sports",
+        "href": "https://futbol-libre.su/fox-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "ESPN",
+        "href": "https://futbol-libre.su/espn-1/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "DirectTV Sports",
+        "href": "https://futbol-libre.su/directv-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "TyC Sports",
+        "href": "https://futbol-libre.su/tyc-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Win Sports+",
+        "href": "https://futbol-libre.su/win-sports-premium/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "TUDN",
+        "href": "https://futbol-libre.su/tudn/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Fox Sports",
+        "href": "https://futbol-libre.su/fox-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/espn-1/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/directv-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/tyc-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/win-sports-premium/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/fox-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/tudn/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/espn-premium/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Ver Canal",
+        "href": "https://futbol-libre.su/tnt-sports/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Futbol Libre",
+        "href": "https://futbol-libre.su/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Futbol Libre",
+        "href": "https://futbol-libre.su/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Fútbol Libre TV",
+        "href": "https://futbol-libre.su/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "Pelota Libre",
+        "href": "https://pelotalibretv.su/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "DMCA",
+        "href": "https://futbol-libre.su/dmca/",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "",
+        "href": "https://adexchangerapid.com/ad/visit.php?al=1",
+        "target": "",
+        "rel": ""
+      }
+    ],
+    "localStorage": {},
+    "sessionStorageKeys": [],
+    "notificationPermission": "default",
+    "serviceWorkerController": false
+  },
+  "cookies": "[REDACTED_COOKIES]",
+  "targets": [
+    {
+      "id": "7522B6A0ED87A077DEC996243E52ACA2",
+      "type": "background_page",
+      "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+      "title": "Google Hangouts"
+    },
+    {
+      "id": "8AB04A49069EF555465EDF657CC756F0",
+      "type": "page",
+      "url": "https://futbol-libre.su/",
+      "title": "Fútbol Libre - Ver Partidos de Fútbol y Canales de Futbol en Vivo Gratis"
+    },
+    {
+      "id": "CC4B289C6C5896DCB786812A565BD804",
+      "type": "service_worker",
+      "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+      "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js"
+    }
+  ],
+  "pageEvents": {
+    "domains": [
+      "acscdn.com",
+      "adexchangerapid.com",
+      "ajax.googleapis.com",
+      "cdn.futbol-libre.su",
+      "cdnjs.cloudflare.com",
+      "code.jquery.com",
+      "futbol-libre.su",
+      "usrpubtrk.com",
+      "www.google-analytics.com",
+      "www.googletagmanager.com"
+    ],
+    "requests": [
+      {
+        "url": "https://futbol-libre.su/",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "other",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/css/style.css?v=1.49",
+        "method": "GET",
+        "type": "Stylesheet",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.4/luxon.min.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/js/menu.js?v=1.06",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/espn1.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/dsports.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/tyc_sports.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/win_sports_plus.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/fox_sports.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/tudn.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/espn_premium.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/tnt_sport.webp",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-L0N11PVD63",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://acscdn.com/script/aclib.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/favicon/manifest.json",
+        "method": "GET",
+        "type": "Manifest",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://futbol-libre.su/agenda/",
+        "method": "GET",
+        "type": "Document",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/agenda/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/agenda/smallscripts.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/agenda/"
+      },
+      {
+        "url": "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/agenda/"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-L0N11PVD63&gtm=45je65s0h2v9119778136za200zd9119778136&_p=[REDACTED]&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=[REDACTED_CID]&frm=0&pscdl=noapi&rcb=1&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115938465~115938469~119034493&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Ffutbol-libre.su%2F&dt=F%C3%BAtbol%20Libre%20-%20Ver%20Partidos%20de%20F%C3%BAtbol%20y%20Canales%20de%20Futbol%20en%20Vivo%20Gratis&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2633",
+        "method": "POST",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://acscdn.com/script/suv5.js",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "script",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "blob:https://futbol-libre.su/6813f0b1-e23e-4d8b-bbe4-4ba938e8f8ea",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "blob:https://futbol-libre.su/6813f0b1-e23e-4d8b-bbe4-4ba938e8f8ea"
+      },
+      {
+        "url": "blob:https://futbol-libre.su/1bf3657f-702a-402e-8a84-cb60e08f4bb3",
+        "method": "GET",
+        "type": "Script",
+        "initiator": "other",
+        "documentURL": "blob:https://futbol-libre.su/1bf3657f-702a-402e-8a84-cb60e08f4bb3"
+      },
+      {
+        "url": "https://usrpubtrk.com/ut/hb.php?cb=0.012239524526996504&v=1",
+        "method": "POST",
+        "type": "Ping",
+        "initiator": "script",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://adexchangerapid.com/script/suurl5.php?r=10652966&chu=%22Chromium%22%3Bv%3D148%2C%20%22Google%20Chrome%22%3Bv%3D148%2C%20%22Not%2FA)Brand%22%3Bv%3D99&chmob=%3F0&chp=macOS&chpv=26.5.0&chuafv=148.0.7778.97&cbur=0.09130685301737651&cbiframe=0&cbWidth=1280&cbHeight=633&cbtitle=F%C3%BAtbol%20Libre%20-%20Ver%20Partidos%20de%20F%C3%BAtbol%20y%20Canales%20de%20Futbol%20en%20Vivo%20Gratis&cbpage=https%3A%2F%2Ffutbol-libre.su%2F&cbref=&cbdescription=En%20Futbol%20Libre%20Puedes%20ver%20Partidos%20de%20Futbol%20y%20Canales%20de%20Futbol%20online%20en%20vivo%20y%20directo.%20Ver%20partidos%20de%20F%C3%BAtbol%20Libre%20Copa%20Libertadores%2C%20Copa%20Sudamericana%2C%20Boca%20Juniors%20y%20River%20Plate%2C%20Fox%20Sports%2C%20TNT%20Sports%2C%20ESPN%2C%20DIRECTV%20y%20TyC%20Canales%20Gratis.&cbkeywords=&cbcdn=acscdn.com&ufp=MacIntel%2FMozilla%2FNetscape%2Ftrue%2Ffalse%2FGoogle%20Inc.800x600240es-419161024%20bits&ts=1780274199735&srs=815906753195e4435548257be14e5c2d&atv=82.0-pa&btp=0.99",
+        "method": "GET",
+        "type": "Fetch",
+        "initiator": "script",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://futbol-libre.su/agenda/spriteupdate8.png",
+        "method": "GET",
+        "type": "Image",
+        "initiator": "parser",
+        "documentURL": "https://futbol-libre.su/agenda/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/favicon/manifest.json",
+        "method": "GET",
+        "type": "Manifest",
+        "initiator": "other",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/futbol-libre-favicon.png",
+        "method": "GET",
+        "type": "Other",
+        "initiator": "other",
+        "documentURL": "https://futbol-libre.su/"
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/favicon/favicon-32x32.png",
+        "method": "GET",
+        "type": "Other",
+        "initiator": "other",
+        "documentURL": "https://futbol-libre.su/"
+      }
+    ],
+    "responses": [
+      {
+        "url": "https://futbol-libre.su/",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2a04:4e42:200::649]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.4/luxon.min.js",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2606:4700::6811:180e]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/css/style.css?v=1.49",
+        "status": 200,
+        "mimeType": "text/css",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Stylesheet",
+        "headers": {
+          "contentType": "text/css"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/espn1.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/js/menu.js?v=1.06",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/dsports.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/tyc_sports.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/win_sports_plus.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/fox_sports.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/tudn.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/espn_premium.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/img/tnt_sport.webp",
+        "status": 200,
+        "mimeType": "image/webp",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/webp"
+        }
+      },
+      {
+        "url": "https://futbol-libre.su/agenda/",
+        "status": 200,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Document",
+        "headers": {
+          "contentType": "text/html; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/agenda/smallscripts.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-L0N11PVD63",
+        "status": 200,
+        "mimeType": "application/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:81a::2008]",
+        "type": "Script",
+        "headers": {
+          "contentType": "application/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://acscdn.com/script/aclib.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:11c9]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://acscdn.com/script/suv5.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2606:4700::6812:11c9]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript"
+        }
+      },
+      {
+        "url": "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+        "status": 200,
+        "mimeType": "text/javascript",
+        "remoteIPAddress": "[2800:3f0:4001:83a::200a]",
+        "type": "Script",
+        "headers": {
+          "contentType": "text/javascript; charset=UTF-8"
+        }
+      },
+      {
+        "url": "https://adexchangerapid.com/script/suurl5.php?r=10652966&chu=%22Chromium%22%3Bv%3D148%2C%20%22Google%20Chrome%22%3Bv%3D148%2C%20%22Not%2FA)Brand%22%3Bv%3D99&chmob=%3F0&chp=macOS&chpv=26.5.0&chuafv=148.0.7778.97&cbur=0.09130685301737651&cbiframe=0&cbWidth=1280&cbHeight=633&cbtitle=F%C3%BAtbol%20Libre%20-%20Ver%20Partidos%20de%20F%C3%BAtbol%20y%20Canales%20de%20Futbol%20en%20Vivo%20Gratis&cbpage=https%3A%2F%2Ffutbol-libre.su%2F&cbref=&cbdescription=En%20Futbol%20Libre%20Puedes%20ver%20Partidos%20de%20Futbol%20y%20Canales%20de%20Futbol%20online%20en%20vivo%20y%20directo.%20Ver%20partidos%20de%20F%C3%BAtbol%20Libre%20Copa%20Libertadores%2C%20Copa%20Sudamericana%2C%20Boca%20Juniors%20y%20River%20Plate%2C%20Fox%20Sports%2C%20TNT%20Sports%2C%20ESPN%2C%20DIRECTV%20y%20TyC%20Canales%20Gratis.&cbkeywords=&cbcdn=acscdn.com&ufp=MacIntel%2FMozilla%2FNetscape%2Ftrue%2Ffalse%2FGoogle%20Inc.800x600240es-419161024%20bits&ts=1780274199735&srs=815906753195e4435548257be14e5c2d&atv=82.0-pa&btp=0.99",
+        "status": 203,
+        "mimeType": "text/html",
+        "remoteIPAddress": "[2606:4700:3037::ac43:def6]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/html; charset=utf-8"
+        }
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-L0N11PVD63&gtm=45je65s0h2v9119778136za200zd9119778136&_p=[REDACTED]&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=[REDACTED_CID]&frm=0&pscdl=noapi&rcb=1&sr=800x600&uaa=arm&uab=64&uafvl=Chromium%3B148.0.7778.97%7CGoogle%2520Chrome%3B148.0.7778.97%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=macOS&uapv=26.5.0&uaw=0&ul=es-419&_s=1&tag_exp=0~115938465~115938469~119034493&sid=[REDACTED]&sct=1&seg=0&dl=https%3A%2F%2Ffutbol-libre.su%2F&dt=F%C3%BAtbol%20Libre%20-%20Ver%20Partidos%20de%20F%C3%BAtbol%20y%20Canales%20de%20Futbol%20en%20Vivo%20Gratis&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2633",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2800:3f0:4001:83a::200e]",
+        "type": "Fetch",
+        "headers": {
+          "contentType": "text/plain"
+        }
+      },
+      {
+        "url": "https://usrpubtrk.com/ut/hb.php?cb=0.012239524526996504&v=1",
+        "status": 204,
+        "mimeType": "text/plain",
+        "remoteIPAddress": "[2606:4700:3030::ac43:ba0b]",
+        "type": "Ping",
+        "headers": {}
+      },
+      {
+        "url": "https://futbol-libre.su/agenda/spriteupdate8.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[REDACTED_IP]",
+        "type": "Image",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/futbol-libre-favicon.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Other",
+        "headers": {
+          "contentType": "image/png"
+        }
+      },
+      {
+        "url": "https://cdn.futbol-libre.su/favicon/favicon-32x32.png",
+        "status": 200,
+        "mimeType": "image/png",
+        "remoteIPAddress": "[2400:52e0:1a02:2::1355:1]",
+        "type": "Other",
+        "headers": {
+          "contentType": "image/png"
+        }
+      }
+    ],
+    "popups": [],
+    "downloads": [],
+    "consoleEntries": [
+      {
+        "type": "log",
+        "args": "Error"
+      }
+    ]
+  },
+  "iframeEvents": [],
+  "browserEvents": []
+}
