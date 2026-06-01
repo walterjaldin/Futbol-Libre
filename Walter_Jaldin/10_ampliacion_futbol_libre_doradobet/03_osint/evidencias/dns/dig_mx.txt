@@ -1,3 +1,0 @@
-
-; <<>> DiG 9.10.6 <<>> futbollibretv.su MX +noall +answer
-;; global options: +cmd

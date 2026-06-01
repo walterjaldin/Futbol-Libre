@@ -17,4 +17,7 @@
 - `07_owasp/` — Fase 5: mapeo OWASP y cálculo del IEU.
 - `08_articulo/` — Borradores de secciones del artículo.
 - `09_referencias/` — Papers consultados.
-- `10_ampliacion_futbol_libre_doradobet/` — Ampliación con análisis de DoradoBet, evidencias publicables, capturas, informes DOCX/Markdown y herramientas de recolección.
+- `06_analisis/informes/` — Informes técnicos, incluyendo la ampliación Futbol Libre / DoradoBet.
+- `08_articulo/entregables/` — Entregables finales del artículo con pruebas y capturas.
+- `evidencias/` — Evidencias dinámicas y publicables de la ampliación DoradoBet/Futbol Libre.
+- `tools/` — Herramientas de recolección, redacción y generación de reportes.

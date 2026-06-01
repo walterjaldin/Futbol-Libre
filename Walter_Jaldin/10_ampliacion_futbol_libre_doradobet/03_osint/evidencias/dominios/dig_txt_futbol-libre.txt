@@ -1,4 +1,0 @@
-
-; <<>> DiG 9.10.6 <<>> futbol-libre.su TXT +noall +answer
-;; global options: +cmd
-;; connection timed out; no servers could be reached
