@@ -1,0 +1,27 @@
+# Port scan 185.254.197.23 - 10 mayo 2026
+# Herramienta: nc (netcat) - sondeo básico
+
+PUERTOS ABIERTOS:
+22   - SSH
+25   - SMTP
+53   - DNS
+80   - HTTP
+110  - POP3
+143  - IMAP
+443  - HTTPS
+465  - SMTPS
+587  - SMTP Submission
+993  - IMAPS
+995  - POP3S
+2082 - cPanel HTTP
+2083 - cPanel HTTPS  (HTTP 200 OK confirmado)
+2086 - WHM HTTP
+2087 - WHM HTTPS     (HTTP 200 OK confirmado)
+2095 - Webmail HTTP
+2096 - Webmail HTTPS (HTTP 200 OK confirmado)
+3306 - MySQL
+8080 - HTTP alternativo (Apache, Last-Modified: 07 Jan 2026)
+8443 - HTTPS alternativo
+
+Conclusión: servidor cPanel/WHM clásico con hosting compartido.
+24 servicios expostos confirmados (consistente con Censys de jornada anterior).

@@ -1,0 +1,70 @@
+=== ANÁLISIS ESTÁTICO aclib.js (Adsterra CDN) ===
+Fecha análisis: 11 mayo 2026
+Tamaño: 166,931 bytes
+
+Tokens ofuscados _0x*: 7995
+eval(): 0
+atob(): 2
+
+Strings legibles seleccionados:
+  aclib
+  aggressivity
+  anchor
+  callback
+  caught
+  certainty
+  collect
+  content
+  delay
+  description
+  details
+  detected
+  detection
+  diffs
+  display
+  ifjpvefusu9oia
+  iframe
+  languages
+  lastevent
+  length
+  lwv2zw50
+  ndjyrgzptei
+  overlay
+  p2n6pq
+  pcfet0nuwvbfia
+  platform
+  probability
+  qunusu9oienbta
+  renderer
+  score
+  shift
+  slice
+  subscribe
+  suzsqu1f
+  texts
+  tw92zxm
+  unsubscribe
+  value
+  vendor
+  video
+  visible
+  worker
+  ywjuzxn0
+  zgf0yq
+  zgv0zwn0q1ntqq
+  zgv0zwn0zwq
+  zw50zwq
+  zwn0zwq
+
+Strings Base64 decodificados (técnicas reveladas):
+  IFJPVEFUSU9OIA            → ' ROTATION '
+  LWV2ZW50                  → '-event'
+  PCFET0NUWVBFIA            → '<!DOCTYPE '
+  QUNUSU9OIENBTA            → 'ACTION CAL'
+  SUZSQU1F                  → 'IFRAME'
+  TW92ZW50                  → 'Movent'
+  P2N6PQ                    → '?cz='
+
+CONCLUSIÓN: Script implementa popunder (IFRAME + DOCTYPE injection),
+rotación de anuncios (ROTATION), detección de movimiento anti-bot (Movement),
+y tracking de eventos (ACTION CALLED, -event).

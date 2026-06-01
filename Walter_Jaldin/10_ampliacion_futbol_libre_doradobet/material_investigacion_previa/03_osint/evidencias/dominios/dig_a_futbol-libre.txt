@@ -1,0 +1,4 @@
+
+; <<>> DiG 9.10.6 <<>> futbol-libre.su A +noall +answer
+;; global options: +cmd
+futbol-libre.su.	60	IN	A	185.254.197.23

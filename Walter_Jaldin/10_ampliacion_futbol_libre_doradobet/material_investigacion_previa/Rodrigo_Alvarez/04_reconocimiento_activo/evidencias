@@ -1,0 +1,16 @@
+# Reconocimiento activo - observación inicial
+
+## Procedimiento
+Se ingresó al dominio objetivo desde un entorno controlado para observar el comportamiento de carga, resolución y posibles recursos externos.
+
+## Observaciones
+- El sitio utiliza conexión cifrada TLS/HTTPS.
+- El navegador establece múltiples conexiones a recursos externos.
+- Se observan dominios relacionados con publicidad y verificación de seguridad.
+- El contenido visible no permite leer el tráfico en claro por estar cifrado.
+
+## Riesgos observados
+- Rastreo de actividad del usuario.
+- Redirecciones hacia dominios de terceros.
+- Exposición a publicidad invasiva.
+- Posible carga de scripts no controlados por el operador principal.

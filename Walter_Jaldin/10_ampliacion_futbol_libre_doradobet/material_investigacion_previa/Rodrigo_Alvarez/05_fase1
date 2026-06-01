@@ -1,0 +1,75 @@
+FASE 1 — PREPARACIÓN DEL ENTORNO CONTROLADO
+3.1 Diseño del Estudio
+
+La investigación se desarrolló bajo un enfoque exploratorio–descriptivo utilizando un entorno controlado virtualizado para minimizar riesgos sobre el sistema 
+anfitrión.
+
+El análisis se realizó sobre el sitio:
+
+https://futbol-libre.su
+
+El objetivo principal fue determinar si el acceso al sitio genera actividad sospechosa o potencialmente maliciosa dentro del sistema operativo y la red.
+
+La metodología se dividió en cinco fases:
+
+Fase	Objetivo	Duración
+Preparación	Configuración segura del laboratorio	1 día
+Reconocimiento Pasivo	Análisis estático del sitio	1 día
+Análisis Dinámico	Monitoreo de tráfico y procesos	2 días
+Análisis Profundo	Forensics y comportamiento	2 días
+Síntesis	Elaboración de resultados	1 día
+3.2 Entorno Controlado (VM)
+Configuración de la Máquina Virtual
+Parámetro	Configuración
+Virtualización	VMware Workstation
+Sistema Operativo	Windows 10
+Tipo de Red	NAT aislado
+Snapshot inicial	WIN10-LIMPIO
+Clipboard	Deshabilitado
+Carpetas compartidas	Deshabilitadas
+Arrastrar y soltar	Deshabilitado
+Medidas de Aislamiento
+
+Para evitar propagación hacia el host principal se aplicaron las siguientes medidas:
+
+Desactivación de Windows Defender.
+Uso exclusivo de la VM para laboratorio.
+Red virtual NAT aislada.
+Restricción de intercambio de archivos.
+Restauración mediante snapshots.
+3.3 Instrumentos de Recolección
+Herramientas Utilizadas
+Herramienta	Función
+Wireshark	Captura de tráfico
+Burp Suite	Intercepción HTTP/HTTPS
+Process Monitor	Monitoreo de procesos
+Autoruns	Persistencia y autoejecución
+Google Chrome	Navegador principal
+Mozilla Firefox	Navegador alternativo
+VirusTotal	Reputación de URLs y dominios
+3.4 Línea Base Inicial
+
+Antes de acceder al sitio se registró el comportamiento inicial del sistema.
+
+Exportación de Procesos
+tasklist > C:\baseline_processes.txt
+Exportación de Conexiones
+netstat -ano > C:\baseline_connections.txt
+Exportación de Servicios
+sc query type= service state= all > C:\baseline_services.txt
+3.5 Hipótesis Inicial
+
+La hipótesis principal establecida fue:
+
+“El acceso al sitio puede generar tráfico sospechoso, redirecciones ocultas, ejecución de scripts externos o comportamiento potencialmente malicioso dentro del 
+sistema operativo.”
+
+También se planteó analizar:
+
+Descargas ocultas.
+Comunicación con servidores externos.
+Pop-ups phishing.
+Adware.
+Persistencia.
+Modificaciones del sistema.
+Requests ocultos mediante JavaScript.

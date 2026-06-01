@@ -1,0 +1,18 @@
+POST /ut/hb.php?cb=0.20038892515909923&v=1 HTTP/2
+Host: usrpubtrk.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0
+Accept: */*
+Accept-Language: es-ES,es;q=0.9,en-US;q=0.8,en;q=0.7
+Accept-Encoding: gzip, deflate, br
+Content-Type: text/plain; charset=utf-8
+Content-Length: 1714
+Sec-Fetch-Storage-Access: none
+Origin: https://futbol-libre.su
+Referer: https://futbol-libre.su/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: cross-site
+Priority: u=6
+Te: trailers
+
+{"clientHints":{},"isScrollable":1,"totalClicks":0,"sessionLength":67,"ippMissclicks":0,"visible":1,"caught":0,"lastevent":0,"isFullscreen":0,"isTabFocused":1,"eventImps":0,"retryCounts":0,"isScrolled":1,"isMouseMoved":0,"pagePercentageSeen":33,"belowTheFoldSeen":0,"touchEnd":0,"touchMove":0,"clicksByType":{"idle":0,"input":0,"video":0,"button":0,"link":0,"img":0},"ufp":"Win32/Mozilla/Netscape/true/false/1536x864240es-ESunknown224 bits","sessionStartTime":1778729043,"sessionId":"3e208a9b6025844cf60946707d33e612","timeZoneOffset":240,"zones":["10652966"],"pUrl":"https%3A%2F%2Ffutbol-libre.su%2F","pReferrer":"","pTitle":"F%C3%BAtbol%20Libre%20-%20Ver%20Partidos%20de%20F%C3%BAtbol%20y%20Canales%20de%20Futbol%20en%20Vivo%20Gratis","pDescription":"En%20Futbol%20Libre%20Puedes%20ver%20Partidos%20de%20Futbol%20y%20Canales%20de%20Futbol%20online%20en%20vivo%20y%20directo.%20Ver%20partidos%20de%20F%C3%BAtbol%20Libre%20Copa%20Libertadores%2C%20Copa%20Sudamericana%2C%20Boca%20Juniors%20y%20River%20Plate%2C%20Fox%20Sports%2C%20TNT%20Sports%2C%20ESPN%2C%20DIRECTV%20y%20TyC%20Canales%20Gratis.","pKeywords":"","pHasIframes":2,"pWidth":1519,"pHeight":2270,"vWidth":1536,"vHeight":739,"inIframe":0,"bsd":"eyJwcm9iYWJpbGl0eSI6MC4wMSwicGVyU2lnbmFsIjp7ImRvZXNVQUNvbnRhaW5IZWFkbGVzc0tleXdvcmQiOmZhbHNlLCJpc1dlYkRyaXZlclByZXNlbnQiOmZhbHNlLCJpc0NEUERldGVjdGVkIjpmYWxzZSwiYXV0b21hdGVkQnJvd3Nlckdsb2JhbHMiOmZhbHNlLCJpc1dpbmRvd0NEQyI6ZmFsc2UsImlzRmlyZWZveE1pc21hdGNoIjpmYWxzZSwiaW5jb25zaXN0ZW5jaWVzIjpmYWxzZSwiaXNDaHJvbWVGb3JUZXN0aW5nIjpmYWxzZSwibWlzc2luZ1dlYlJUQyI6ZmFsc2UsImRldGVjdENTU0Fub21hbGllcyI6ZmFsc2UsImlzSGVhZGxlc3NQZXJtaXNzaW9uTWF0Y2hlZCI6ZmFsc2UsInN1c1VzZXJJbnB1dCI6ZmFsc2V9fQ==","sentTimestamp":1778729109763}

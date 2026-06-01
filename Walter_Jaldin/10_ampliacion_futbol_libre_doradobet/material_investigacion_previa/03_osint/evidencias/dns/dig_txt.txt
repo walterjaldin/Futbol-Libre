@@ -1,0 +1,4 @@
+
+; <<>> DiG 9.10.6 <<>> futbollibretv.su TXT +noall +answer
+;; global options: +cmd
+futbollibretv.su.	60	IN	TXT	"google-site-verification=rSdArONcC2FDZLl7WDw16516IV-nP_nvryYI5soxy70"

@@ -1,0 +1,70 @@
+Hipótesis, hallazgos y conclusiones
+
+Resumen ejecutivo — métricas finales
+
+IOC identificados
+15
+dominios, IPs y archivos
+
+Técnicas MITRE
+6
+T1189, T1204, T1027…
+
+Redes publicitarias
+8
+malvertising confirmado
+
+Ejecutable malicioso
+1
+OperaSetup(1).exe
+
+Hipótesis de investigación — verificación
+
+H1 — Confirmada: el sitio distribuye malware mediante publicidad
+Se confirmó que futbollibretv.su utiliza redes de malvertising (v.byads.co, ad.propellerads.com) y un sistema de afiliados CPA para forzar la descarga 
+automática de OperaSetup(1).exedesde tracking.prmtracking.com. Windows Defender lo detectó como peligroso antes de que el usuario pudiera ejecutarlo.
+
+H2 — Confirmada: el sitio opera como portal mixto de apuestas y piratería
+El sitio no solo retransmite señales de fútbol sin autorización, sino que integra activamente la plataforma de apuestas DoradoBet mediante scripts inyectados 
+(Register.js, methodsDeposit.js, LandingLogin.js). Se capturó un POST de 1.360 bytes con datos de formulario enviados a doradobet.com sin consentimiento 
+explícito del usuario.
+
+H3 — Confirmada: el video proviene de infraestructura externa no declarada
+El contenido multimedia no se sirve desde el propio dominio. Los segmentos HLS (.ts) provienen exclusivamente de wf6kt.envivoslatam.org (IP 195.178.110.14), 
+confirmado por 30+ handshakes TLS en Wireshark. El reproductor clappr.min.js actúa como intermediario para ocultar el origen real del stream.
+
+H4 — Parcialmente confirmada: minero de criptomonedas en JavaScript
+Se observó consumo de CPU al 100% y lentitud extrema de la VM mientras la pestaña estaba abierta — comportamiento típico de cryptominer JS. Sin embargo, no se 
+logró aislar el código del minero explícitamente del script ofuscado _0x3c24. El script sí implementa pop-unders confirmados. El minero JS queda como hipótesis
+probable pero no plenamente demostrada con el análisis estático disponible.
+
+Hallazgos principales ordenados por criticidad
+
+Crítico Descarga automática de ejecutable malicioso
+Sin ninguna interacción del usuario más allá de cargar la página, el sitio disparó la descarga de OperaSetup(1).exe disfrazado como instalador legítimo de 
+Opera (T1036.005 — Masquerading). El vector fue el script ofuscado que activó un pop-under hacia tracking.prmtracking.com vía red CPA (pid=1053, 
+offer_id=2435929). Técnicas MITRE: T1189, T1204.002, T1036.005.
+
+Crítico Exfiltración de datos a plataforma de apuestas
+Se documentó el envío de datos de usuario (formulario de registro DoradoBet) desde el contexto del sitio pirata mediante un POST capturado con Burp Suite 
+(1.360 bytes). El usuario no fue informado de que sus datos serían enviados a una plataforma de apuestas. Técnicas MITRE: T1056, T1185.
+
+Alto JavaScript ofuscado con lógica maliciosa
+El sitio carga un script con ofuscación hexadecimal avanzada (patrón _0x3c24/_0xb6c9b8) que implementa la clase pop-under responsable de las redirecciones no 
+autorizadas. La ofuscación dificulta el análisis estático y es una evasión deliberada de herramientas de seguridad. Técnica MITRE: T1027.
+
+Alto Red de 8 ad-servers con capacidad de malvertising
+Se identificaron 8 redes publicitarias activas durante la visita, incluyendo trafficjunky.net (red de anuncios adultos), propellerads.com (historial documentado 
+de malvertising), byads.co (pop-unders agresivos) y adscope.gotrackier.com (tracking de afiliados). Cualquiera de estas redes puede servir anuncios maliciosos
+sin control del operador del sitio. Técnica MITRE: T1189.
+
+Medio Retransmisión no autorizada de señal de fútbol
+El sitio retransmite señales de fútbol profesional sin licencia mediante segmentos HLS servidos por envivoslatam.org. La arquitectura separa el sitio frontal 
+del servidor de contenido para dificultar acciones legales contra el dominio principal. Técnica MITRE: T1102 (Web Service como intermediario).
+
+Conclusión general
+futbollibretv.su es un portal de riesgo alto para cualquier visitante
+El análisis forense demuestra que el sitio opera con un modelo de monetización múltiple que combina: retransmisión pirata de fútbol como gancho, inyección de 
+plataforma de apuestas (DoradoBet) para captación de usuarios, red de malvertising para distribución de ejecutables maliciosos, y tracking extensivo del 
+comportamiento del visitante. La VM no quedó infectada de forma persistente gracias a la intervención de Windows Defender, pero un usuario promedio sin 
+protección activa habría ejecutado el instalador falso de Opera.
