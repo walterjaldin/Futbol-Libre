@@ -297,7 +297,7 @@ A diferencia de la sección anterior, el presente análisis incorpora inferencia
 El análisis del payload transmitido hacia infraestructura externa (`usrpubtrk.com`) evidencia la recolección automatizada de variables asociadas al comportamiento observable del usuario durante la sesión.
 
 **Evidencia visual:**  
-![Payload de tracking conductual observado](./screenshots/04_usrpubtrk_request.png)
+![Payload de tracking conductual observado](payload_usrpubtrk.png)
 
 Entre los indicadores observados se incluyen:
 
@@ -320,7 +320,7 @@ Este hallazgo indica que la observación de actividad conductual no depende nece
 ### 5.2 Fingerprinting del entorno cliente
 
 Además de variables conductuales, el payload observado incluyó atributos técnicos del entorno cliente que permiten caracterizar de forma relativamente específica el navegador y el contexto de ejecución.
-![Payload con atributos del entorno cliente](./screenshots/04_usrpubtrk_request.png)
+![Payload con atributos del entorno cliente](payload_usrpubtrk.png)
 Variables observadas:
 
 - plataforma del sistema (`Win32`)
