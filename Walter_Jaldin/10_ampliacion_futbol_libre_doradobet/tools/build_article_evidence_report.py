@@ -11,8 +11,9 @@ from docx.shared import Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "evidencias" / "publicable"
-OUT_DOCX = ROOT / "Articulo_Evidencias_FutbolLibre_DoradoBet.docx"
-OUT_MD = ROOT / "Articulo_Evidencias_FutbolLibre_DoradoBet.md"
+OUT_DIR = ROOT / "08_articulo" / "entregables"
+OUT_DOCX = OUT_DIR / "Articulo_Evidencias_FutbolLibre_DoradoBet.docx"
+OUT_MD = OUT_DIR / "Articulo_Evidencias_FutbolLibre_DoradoBet.md"
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -286,6 +287,7 @@ md_lines.extend(
     ]
 )
 
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_MD.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
 

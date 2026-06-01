@@ -6,8 +6,9 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DOCX = ROOT / "Analisis_Ampliado_FutbolLibre_DoradoBet.docx"
-OUT_MD = ROOT / "Analisis_Ampliado_FutbolLibre_DoradoBet.md"
+OUT_DIR = ROOT / "06_analisis" / "informes"
+OUT_DOCX = OUT_DIR / "Analisis_Ampliado_FutbolLibre_DoradoBet.docx"
+OUT_MD = OUT_DIR / "Analisis_Ampliado_FutbolLibre_DoradoBet.md"
 
 
 def add_heading(doc, text, level=1):
@@ -381,6 +382,7 @@ def build_docx():
 
 
 def main():
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text(report_md, encoding="utf-8")
     build_docx()
     print(OUT_MD)
